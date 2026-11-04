@@ -1,0 +1,19 @@
+{
+  "slug": "comm-ntfy",
+  "name": "ntfy",
+  "author": "McSparrow <support@mcsparrow.eu>",
+  "license": "Apache-2.0",
+  "homepage": "https://www.mcharbor.eu/docs/plugins",
+  "description": "ntfy.sh or self-hosted ntfy notification channel. POSTs Title + Message to <server_url>/<topic> with optional Priority + Tags headers, plus HTTP Basic or Bearer-token auth. Install this plugin to add 'ntfy' as a channel_type in Settings > Notifications > Channels.",
+  "category": "Communication channels",
+  "icon": "plugin.svg",
+  "versions": [
+    {
+      "version": "2026.10.01",
+      "build": "202610161440",
+      "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/comm-ntfy-2026.10.01.tar.gz",
+      "built_for": "2026.10.01",
+      "signature": "NHmiFHQhtycmWENes2nZKBt8ezYT+uYO5xsgfov9YuI5twAEHlGu4rxcOFcYBZBmmylCKU66hoWR7KLQ938qCA=="
+    }
+  ]
+}

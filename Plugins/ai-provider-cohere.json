@@ -1,0 +1,19 @@
+{
+  "slug": "ai-provider-cohere",
+  "name": "Cohere",
+  "author": "McSparrow <support@mcsparrow.eu>",
+  "license": "Apache-2.0",
+  "homepage": "https://www.mcharbor.eu/docs/plugins",
+  "description": "Routes McHarbor AI chat completions through Cohere's Command model family.",
+  "category": "AI providers",
+  "icon": "plugin.svg",
+  "versions": [
+    {
+      "version": "2026.10.01",
+      "build": "202610161437",
+      "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/ai-provider-cohere-2026.10.01.tar.gz",
+      "built_for": "2026.10.01",
+      "signature": "fekloKJ7Ra9tcgBD4bjkyMQWZ9bsR4apu2CMgZpWmEp5NjYmDI8UPc2YnDxdHJxYYpnRLCOLKc9MM1OMkc8AAQ=="
+    }
+  ]
+}

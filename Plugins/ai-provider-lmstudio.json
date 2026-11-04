@@ -1,0 +1,19 @@
+{
+  "slug": "ai-provider-lmstudio",
+  "name": "LM Studio",
+  "author": "McSparrow <support@mcsparrow.eu>",
+  "license": "Apache-2.0",
+  "homepage": "https://www.mcharbor.eu/docs/plugins",
+  "description": "Routes McHarbor AI chat completions through a local LM Studio server.",
+  "category": "AI providers",
+  "icon": "plugin.svg",
+  "versions": [
+    {
+      "version": "2026.10.01",
+      "build": "202610161438",
+      "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/ai-provider-lmstudio-2026.10.01.tar.gz",
+      "built_for": "2026.10.01",
+      "signature": "P:/Programs/Git/sQV1n6ojWikZNTB0wQ+LWWqwAGYqHSl53we3DU8ffVndksCxy+/jmaLcZ2KyXv43lrM2Qtzjh+zohwYx0xvDg=="
+    }
+  ]
+}

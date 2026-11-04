@@ -1,0 +1,19 @@
+{
+  "slug": "storage-sharepoint-online",
+  "name": "SharePoint Online",
+  "author": "McSparrow <support@mcsparrow.eu>",
+  "license": "Apache-2.0",
+  "homepage": "https://www.mcharbor.eu/docs/plugins",
+  "description": "SharePoint document library backup destination. Tenant-scoped Microsoft Graph API (/sites/{site_id}/drive). OAuth refresh-token flow + chunked upload session. Requires Sites.ReadWrite.All delegated permission. Install storage-onedrive-business separately for OneDrive for Business drives.",
+  "category": "Storage destinations",
+  "icon": "plugin.svg",
+  "versions": [
+    {
+      "version": "2026.10.01",
+      "build": "202610161449",
+      "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/storage-sharepoint-online-2026.10.01.tar.gz",
+      "built_for": "2026.10.01",
+      "signature": "M6/a3YfMdzfBQMIV05RXmtAkH3KD0febtm604B6P3cHi0asQYopgk0tqKCxAm8IdxivJODJ3st7+p3wzv5lGAQ=="
+    }
+  ]
+}

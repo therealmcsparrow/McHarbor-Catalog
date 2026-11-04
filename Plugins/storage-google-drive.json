@@ -1,0 +1,19 @@
+{
+  "slug": "storage-google-drive",
+  "name": "Google Drive",
+  "author": "McSparrow <support@mcsparrow.eu>",
+  "license": "Apache-2.0",
+  "homepage": "https://www.mcharbor.eu/docs/plugins",
+  "description": "Google Drive backup destination. OAuth refresh-token flow + Drive API v3 resumable upload so backups of any size are supported. List/Delete use the same API surface. Requires a Google Cloud project with the Drive API enabled and an OAuth client with the drive.file scope.",
+  "category": "Storage destinations",
+  "icon": "plugin.svg",
+  "versions": [
+    {
+      "version": "2026.10.01",
+      "build": "202610161446",
+      "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/storage-google-drive-2026.10.01.tar.gz",
+      "built_for": "2026.10.01",
+      "signature": "Q9k2Q5yZIGYlhdVW3sGMRelvCPrerFh33ZFApUItY0mPDbmkDCawI+7TsMAUSUNx3c+KYC2O6IuUZSZQ4ZzUCQ=="
+    }
+  ]
+}

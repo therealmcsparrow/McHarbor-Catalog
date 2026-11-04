@@ -1,0 +1,19 @@
+{
+  "slug": "comm-itop",
+  "name": "iTop",
+  "author": "McSparrow <support@mcsparrow.eu>",
+  "license": "Apache-2.0",
+  "homepage": "https://www.mcharbor.eu/docs/plugins",
+  "description": "Creates, logs and resolves Combodo iTop incidents from McHarbor alerts through the iTop REST/JSON web service, following the iTop lifecycle, with webhook or polling status sync.",
+  "category": "Communication channels",
+  "icon": "plugin.svg",
+  "versions": [
+    {
+      "version": "2026.10.01",
+      "build": "202610161442",
+      "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/comm-itop-2026.10.01.tar.gz",
+      "built_for": "2026.10.01",
+      "signature": "2CM9u19vRnSsiVm1BbobwICSaou3fn/o6K7WsLlDdnQzWSYLkmRmZnU+VCaxfL5Eo+QijUK9pVmfEUv6ci9iBQ=="
+    }
+  ]
+}

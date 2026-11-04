@@ -1,0 +1,19 @@
+{
+  "slug": "snapshot-synology",
+  "name": "Synology DSM",
+  "author": "McSparrow <support@mcsparrow.eu>",
+  "license": "Apache-2.0",
+  "homepage": "https://www.mcharbor.eu/docs/plugins",
+  "description": "Synology DSM snapshot repository via the DSM 7.x REST API. Take filesystem-level snapshots without `docker pause`. Supports Hyper Backup vault and shared folder snapshots.",
+  "category": "Snapshots",
+  "icon": "plugin.svg",
+  "versions": [
+    {
+      "version": "2026.10.01",
+      "build": "202610161446",
+      "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/snapshot-synology-2026.10.01.tar.gz",
+      "built_for": "2026.10.01",
+      "signature": "03GwUKUBpdPo+5IdCMO/xh1wIu/vcxy2Ol2BVgGMvpLVazhQzl/K95E/VmHssyQWkV6Q3Od1XevijwSe60LeCw=="
+    }
+  ]
+}

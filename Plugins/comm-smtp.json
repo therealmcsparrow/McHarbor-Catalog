@@ -1,0 +1,19 @@
+{
+  "slug": "comm-smtp",
+  "name": "SMTP",
+  "author": "McSparrow <support@mcsparrow.eu>",
+  "license": "Apache-2.0",
+  "homepage": "https://www.mcharbor.eu/docs/plugins",
+  "description": "Adds SMTP email as a communication channel for workflow, alert, and backup notifications. This is a channel adapter, not an email-server adapter.",
+  "category": "Communication channels",
+  "icon": "plugin.svg",
+  "versions": [
+    {
+      "version": "2026.10.01",
+      "build": "202610212129",
+      "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/comm-smtp-2026.10.01.tar.gz",
+      "built_for": "2026.10.01",
+      "signature": "lElNOpCip4m6KMhkwxF8BO+fBMCKroyPPO6W685cMcgE+72tO08Kg4T4JrEdGGtfnBBT/SzOJsPBcj6rznM5Cg=="
+    }
+  ]
+}

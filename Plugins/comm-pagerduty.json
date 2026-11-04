@@ -1,0 +1,19 @@
+{
+  "slug": "comm-pagerduty",
+  "name": "PagerDuty",
+  "author": "McSparrow <support@mcsparrow.eu>",
+  "license": "Apache-2.0",
+  "homepage": "https://www.mcharbor.eu/docs/plugins",
+  "description": "PagerDuty incident channel. Triggers, re-notifies and resolves PagerDuty incidents through Events API v2 and reads acknowledge/resolve back through signed v3 webhooks or REST polling.",
+  "category": "Communication channels",
+  "icon": "plugin.svg",
+  "versions": [
+    {
+      "version": "2026.10.01",
+      "build": "202610161443",
+      "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/comm-pagerduty-2026.10.01.tar.gz",
+      "built_for": "2026.10.01",
+      "signature": "LzX8fErzDJpbigjbKY3qwfS9wIwkmzxT+srfBylGxZN15FIw6xpyiZg2q0SrWRAZWqE0nD2xPwIsEB1hLNvnBA=="
+    }
+  ]
+}

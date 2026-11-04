@@ -1,0 +1,19 @@
+{
+  "slug": "addon-kvm",
+  "name": "Virtual Machines",
+  "author": "McSparrow <support@mcsparrow.eu>",
+  "license": "Apache-2.0",
+  "homepage": "https://www.mcharbor.eu/docs/plugins",
+  "description": "Run KVM virtual machines on your own hosts. Create one from a cloud image and reach a login prompt in the browser in under two minutes, or install from an ISO. Disks, network interfaces, snapshots, clones and templates, with a VNC and serial console. McHarbor drives QEMU directly over QMP and supervises it with systemd — there is no libvirt, no Proxmox and no third-party hypervisor UI.",
+  "category": "Orchestration",
+  "icon": "plugin.svg",
+  "versions": [
+    {
+      "version": "2026.10.01",
+      "build": "202610161436",
+      "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/addon-kvm-2026.10.01.tar.gz",
+      "built_for": "2026.10.01",
+      "signature": "fmaegQ0SjiLfQW2eGcAVe1sBq5zJ34leunEFpltZ4sMvxIP8eeJUy2XHQpMWG/Dj/mNq1WaBfYhtpOo7kinGCw=="
+    }
+  ]
+}

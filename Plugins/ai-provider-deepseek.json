@@ -1,0 +1,19 @@
+{
+  "slug": "ai-provider-deepseek",
+  "name": "DeepSeek",
+  "author": "McSparrow <support@mcsparrow.eu>",
+  "license": "Apache-2.0",
+  "homepage": "https://www.mcharbor.eu/docs/plugins",
+  "description": "Routes McHarbor AI chat completions through DeepSeek (deepseek-chat, deepseek-reasoner).",
+  "category": "AI providers",
+  "icon": "plugin.svg",
+  "versions": [
+    {
+      "version": "2026.10.01",
+      "build": "202610161437",
+      "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/ai-provider-deepseek-2026.10.01.tar.gz",
+      "built_for": "2026.10.01",
+      "signature": "qmZvDMZKFWpzbVYUTBi/DctAOmJ/+qQJg5zcyW1k8vvY93y4MDgjTAu3Qb8V9LXm1nZqf5yCpGJjmXlm2TMXDw=="
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "slug": "storage-dropbox",
+  "name": "Dropbox",
+  "author": "McSparrow <info@mcsparrow.eu>",
+  "license": "McHarbor",
+  "homepage": "https://www.mcharbor.eu/docs/plugins",
+  "description": "Backup destination backed by Dropbox (Dropbox API v2). Long-lived access token from a Dropbox app.",
+  "category": "Storage destinations",
+  "icon": "plugin.svg",
+  "versions": [
+    {
+      "version": "2026.10.01",
+      "build": "202610161446",
+      "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/storage-dropbox-2026.10.01.tar.gz",
+      "built_for": "2026.10.01",
+      "signature": "ZmrFKRCb0yJidzhTlqVc93rZpJhbOr7JGSe7AS79gJBb6oRBJXfhmRxOorUIaF0FdojuydahhepUjXx5VgffAw=="
+    }
+  ]
+}

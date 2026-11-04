@@ -1,0 +1,19 @@
+{
+  "slug": "ai-provider-anthropic",
+  "name": "Anthropic Claude",
+  "author": "McSparrow <support@mcsparrow.eu>",
+  "license": "Apache-2.0",
+  "homepage": "https://www.mcharbor.eu/docs/plugins",
+  "description": "Routes McHarbor AI chat completions through Anthropic's Messages API for Claude models.",
+  "category": "AI providers",
+  "icon": "plugin.svg",
+  "versions": [
+    {
+      "version": "2026.10.01",
+      "build": "202610161437",
+      "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/ai-provider-anthropic-2026.10.01.tar.gz",
+      "built_for": "2026.10.01",
+      "signature": "rUJ3drhLjXQ4gmKZY4LB1yaNfQmowTX6tZq/Fsf9+bdzlNyfVnQFwkxN7nHWNDOagZQveXXOG9l6zET1RfbkDA=="
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "slug": "ai-provider-llamacpp",
+  "name": "llama.cpp",
+  "author": "McSparrow <support@mcsparrow.eu>",
+  "license": "Apache-2.0",
+  "homepage": "https://www.mcharbor.eu/docs/plugins",
+  "description": "Routes McHarbor AI chat completions through a self-hosted llama.cpp server.",
+  "category": "AI providers",
+  "icon": "plugin.svg",
+  "versions": [
+    {
+      "version": "2026.10.01",
+      "build": "202610161438",
+      "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/ai-provider-llamacpp-2026.10.01.tar.gz",
+      "built_for": "2026.10.01",
+      "signature": "gyznGgzdE0Km9f2hn6HkYLT+RA9RXL5Wdi+IIIU9EBPMC4X+SgCDWY/ReAnUSp5hKuFI2NnTPj3wCPduW2WsDg=="
+    }
+  ]
+}

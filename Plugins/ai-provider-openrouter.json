@@ -1,0 +1,19 @@
+{
+  "slug": "ai-provider-openrouter",
+  "name": "OpenRouter",
+  "author": "McSparrow <support@mcsparrow.eu>",
+  "license": "Apache-2.0",
+  "homepage": "https://www.mcharbor.eu/docs/plugins",
+  "description": "Routes McHarbor AI chat completions through the OpenRouter multi-vendor gateway.",
+  "category": "AI providers",
+  "icon": "plugin.svg",
+  "versions": [
+    {
+      "version": "2026.10.01",
+      "build": "202610161439",
+      "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/ai-provider-openrouter-2026.10.01.tar.gz",
+      "built_for": "2026.10.01",
+      "signature": "4X9wZY4kq1/1Y32+U9yjwW5Kz/waIEPKhbtV1+l3cgcI+wfVpR9SKaZjehmQ3sPihAwsY40kaMsFwLjLMPi/CQ=="
+    }
+  ]
+}

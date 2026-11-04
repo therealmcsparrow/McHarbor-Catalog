@@ -1,0 +1,249 @@
+>>> plugin      addon-kubernetes@2026.10.01
+>>> source      /z/projects/web/management/McHarbor/src/plugins/Plugins/addon-kubernetes
+>>> output      /z/projects/web/management/McHarbor/mnt/plugin-catalog
+>>> catalog     https://www.mcharbor.eu/catalog/plugins
+
+>>> building frontend UMD bundle for addon-kubernetes
+
+> mcharbor-plugin-kubernetes-frontend@1.0.0 build
+> vite build --config vite-plugin.config.ts
+
+[33m
+(!) build.outDir must not be the same directory of root or a parent directory of root as this could cause Vite to overwriting source files with build outputs.
+[39m
+[36mvite v8.2.2 [32mbuilding client environment for production...[36m[39m
+
+[43m[30m WARN [39m[49m [36minlineDynamicImports[39m option is ignored because [36mcodeSplitting: false[39m is set.
+
+transforming...
+✓ 6669 modules transformed.
+rendering chunks...
+computing gzip size...
+/addon-kubernetes.umd.cjs  725.27 kB │ gzip: 219.98 kB
+
+[33m[33m[MIXED_EXPORTS] [0mEntry module "src/index.tsx" is using named (including "default", "mount", "onNavigate", "unmount", "widgets") and default exports together. Consumers of your bundle will have to use `McharborPlugin_addon_kubernetes.default` to access the default export, which may not be what you want. Use `output.exports: "named"` to disable this warning.
+[39m
+[32m✓ built in 42.30s[39m
+>>> built /z/projects/web/management/McHarbor/src/plugins/Plugins/addon-kubernetes/frontend/addon-kubernetes.umd.cjs (has McharborPlugin_addon_kubernetes + mount)
+>>> running plugin-packager for addon-kubernetes@2026.10.01 (first run: 3-5 min cold)
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile.plugin-packager
+#1 transferring dockerfile: 13.10kB done
+#1 DONE 0.1s
+
+#2 [internal] load metadata for docker.io/library/golang:1.27.2-bookworm
+#2 DONE 0.9s
+
+#3 [internal] load .dockerignore
+#3 transferring context:
+#3 transferring context: 1.67kB 0.0s done
+#3 DONE 0.2s
+
+#4 [internal] load build context
+#4 DONE 0.0s
+
+#5 [builder  1/14] FROM docker.io/library/golang:1.27.2-bookworm@sha256:5cf287a799e6b94384bad13d16b14904c531f51ba65792237e122ce42b392f61
+#5 resolve docker.io/library/golang:1.27.2-bookworm@sha256:5cf287a799e6b94384bad13d16b14904c531f51ba65792237e122ce42b392f61 0.0s done
+#5 DONE 0.1s
+
+#4 [internal] load build context
+#4 ...
+
+#5 [builder  1/14] FROM docker.io/library/golang:1.27.2-bookworm@sha256:5cf287a799e6b94384bad13d16b14904c531f51ba65792237e122ce42b392f61
+#5 CACHED
+
+#4 [internal] load build context
+#4 transferring context: 2.04MB 0.4s done
+#4 DONE 0.5s
+
+#6 [builder  2/14] RUN apt-get update     && apt-get install -y --no-install-recommends git bash gcc libc6-dev     && apt-get clean && find /var/lib/apt/lists -mindepth 1 -delete
+#6 CACHED
+
+#7 [builder  3/14] WORKDIR /build
+#7 CACHED
+
+#8 [builder  4/14] COPY src/backend/ ./src/backend/
+#8 DONE 1.2s
+
+#9 [builder  5/14] COPY src/plugins/Plugins/addon-kubernetes/ ./src/plugins/Plugins/addon-kubernetes/
+#9 DONE 0.2s
+
+#10 [builder  6/14] RUN if [ -z "2026.10.01" ]; then         PLUGIN_VERSION=$(awk '/^version:[[:space:]]*/{print $2; exit}' "src/plugins/Plugins/addon-kubernetes/plugin.yaml" | tr -d '"\r');         echo "resolved PLUGIN_VERSION=2026.10.01 from plugin.yaml";     fi
+#10 DONE 0.4s
+
+#11 [builder  7/14] RUN mkdir -p src/backend/_plugin_build/addon-kubernetes/backend     && cp -R src/plugins/Plugins/addon-kubernetes/backend/.         src/backend/_plugin_build/addon-kubernetes/backend/     && ls src/backend/_plugin_build/addon-kubernetes/backend/
+#11 0.738 alerts.go
+#11 0.738 api_probe.go
+#11 0.738 api_probe_test.go
+#11 0.738 cli.go
+#11 0.738 cli_test.go
+#11 0.738 client.go
+#11 0.738 cluster_credentials_guard.go
+#11 0.738 cluster_credentials_guard_http_test.go
+#11 0.738 cluster_credentials_guard_test.go
+#11 0.738 clusters.go
+#11 0.738 clusters_backfill.go
+#11 0.738 clusters_backfill_test.go
+#11 0.738 clusters_encryption_test.go
+#11 0.738 clusters_environment_test.go
+#11 0.738 connection.go
+#11 0.738 desired_state.go
+#11 0.738 desired_state_test.go
+#11 0.738 destination_embedded_test.go
+#11 0.738 destination_guard.go
+#11 0.738 destination_guard_test.go
+#11 0.738 failcause_test.go
+#11 0.738 handler.go
+#11 0.738 incident_source.go
+#11 0.738 incident_source_test.go
+#11 0.738 main.go
+#11 0.738 model.go
+#11 0.738 nodes.go
+#11 0.738 nodes_test.go
+#11 0.738 redaction_guard_test.go
+#11 0.738 reports.go
+#11 0.738 reports_blocks.go
+#11 0.738 reports_build.go
+#11 0.738 reports_facets.go
+#11 0.738 reports_facets_test.go
+#11 0.738 reports_tables.go
+#11 0.738 service.go
+#11 0.738 triggers.go
+#11 DONE 0.8s
+
+#12 [builder  8/14] RUN PLUGIN_MODULE="$(awk '/^module /{print $2; exit}' src/plugins/Plugins/addon-kubernetes/go.mod | tr -d '\r')"     && HOST_MODULE="$(awk '/^module /{print $2; exit}' src/backend/go.mod | tr -d '\r')"     && echo "rewriting imports ${PLUGIN_MODULE}/backend -> ${HOST_MODULE}/_plugin_build/addon-kubernetes/backend"     && find src/backend/_plugin_build/addon-kubernetes/backend -name '*.go' -print0        | xargs -0 sed -i "s#"${PLUGIN_MODULE}/backend/#"${HOST_MODULE}/_plugin_build/addon-kubernetes/backend/#g"
+#12 0.420 rewriting imports github.com/therealmcsparrow/mcharbor-addons/plugins/addon-kubernetes/backend -> github.com/therealmcsparrow/mcharbor/_plugin_build/addon-kubernetes/backend
+#12 DONE 0.5s
+
+#13 [builder  9/14] WORKDIR /build/src/backend
+#13 DONE 0.3s
+
+#14 [builder 10/14] RUN PLUGIN_KEEP_FILE=/build/src/backend/_plugin_build/addon-kubernetes/backend/host_link_keep.go &&     go run ./cmd/extract-core-plugin-symbols ./core/plugin > "$PLUGIN_KEEP_FILE" &&     echo "=== generated $PLUGIN_KEEP_FILE ===" &&     wc -l "$PLUGIN_KEEP_FILE" &&     head -25 "$PLUGIN_KEEP_FILE"
+#14 6.085 === generated /build/src/backend/_plugin_build/addon-kubernetes/backend/host_link_keep.go ===
+#14 6.087 864 /build/src/backend/_plugin_build/addon-kubernetes/backend/host_link_keep.go
+#14 6.088 // Code generated by docker/cmd/extract-core-plugin-symbols. DO NOT EDIT.
+#14 6.088 //
+#14 6.088 // Force-link every exported top-level symbol of every Go subpackage
+#14 6.088 // under github.com/therealmcsparrow/mcharbor/core/plugin/* so each
+#14 6.088 // subpackage's per-package ABI hash in the plugin .so matches the
+#14 6.088 // host binary's. Without this, the plugin linker prunes symbols the
+#14 6.088 // plugin does not directly use from each shared package, producing a
+#14 6.088 // strict-subset view that fails to load with "different version of
+#14 6.088 // package <subpkg>".
+#14 6.088 
+#14 6.088 package main
+#14 6.088 
+#14 6.088 import (
+#14 6.088 	"reflect"
+#14 6.088 	plugin "github.com/therealmcsparrow/mcharbor/core/plugin"
+#14 6.088 	contract "github.com/therealmcsparrow/mcharbor/core/plugin/contract"
+#14 6.088 	host "github.com/therealmcsparrow/mcharbor/core/plugin/host"
+#14 6.088 	services "github.com/therealmcsparrow/mcharbor/core/plugin/services"
+#14 6.088 	abac "github.com/therealmcsparrow/mcharbor/core/plugin/specs/abac"
+#14 6.088 	ai "github.com/therealmcsparrow/mcharbor/core/plugin/specs/ai"
+#14 6.088 	alerting "github.com/therealmcsparrow/mcharbor/core/plugin/specs/alerting"
+#14 6.088 	backup "github.com/therealmcsparrow/mcharbor/core/plugin/specs/backup"
+#14 6.088 	desiredstate "github.com/therealmcsparrow/mcharbor/core/plugin/specs/desiredstate"
+#14 6.088 	identity "github.com/therealmcsparrow/mcharbor/core/plugin/specs/identity"
+#14 6.088 	incident "github.com/therealmcsparrow/mcharbor/core/plugin/specs/incident"
+#14 DONE 6.1s
+
+#15 [builder 11/14] WORKDIR /build/src/backend
+#15 DONE 0.3s
+
+#16 [builder 12/14] RUN awk '/^[[:space:]]+[A-Za-z0-9.-]+\.[A-Za-z]+\/[^ ]+ v[0-9]/{print $1}' go.mod         | tr -d '\r' | sort -u > /tmp/host-modules.txt  && PLUGIN_DEPS=$(grep -E '^\s+[A-Za-z0-9.-]+\.[A-Za-z]+/[^ ]+ v[0-9]'         /build/src/plugins/Plugins/addon-kubernetes/go.mod 2>/dev/null |         tr -d '\r' |         awk '{print $1 "@" $2}' |         grep -v 'github.com/therealmcsparrow/mcharbor' || true) &&     if [ -n "$PLUGIN_DEPS" ]; then         for dep in $PLUGIN_DEPS; do             mod="${dep%@*}";             if grep -Fxq "$mod" /tmp/host-modules.txt; then                 echo "keeping host pin for $mod (plugin asked for ${dep#*@})";                 continue;             fi;             go get "$dep" >/tmp/goget.log 2>&1 || { echo "go get $dep failed:"; cat /tmp/goget.log; };         done;     fi
+#16 0.783 keeping host pin for github.com/go-chi/chi/v5 (plugin asked for v5.3.2)
+#16 0.793 keeping host pin for github.com/rs/xid (plugin asked for v1.6.0)
+#16 5.037 keeping host pin for filippo.io/edwards25519 (plugin asked for v1.2.0)
+#16 5.039 keeping host pin for github.com/caarlos0/env/v11 (plugin asked for v11.4.1)
+#16 5.312 keeping host pin for github.com/dustin/go-humanize (plugin asked for v1.0.1)
+#16 6.360 keeping host pin for github.com/go-logr/logr (plugin asked for v1.4.4)
+#16 9.695 keeping host pin for github.com/go-sql-driver/mysql (plugin asked for v1.10.1)
+#16 9.699 keeping host pin for github.com/golang-sql/civil (plugin asked for v0.0.0-20220223132316-b832511892a9)
+#16 9.706 keeping host pin for github.com/golang-sql/sqlexp (plugin asked for v0.1.0)
+#16 10.12 keeping host pin for github.com/google/uuid (plugin asked for v1.6.0)
+#16 10.12 keeping host pin for github.com/jackc/pgpassfile (plugin asked for v1.0.0)
+#16 10.12 keeping host pin for github.com/jackc/pgservicefile (plugin asked for v0.0.0-20240606120523-5a60cdf6a761)
+#16 10.12 keeping host pin for github.com/jackc/pgx/v5 (plugin asked for v5.11.0)
+#16 10.13 keeping host pin for github.com/jackc/puddle/v2 (plugin asked for v2.2.2)
+#16 10.72 keeping host pin for github.com/mattn/go-isatty (plugin asked for v0.0.24)
+#16 10.72 keeping host pin for github.com/microsoft/go-mssqldb (plugin asked for v1.11.2)
+#16 11.37 keeping host pin for github.com/munnerz/goautoneg (plugin asked for v0.0.0-20191010083416-a7dc8b61c822)
+#16 11.37 keeping host pin for github.com/ncruces/go-strftime (plugin asked for v1.0.0)
+#16 11.37 keeping host pin for github.com/remyoudompheng/bigfft (plugin asked for v0.0.0-20230129092748-24d4a6f8daec)
+#16 11.37 keeping host pin for github.com/shopspring/decimal (plugin asked for v1.4.0)
+#16 13.90 keeping host pin for golang.org/x/crypto (plugin asked for v0.57.0)
+#16 13.90 keeping host pin for golang.org/x/net (plugin asked for v0.60.0)
+#16 14.44 keeping host pin for golang.org/x/sync (plugin asked for v0.23.0)
+#16 14.45 keeping host pin for golang.org/x/sys (plugin asked for v0.48.0)
+#16 15.37 keeping host pin for golang.org/x/text (plugin asked for v0.42.0)
+#16 15.60 keeping host pin for google.golang.org/protobuf (plugin asked for v1.36.12)
+#16 17.30 keeping host pin for modernc.org/libc (plugin asked for v1.75.7)
+#16 17.30 keeping host pin for modernc.org/mathutil (plugin asked for v1.7.1)
+#16 17.30 keeping host pin for modernc.org/memory (plugin asked for v1.12.1)
+#16 17.31 keeping host pin for modernc.org/sqlite (plugin asked for v1.58.0)
+#16 DONE 18.4s
+
+#17 [builder 13/14] RUN CGO_ENABLED=1 go build -trimpath -buildmode=plugin          -o /tmp/addon-kubernetes.so         ./_plugin_build/addon-kubernetes/backend
+#17 0.399 go: downloading github.com/rs/xid v1.6.0
+#17 0.399 go: downloading github.com/go-chi/chi/v5 v5.3.2
+#17 0.418 go: downloading google.golang.org/protobuf v1.36.12
+#17 0.424 go: downloading github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822
+#17 0.426 go: downloading golang.org/x/net v0.60.0
+#17 0.429 go: downloading golang.org/x/crypto v0.57.0
+#17 0.441 go: downloading github.com/google/uuid v1.6.0
+#17 0.452 go: downloading github.com/go-sql-driver/mysql v1.10.1
+#17 0.453 go: downloading github.com/jackc/pgx/v5 v5.11.0
+#17 0.453 go: downloading github.com/microsoft/go-mssqldb v1.11.2
+#17 0.453 go: downloading modernc.org/sqlite v1.58.0
+#17 0.455 go: downloading github.com/caarlos0/env/v11 v11.4.1
+#17 0.590 go: downloading filippo.io/edwards25519 v1.2.0
+#17 0.997 go: downloading github.com/jackc/puddle/v2 v2.2.2
+#17 0.998 go: downloading golang.org/x/text v0.42.0
+#17 0.998 go: downloading github.com/jackc/pgpassfile v1.0.0
+#17 0.998 go: downloading github.com/jackc/pgservicefile v0.0.0-20240606120523-5a60cdf6a761
+#17 1.033 go: downloading golang.org/x/sync v0.23.0
+#17 1.035 go: downloading github.com/shopspring/decimal v1.4.0
+#17 1.035 go: downloading github.com/golang-sql/civil v0.0.0-20220223132316-b832511892a9
+#17 1.035 go: downloading github.com/golang-sql/sqlexp v0.1.0
+#17 4.545 go: downloading modernc.org/libc v1.75.7
+#17 8.906 go: downloading github.com/dustin/go-humanize v1.0.1
+#17 8.906 go: downloading modernc.org/mathutil v1.7.1
+#17 8.906 go: downloading modernc.org/memory v1.12.1
+#17 8.939 go: downloading github.com/remyoudompheng/bigfft v0.0.0-20230129092748-24d4a6f8daec
+#17 DONE 74.0s
+
+#18 [builder 14/14] RUN RESOLVED_PLUGIN_VERSION="2026.10.01"     && if [ -z "${RESOLVED_PLUGIN_VERSION}" ]; then          RESOLVED_PLUGIN_VERSION=$(awk '/^version:[[:space:]]*/{print $2; exit}' "/build/src/plugins/Plugins/addon-kubernetes/plugin.yaml" | tr -d '"\r');        fi     && test -n "${RESOLVED_PLUGIN_VERSION}"     && mkdir -p /tmp/payload/backend     && cp /build/src/plugins/Plugins/addon-kubernetes/plugin.yaml /tmp/payload/     && if [ -n "202610211556" ]; then          sed -i '/^build:/d' /tmp/payload/plugin.yaml &&          { [ -z "$(tail -c1 /tmp/payload/plugin.yaml)" ] || echo >> /tmp/payload/plugin.yaml; } &&          echo "build:    "202610211556"" >> /tmp/payload/plugin.yaml;        fi     && if [ -d /build/src/plugins/Plugins/addon-kubernetes/i18n ]; then          cp -R /build/src/plugins/Plugins/addon-kubernetes/i18n /tmp/payload/;        fi     && if [ -f /build/src/plugins/Plugins/addon-kubernetes/frontend/addon-kubernetes.umd.cjs ]; then          mkdir -p /tmp/payload/frontend &&            cp /build/src/plugins/Plugins/addon-kubernetes/frontend/addon-kubernetes.umd.cjs /tmp/payload/frontend/;        else          echo "warning: frontend/addon-kubernetes.umd.cjs missing — ConfigForm/SetupGuide will render blank" >&2;        fi     && if [ -d /build/src/plugins/Plugins/addon-kubernetes/icons ]; then          mkdir -p /tmp/payload/icons &&            cp -R /build/src/plugins/Plugins/addon-kubernetes/icons/. /tmp/payload/icons/;        fi     && if [ -d /build/src/plugins/Plugins/addon-kubernetes/migrations ]; then          cp -R /build/src/plugins/Plugins/addon-kubernetes/migrations /tmp/payload/;        fi     && if [ -f /build/src/plugins/Plugins/addon-kubernetes/THIRD_PARTY_NOTICES.md ]; then          cp /build/src/plugins/Plugins/addon-kubernetes/THIRD_PARTY_NOTICES.md /tmp/payload/;        fi     && cp /tmp/addon-kubernetes.so /tmp/payload/backend/addon-kubernetes.so     && mkdir -p /tmp/packaged     && tar -C /tmp/payload -czf /tmp/packaged/addon-kubernetes-${RESOLVED_PLUGIN_VERSION}.tar.gz .     && ls -la /tmp/packaged/
+#18 4.456 total 39280
+#18 4.456 drwxr-xr-x 2 root root     4096 Oct 21 15:58 .
+#18 4.456 drwxrwxrwt 1 root root     4096 Oct 21 15:58 ..
+#18 4.456 -rw-r--r-- 1 root root 40213990 Oct 21 15:58 addon-kubernetes-2026.10.01.tar.gz
+#18 DONE 13.1s
+
+#19 [plugin-packager 1/1] COPY --from=builder /tmp/packaged/ /packaged/
+#19 DONE 0.1s
+
+#20 exporting to client tarball
+#20 sending tarball
+#20 sending tarball 0.4s done
+#20 DONE 0.4s
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/82k2ionmsy8f9uvmipfnlrq7j
+>>> extracting packaged/addon-kubernetes-2026.10.01.tar.gz
+>>> signing addon-kubernetes-2026.10.01.tar.gz with plugin-signing.key and verifying against plugin-signing.pub
+pluginsigner: verified 1 signature(s) against Z:/projects/web/management/McHarbor/signing/plugin-signing.pub
+pluginsigner: signed 1 tarballs, recorded 0 catalog signatures
+>>> generating addon-kubernetes.json
+
+>>> wrote /z/projects/web/management/McHarbor/mnt/plugin-catalog/addon-kubernetes.json
+>>> wrote /z/projects/web/management/McHarbor/mnt/plugin-catalog/files/addon-kubernetes-2026.10.01.tar.gz (39M)
+>>> wrote /z/projects/web/management/McHarbor/mnt/plugin-catalog/files/addon-kubernetes-2026.10.01.tar.gz.sig
+>>> wrote /z/projects/web/management/McHarbor/mnt/plugin-catalog/icons/addon-kubernetes/ (2 icon(s))
+
+    download_url: https://www.mcharbor.eu/catalog/plugins/files/addon-kubernetes-2026.10.01.tar.gz
+
+    Copy the contents of /z/projects/web/management/McHarbor/mnt/plugin-catalog
+    over the catalog root, then restart the container so the
+    installer sees it:
+      docker compose up -d --force-recreate mcharbor

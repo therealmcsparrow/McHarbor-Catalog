@@ -1,0 +1,19 @@
+{
+  "slug": "comm-gotify",
+  "name": "Gotify",
+  "author": "McSparrow <support@mcsparrow.eu>",
+  "license": "Apache-2.0",
+  "homepage": "https://www.mcharbor.eu/docs/plugins",
+  "description": "Adds Gotify as a communication channel for workflow, alert, and backup notifications. This is a channel adapter owned by the plugin runtime.",
+  "category": "Communication channels",
+  "icon": "plugin.svg",
+  "versions": [
+    {
+      "version": "2026.10.01",
+      "build": "202610161440",
+      "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/comm-gotify-2026.10.01.tar.gz",
+      "built_for": "2026.10.01",
+      "signature": "jfW5Ztd5tPi3x4+7INYopz6OTp7fcp453CDDkJU9QyTjUv4ocUYSgtNkHV7V2L3OfVqtLhsEhv7YA2tRkA4FAg=="
+    }
+  ]
+}

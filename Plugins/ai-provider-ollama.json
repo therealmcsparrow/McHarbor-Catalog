@@ -1,0 +1,19 @@
+{
+  "slug": "ai-provider-ollama",
+  "name": "Ollama",
+  "author": "McSparrow <support@mcsparrow.eu>",
+  "license": "Apache-2.0",
+  "homepage": "https://www.mcharbor.eu/docs/plugins",
+  "description": "Connects McHarbor AI chat to a self-hosted Ollama server and locally hosted models.",
+  "category": "AI providers",
+  "icon": "plugin.svg",
+  "versions": [
+    {
+      "version": "2026.10.01",
+      "build": "202610161439",
+      "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/ai-provider-ollama-2026.10.01.tar.gz",
+      "built_for": "2026.10.01",
+      "signature": "LAt3zXZRmCfordkB3klxADhoSeFDFdbwMYFaMhFfEZVoW1XRF00lmJq/bev7/kO8qJZu4l99JMQxUuyaVcHPCg=="
+    }
+  ]
+}

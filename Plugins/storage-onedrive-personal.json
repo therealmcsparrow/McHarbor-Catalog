@@ -1,0 +1,19 @@
+{
+  "slug": "storage-onedrive-personal",
+  "name": "OneDrive (Personal)",
+  "author": "McSparrow <support@mcsparrow.eu>",
+  "license": "Apache-2.0",
+  "homepage": "https://www.mcharbor.eu/docs/plugins",
+  "description": "OneDrive Personal (consumer endpoint) backup destination. Talks to Microsoft Graph /me/drive for upload/download/delete/list and login.microsoftonline.com/consumers for OAuth tokens. Large uploads use Microsoft's chunked upload session so backups of any size are supported.",
+  "category": "Storage destinations",
+  "icon": "plugin.svg",
+  "versions": [
+    {
+      "version": "2026.10.01",
+      "build": "202610161447",
+      "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/storage-onedrive-personal-2026.10.01.tar.gz",
+      "built_for": "2026.10.01",
+      "signature": "gQ8VAK5uXVjYvlZvPlSwhlrzDSIR9E8BVnCnMe69wFL5XAXeoWsZ4hVMiwtdO5kOv1dLbBWIHRwW4ClDh8EvDQ=="
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "slug": "comm-gmail",
+  "name": "Gmail",
+  "author": "McSparrow <support@mcsparrow.eu>",
+  "license": "Apache-2.0",
+  "homepage": "https://www.mcharbor.eu/docs/plugins",
+  "description": "Adds Gmail API email as a communication channel for workflow, alert, and backup notifications. This is a channel adapter, not an email-server adapter.",
+  "category": "Communication channels",
+  "icon": "plugin.svg",
+  "versions": [
+    {
+      "version": "2026.10.01",
+      "build": "202610161440",
+      "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/comm-gmail-2026.10.01.tar.gz",
+      "built_for": "2026.10.01",
+      "signature": "Arl+STVDhg1CmqHu9sAJPuP738R76dQ61kfCyGunU/dOv/HEU2v2G5MQoqps+jnj+P+kgucMsz0P7nAy9x5PBw=="
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "slug": "storage-nfs",
+  "name": "NFS",
+  "author": "McSparrow <info@mcsparrow.eu>",
+  "license": "McHarbor",
+  "homepage": "https://www.mcharbor.eu/docs/plugins",
+  "description": "Backup destination backed by an NFS (RFC 7530) export. AUTH_SYS (UID-based) plus Kerberos flavors (krb5/krb5i/krb5p) via the kernel nfs client.",
+  "category": "Storage destinations",
+  "icon": "plugin.svg",
+  "versions": [
+    {
+      "version": "2026.10.01",
+      "build": "202610161447",
+      "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/storage-nfs-2026.10.01.tar.gz",
+      "built_for": "2026.10.01",
+      "signature": "NC/b40VMjQ8ICfe++ciiVXTefV6/pgRRfIV0fBLhCBAbO5YskG6BbfcFwTicEHDRGkFxBSmkshhj24TYy3n0DA=="
+    }
+  ]
+}

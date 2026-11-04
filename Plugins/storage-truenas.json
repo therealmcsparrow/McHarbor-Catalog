@@ -1,0 +1,19 @@
+{
+  "slug": "storage-truenas",
+  "name": "TrueNAS",
+  "author": "McSparrow <support@mcsparrow.eu>",
+  "license": "Apache-2.0",
+  "homepage": "https://www.mcharbor.eu/docs/plugins",
+  "description": "Back up containers to a TrueNAS instance via WebDAV (RFC 4918). TrueNAS exposes WebDAV on the share's configured path (default `/webdav` for the standard WebDAV share). Operators authenticate with a local TrueNAS user + password over HTTP Basic auth. Chunked uploads use Content-Range PUT; the TrueNAS Samba server is built on samba.org which supports Content-Range PUT in WebDAV. Same Test round-trip shape (write / change / delete) as the SharePoint, Google Drive, and Nextcloud plugins.",
+  "category": "Storage destinations",
+  "icon": "plugin.svg",
+  "versions": [
+    {
+      "version": "2026.10.01",
+      "build": "202610161449",
+      "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/storage-truenas-2026.10.01.tar.gz",
+      "built_for": "2026.10.01",
+      "signature": "AwYxDNlq7ydz8cFr0brJZYqik+8vN92Q+bPGeAfJ8VaJVNCJlbKFcbVfBAKxTPX6QA/8bU15nj1WUy4ta+l8BQ=="
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "slug": "comm-teams",
+  "name": "Microsoft Teams",
+  "author": "McSparrow <support@mcsparrow.eu>",
+  "license": "Apache-2.0",
+  "homepage": "https://www.mcharbor.eu/docs/plugins",
+  "description": "Microsoft Teams Incoming Webhook connector channel. POSTs an Adaptive Card with Title as a bold TextBlock header and Message as a wrapping TextBlock body to a Teams channel webhook URL. Install this plugin to add 'teams' as a channel_type in Settings > Notifications > Channels.",
+  "category": "Communication channels",
+  "icon": "plugin.svg",
+  "versions": [
+    {
+      "version": "2026.10.01",
+      "build": "202610161441",
+      "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/comm-teams-2026.10.01.tar.gz",
+      "built_for": "2026.10.01",
+      "signature": "djZ0mRq0AXHPA+be4M1mEdX4kTIpQNfFBpf4iNMmEfke6tl61v8xhIyeKEdJep3hnlgla4b4GvlzxngzkGu0BQ=="
+    }
+  ]
+}

@@ -1,0 +1,1362 @@
+[
+  {
+    "slug": "addon-compute",
+    "name": "Compute Foundation",
+    "author": "McSparrow <support@mcsparrow.eu>",
+    "license": "Apache-2.0",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "Storage pools, networks, guest images and per-host capability checks for running virtual machines and system containers on your own hosts. Install it on its own to see what each host can run and to prepare its storage and networking; the Virtual Machines and System Containers plugins build on it and install it automatically.",
+    "category": "Orchestration",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610211556",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/addon-compute-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "ICbBTsFk4MtkUFtSbBrhMpI5ZoaZrjItC5E0G6l15z8SRv+5mFJz1/zgHD+7lvbLOfbxTiHdYn7l+ijH0uNfDg==",
+        "checksum": "fe97d7e818a1b71a0007049eecfc4bf53ab55eacff332c1d6f0f78243347039b"
+      }
+    ]
+  },
+  {
+    "slug": "addon-kubernetes",
+    "name": "Kubernetes",
+    "author": "McSparrow <support@mcsparrow.eu>",
+    "license": "Apache-2.0",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "Manage Kubernetes clusters from McHarbor: pods, deployments and other workloads, services and networking, storage, config, namespaces, nodes and events — with pod logs, deployment scaling and rolling restarts. Cluster connections are owned by the plugin and their kubeconfig and bearer-token credentials are encrypted at rest with the host's own key.",
+    "category": "Orchestration",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610211556",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/addon-kubernetes-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "nbTl0unF5O9mIMGQpqiE6jHIS3CPo+ODTwan+QAKf5w5kW1eGdxaKrGC+6w4QdnWODSgGrtHBIgt+Bq6Kew4Aw==",
+        "checksum": "620be5ebde70699f854e1d03c0e354554f4237cad1983c6064fdceab6d3b24cc"
+      }
+    ]
+  },
+  {
+    "slug": "addon-kvm",
+    "name": "Virtual Machines",
+    "author": "McSparrow <support@mcsparrow.eu>",
+    "license": "Apache-2.0",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "Run KVM virtual machines on your own hosts. Create one from a cloud image and reach a login prompt in the browser in under two minutes, or install from an ISO. Disks, network interfaces, snapshots, clones and templates, with a VNC and serial console. McHarbor drives QEMU directly over QMP and supervises it with systemd — there is no libvirt, no Proxmox and no third-party hypervisor UI.",
+    "category": "Orchestration",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610161436",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/addon-kvm-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "fmaegQ0SjiLfQW2eGcAVe1sBq5zJ34leunEFpltZ4sMvxIP8eeJUy2XHQpMWG/Dj/mNq1WaBfYhtpOo7kinGCw==",
+        "checksum": "537b2560e09e90233e01fe30707af3617154239c63a92096bbf924c692c70113"
+      }
+    ]
+  },
+  {
+    "slug": "addon-lxc",
+    "name": "System Containers",
+    "author": "McSparrow <support@mcsparrow.eu>",
+    "license": "Apache-2.0",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "Run full-system LXC containers on your own hosts: a whole distribution with its own init, users and services, in a fraction of a virtual machine's memory and starting in about a second. Unprivileged by default, with CPU, memory and process limits that apply without a restart, a browser console, mounts, snapshots, clones and templates. McHarbor drives libcontainer directly — there is no LXD, no Incus and no lxc-* toolchain.",
+    "category": "Orchestration",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610161436",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/addon-lxc-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "HrwG4CVTmz7420XoM5oUUJ7itMgSuUTgeuvrlldtgz3691Mz2y0d6ARqhqV7hn5OHbQdHgNymsqWwcuYw8/iBw==",
+        "checksum": "9c2af6de64d9b381ef0839bd38d345b47a1b139dfdf02f144ee7f15f369e53d9"
+      }
+    ]
+  },
+  {
+    "slug": "addon-reporting",
+    "name": "Reporting",
+    "author": "McSparrow <support@mcsparrow.eu>",
+    "license": "Apache-2.0",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "Generate board-presentable reports on environments, workloads, incidents, security, capacity, delivery and recovery. Each report is organised by management altitude — strategic, tactical and operational — is readable inside McHarbor, and exports to PDF and Word with the product's own typography and marks.",
+    "category": "Reporting",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610161436",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/addon-reporting-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "7sixnt1OQOu6URx8AkhAge3go4YMVP/UPqbO9m29HlyBnptuHKA98zriw66w8VnR7dBb4uNgyiPHiepo/4tUDA==",
+        "checksum": "58b6148f9c48e3f324272cb401f1b3450a9952844f2e2e351664476352f56631"
+      }
+    ]
+  },
+  {
+    "slug": "addon-swarm",
+    "name": "Docker Swarm",
+    "author": "McSparrow <support@mcsparrow.eu>",
+    "license": "Apache-2.0",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "Manage Docker Swarm from McHarbor: services, tasks, nodes, secrets, configs, swarm stacks and overlay networks — with cluster init, join, leave, join-token and unlock-key lifecycle, service scaling, rolling restarts and rollback. Swarm is discovered by probing the daemon an environment is already connected to, so the add-on stores nothing and needs no credentials of its own.",
+    "category": "Orchestration",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610161436",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/addon-swarm-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "xnD+Mey0yvwbEYl0XMYVOoY658HgHyXQ71P4rOCQRx7HCmr9j1kKOt7mUH/KyV1sYgdDb+ppzpnbDJNGZnYQAg==",
+        "checksum": "001d38fe5b1de7e97c4f8d450ab2c4f00cc0655d18f7388503a8f42a2a4a4a28"
+      }
+    ]
+  },
+  {
+    "slug": "ai-provider-anthropic",
+    "name": "Anthropic Claude",
+    "author": "McSparrow <support@mcsparrow.eu>",
+    "license": "Apache-2.0",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "Routes McHarbor AI chat completions through Anthropic's Messages API for Claude models.",
+    "category": "AI providers",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610161437",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/ai-provider-anthropic-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "rUJ3drhLjXQ4gmKZY4LB1yaNfQmowTX6tZq/Fsf9+bdzlNyfVnQFwkxN7nHWNDOagZQveXXOG9l6zET1RfbkDA==",
+        "checksum": "4614837ad0c5cbe7c28ef88ff5c4a5505ca43b8d165d7dd87832dc1f9ece67f6"
+      }
+    ]
+  },
+  {
+    "slug": "ai-provider-cohere",
+    "name": "Cohere",
+    "author": "McSparrow <support@mcsparrow.eu>",
+    "license": "Apache-2.0",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "Routes McHarbor AI chat completions through Cohere's Command model family.",
+    "category": "AI providers",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610161437",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/ai-provider-cohere-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "fekloKJ7Ra9tcgBD4bjkyMQWZ9bsR4apu2CMgZpWmEp5NjYmDI8UPc2YnDxdHJxYYpnRLCOLKc9MM1OMkc8AAQ==",
+        "checksum": "636f9b4ee6b935f5051eb551ac6d735f4c6c7a5fde80810e449aa506729aab50"
+      }
+    ]
+  },
+  {
+    "slug": "ai-provider-deepseek",
+    "name": "DeepSeek",
+    "author": "McSparrow <support@mcsparrow.eu>",
+    "license": "Apache-2.0",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "Routes McHarbor AI chat completions through DeepSeek (deepseek-chat, deepseek-reasoner).",
+    "category": "AI providers",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610161437",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/ai-provider-deepseek-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "qmZvDMZKFWpzbVYUTBi/DctAOmJ/+qQJg5zcyW1k8vvY93y4MDgjTAu3Qb8V9LXm1nZqf5yCpGJjmXlm2TMXDw==",
+        "checksum": "250d497ff3977eab1f15ab9e5177b3c73f9127b9a9f252907b08969b1ab7f896"
+      }
+    ]
+  },
+  {
+    "slug": "ai-provider-fireworks",
+    "name": "Fireworks AI",
+    "author": "McSparrow <support@mcsparrow.eu>",
+    "license": "Apache-2.0",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "Routes McHarbor AI chat completions through Fireworks AI's hosted inference API.",
+    "category": "AI providers",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610161437",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/ai-provider-fireworks-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "dY22yP2e6A8xXTeKqacqFOotsfuRCr7yyv/91aKyN/svXCzN5ifbbOaEyTB9Oz8dgbLjfSncxA2BpPOgQNzDAw==",
+        "checksum": "ab60183d32d6313adad4f70978319abc0f1a48e46e6c6ad46bb348b763df6808"
+      }
+    ]
+  },
+  {
+    "slug": "ai-provider-gemini",
+    "name": "Google Gemini",
+    "author": "McSparrow <support@mcsparrow.eu>",
+    "license": "Apache-2.0",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "Routes McHarbor AI chat completions through Google Gemini (2.5 Pro, 2.5 Flash, 2.0 Flash).",
+    "category": "AI providers",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610161438",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/ai-provider-gemini-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "t4H1idp3l9Ag8gs49VN6C6EYihuNTk/vXXDW1ocP+H9CPdZP1hdiAjKqsnmQuJ3D7H07s1jh8W201N7bgeznAw==",
+        "checksum": "ab4755ab8aa2c1d2379a1d6391f01c85932ec5234dc9f4f522f618c03b13cdba"
+      }
+    ]
+  },
+  {
+    "slug": "ai-provider-groq",
+    "name": "Groq",
+    "author": "McSparrow <support@mcsparrow.eu>",
+    "license": "Apache-2.0",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "Routes McHarbor AI chat completions through Groq's low-latency LPU inference API.",
+    "category": "AI providers",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610161438",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/ai-provider-groq-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "3V1pFW/tbQz8qhnwt55nj3MLUiX+yvj+D1f9Yln/UxPtplxCRn5/yRpuFk5GOUc/n8Dih+NYK9K3yDahoL8XCg==",
+        "checksum": "bc0d6583634f27653e0017724cd70e907f52adbdc6d070bb162b0584c44b4cfa"
+      }
+    ]
+  },
+  {
+    "slug": "ai-provider-llamacpp",
+    "name": "llama.cpp",
+    "author": "McSparrow <support@mcsparrow.eu>",
+    "license": "Apache-2.0",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "Routes McHarbor AI chat completions through a self-hosted llama.cpp server.",
+    "category": "AI providers",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610161438",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/ai-provider-llamacpp-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "gyznGgzdE0Km9f2hn6HkYLT+RA9RXL5Wdi+IIIU9EBPMC4X+SgCDWY/ReAnUSp5hKuFI2NnTPj3wCPduW2WsDg==",
+        "checksum": "1e007876df6ef50dd9063e9445d9888a4fbad548e2875824774a87e220ed15ff"
+      }
+    ]
+  },
+  {
+    "slug": "ai-provider-lmstudio",
+    "name": "LM Studio",
+    "author": "McSparrow <support@mcsparrow.eu>",
+    "license": "Apache-2.0",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "Routes McHarbor AI chat completions through a local LM Studio server.",
+    "category": "AI providers",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610161438",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/ai-provider-lmstudio-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "P:/Programs/Git/sQV1n6ojWikZNTB0wQ+LWWqwAGYqHSl53we3DU8ffVndksCxy+/jmaLcZ2KyXv43lrM2Qtzjh+zohwYx0xvDg==",
+        "checksum": "368c89549396bfbc3604a41c6f5ac4228c20de3a97fadaccd847c972f0468808"
+      }
+    ]
+  },
+  {
+    "slug": "ai-provider-localai",
+    "name": "LocalAI",
+    "author": "McSparrow <support@mcsparrow.eu>",
+    "license": "Apache-2.0",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "Routes McHarbor AI chat completions through a self-hosted LocalAI instance.",
+    "category": "AI providers",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610161438",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/ai-provider-localai-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "8uK4jmm/7YcbI2dJ3D5WWc/mhucHmyL9ufxozRQQlBTOkdZjKjuXoyLZW7UH+rRORYjYDyS3b50B9lFQcKxyDw==",
+        "checksum": "657132d0945b752e9272b323ff523724c4cc63bde9e63f1ab9033e5601502cd4"
+      }
+    ]
+  },
+  {
+    "slug": "ai-provider-minimax",
+    "name": "MiniMax",
+    "author": "McSparrow <support@mcsparrow.eu>",
+    "license": "Apache-2.0",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "Routes McHarbor AI chat completions through MiniMax's OpenAI-compatible API.",
+    "category": "AI providers",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610161439",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/ai-provider-minimax-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "1PsJ66/tD0pmuEJ1mK5cS85E8hpWcVITRXrao31CD6bsuOeaPHmxCZgqru4Tdxmi130otStmKp4a3UCkMwGDDA==",
+        "checksum": "3a01d82114ac5c1b11ea55d1e00216505a565090cc55ccf87b313bd344ee83cf"
+      }
+    ]
+  },
+  {
+    "slug": "ai-provider-mistral",
+    "name": "Mistral",
+    "author": "McSparrow <support@mcsparrow.eu>",
+    "license": "Apache-2.0",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "Routes McHarbor AI chat completions through Mistral's API for Mistral and Mixtral models.",
+    "category": "AI providers",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610161439",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/ai-provider-mistral-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "vVpQ0f5HzrQlWL7X8yef+ZAe8fswFpoqAUX2uPuqyD+Nea7xKhsnLelxE7ZUcnTaMqusjZqN6YkZ59SSwhGBDA==",
+        "checksum": "bb765d2af5584e4dbfb1f255bad317514d42b5166ec8b9552abed972c8df85d8"
+      }
+    ]
+  },
+  {
+    "slug": "ai-provider-ollama",
+    "name": "Ollama",
+    "author": "McSparrow <support@mcsparrow.eu>",
+    "license": "Apache-2.0",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "Connects McHarbor AI chat to a self-hosted Ollama server and locally hosted models.",
+    "category": "AI providers",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610161439",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/ai-provider-ollama-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "LAt3zXZRmCfordkB3klxADhoSeFDFdbwMYFaMhFfEZVoW1XRF00lmJq/bev7/kO8qJZu4l99JMQxUuyaVcHPCg==",
+        "checksum": "d40f76eca73fa1246515618d6d672bfd03bab4277e6226e403e798a5a6bbb061"
+      }
+    ]
+  },
+  {
+    "slug": "ai-provider-openai",
+    "name": "OpenAI",
+    "author": "McSparrow <support@mcsparrow.eu>",
+    "license": "Apache-2.0",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "Routes McHarbor AI chat completions through OpenAI with support for GPT and o-series models.",
+    "category": "AI providers",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610161439",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/ai-provider-openai-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "bTmchNyaPWBMVkTESt2lYeSbWGIXOsiz+cdunlu2jHJULRjcXTqA0u3Liva0cVXSs2Pm8R/uPFmAoFdVbEtpAg==",
+        "checksum": "f6fec9ab4132911b17061c95a168958389c0ece5f751fa7ee83dc74659d6317d"
+      }
+    ]
+  },
+  {
+    "slug": "ai-provider-openrouter",
+    "name": "OpenRouter",
+    "author": "McSparrow <support@mcsparrow.eu>",
+    "license": "Apache-2.0",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "Routes McHarbor AI chat completions through the OpenRouter multi-vendor gateway.",
+    "category": "AI providers",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610161439",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/ai-provider-openrouter-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "4X9wZY4kq1/1Y32+U9yjwW5Kz/waIEPKhbtV1+l3cgcI+wfVpR9SKaZjehmQ3sPihAwsY40kaMsFwLjLMPi/CQ==",
+        "checksum": "c377b5a9317b556566b09ad7e79b262e5a5cf6ed29fe6ad4a66417c3c83c88a8"
+      }
+    ]
+  },
+  {
+    "slug": "ai-provider-perplexity",
+    "name": "Perplexity",
+    "author": "McSparrow <support@mcsparrow.eu>",
+    "license": "Apache-2.0",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "Routes McHarbor AI chat completions through Perplexity's web-grounded Sonar models.",
+    "category": "AI providers",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610161439",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/ai-provider-perplexity-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "XJnF8LJdew5xKgG1kdiRPDjpW39Dpe4T4WnH3lBBeHjSYc7FKolw5bxofPR71lO5VEa5lO3mLTL0tdSbo6hPBA==",
+        "checksum": "983378a3631f9e8d1959910a7f3a2f9e12b4e07928cd11dc1b51e6384922330e"
+      }
+    ]
+  },
+  {
+    "slug": "ai-provider-together",
+    "name": "Together AI",
+    "author": "McSparrow <support@mcsparrow.eu>",
+    "license": "Apache-2.0",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "Routes McHarbor AI chat completions through Together AI's hosted open-weights catalog.",
+    "category": "AI providers",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610161439",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/ai-provider-together-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "tb4i8KcDKfsb38/UfreAaXjgeY+Xq1DInY+YjTz+v1nbe1bIE/uVulQ9LYCmaGWOnPQib/RVL03/22ZpSGXhCw==",
+        "checksum": "c23b8c247ff8152a86a56b91fb0a191aec828e825676ae9a5da123a7707ae9c6"
+      }
+    ]
+  },
+  {
+    "slug": "ai-provider-vllm",
+    "name": "vLLM",
+    "author": "McSparrow <support@mcsparrow.eu>",
+    "license": "Apache-2.0",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "Routes McHarbor AI chat completions through a self-hosted vLLM server.",
+    "category": "AI providers",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610161440",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/ai-provider-vllm-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "moxOvju3I9zXQ+vMEE+mLCGOu7jVqB9/RJKhepHk91/6tGVkhLqTs+YW41mr3eOadpE6mqoCKBJhc50Lm8jVDw==",
+        "checksum": "79dd09dadb688d197a3b892f178bfa5ede26bdf590ff9b93deda39bdbac45d87"
+      }
+    ]
+  },
+  {
+    "slug": "ai-provider-xai",
+    "name": "xAI Grok",
+    "author": "McSparrow <support@mcsparrow.eu>",
+    "license": "Apache-2.0",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "Routes McHarbor AI chat completions through xAI Grok models.",
+    "category": "AI providers",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610161440",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/ai-provider-xai-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "LWQ5UjY3GVmkDKc1DBPGAyF+oPyhKaoa6ffitcL2/Wwq2dS/1Mp2S60e0eKjDBehz7GpwMqPdK3A0JN5ayWdAg==",
+        "checksum": "4ca16fb8c277bbd115797acafcfed8b490b7f21fad93923b2fd335a5dd6561d7"
+      }
+    ]
+  },
+  {
+    "slug": "comm-alertmanager-webhook",
+    "name": "Alertmanager webhook",
+    "author": "McSparrow <support@mcsparrow.eu>",
+    "license": "Apache-2.0",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "Generic on-call channel. Sends McHarbor alerts as Prometheus Alertmanager webhook v4 payloads, one group per condition, to any receiver that ingests Alertmanager: Grafana Cloud IRM, Squadcast, Zenduty, Keep and others.",
+    "category": "Communication channels",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610211556",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/comm-alertmanager-webhook-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "dGlWTLTbBV9+WbdDHq06ALj+bH/HkIECW9WOtume94c+uYIUdR8x1j/C6CK9Ml3XkcsT09fXCXqmNA0VVgwGBQ==",
+        "checksum": "14be608c4eaf0660573167e9e8be6cd7596f71aa1688608ccd273958d21fd2cf"
+      }
+    ]
+  },
+  {
+    "slug": "comm-discord",
+    "name": "Discord",
+    "author": "McSparrow <support@mcsparrow.eu>",
+    "license": "Apache-2.0",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "Adds Discord webhooks as a communication channel for workflow, alert, and backup notifications. This is a channel adapter owned by the plugin runtime.",
+    "category": "Communication channels",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610161440",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/comm-discord-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "bhaBYPW9fkc7BrdtVr9KKVQGPvC1cFY15f40/1oXxdvttnqWgzLthjB8GoAuWF5K57pdwh/QE8R0uU/I3DjqDQ==",
+        "checksum": "0c78b9ca937a55b7c40e7ecdcf5015a0858fc709bf593b044d1d7469ac71c659"
+      }
+    ]
+  },
+  {
+    "slug": "comm-exchange",
+    "name": "Exchange",
+    "author": "McSparrow <support@mcsparrow.eu>",
+    "license": "Apache-2.0",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "Adds Exchange Online / Microsoft Graph email as a communication channel for workflow, alert, and backup notifications. This is a channel adapter, not an email-server adapter.",
+    "category": "Communication channels",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610161440",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/comm-exchange-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "8qLU10YJdLVLs7SP5VVcqe38RlE77agdbDijTNGUncE9NCf48XK94OXxiQlRUIogCcOOlq6zVbWzNsRgFvl5Ag==",
+        "checksum": "78465f06c3a411e77e29fe560ac1a020ae05520df2a9f332c1f9521d7680cc01"
+      }
+    ]
+  },
+  {
+    "slug": "comm-glpi",
+    "name": "GLPI",
+    "author": "McSparrow <support@mcsparrow.eu>",
+    "license": "Apache-2.0",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "Opens, follows up and solves GLPI tickets from McHarbor alerts through the GLPI REST API (v1) or high-level API (v2, GLPI 11), with signed GLPI 11 webhooks or polling for status.",
+    "category": "Communication channels",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610161442",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/comm-glpi-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "KD7gzZKZoum687qFhW7ftgIJoCkMIyetscLNLgJBzcP8HfDa5NH451ndUwJJoB9igb0oH/EmUD09dVFId57yCw==",
+        "checksum": "350f69d3d6a87a043ab0ec6dd11b923176107a1c1dc18406cda5f2a5609e143f"
+      }
+    ]
+  },
+  {
+    "slug": "comm-gmail",
+    "name": "Gmail",
+    "author": "McSparrow <support@mcsparrow.eu>",
+    "license": "Apache-2.0",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "Adds Gmail API email as a communication channel for workflow, alert, and backup notifications. This is a channel adapter, not an email-server adapter.",
+    "category": "Communication channels",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610161440",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/comm-gmail-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "Arl+STVDhg1CmqHu9sAJPuP738R76dQ61kfCyGunU/dOv/HEU2v2G5MQoqps+jnj+P+kgucMsz0P7nAy9x5PBw==",
+        "checksum": "f65b32ff7524969b71d3055c76160399bec63310379f38a19dec75807b1bd30b"
+      }
+    ]
+  },
+  {
+    "slug": "comm-gotify",
+    "name": "Gotify",
+    "author": "McSparrow <support@mcsparrow.eu>",
+    "license": "Apache-2.0",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "Adds Gotify as a communication channel for workflow, alert, and backup notifications. This is a channel adapter owned by the plugin runtime.",
+    "category": "Communication channels",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610161440",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/comm-gotify-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "jfW5Ztd5tPi3x4+7INYopz6OTp7fcp453CDDkJU9QyTjUv4ocUYSgtNkHV7V2L3OfVqtLhsEhv7YA2tRkA4FAg==",
+        "checksum": "5ee95cf60227e924bd1464b701c304ae284a6d1f47f718dfdcfec7eeb8681f86"
+      }
+    ]
+  },
+  {
+    "slug": "comm-itop",
+    "name": "iTop",
+    "author": "McSparrow <support@mcsparrow.eu>",
+    "license": "Apache-2.0",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "Creates, logs and resolves Combodo iTop incidents from McHarbor alerts through the iTop REST/JSON web service, following the iTop lifecycle, with webhook or polling status sync.",
+    "category": "Communication channels",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610161442",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/comm-itop-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "2CM9u19vRnSsiVm1BbobwICSaou3fn/o6K7WsLlDdnQzWSYLkmRmZnU+VCaxfL5Eo+QijUK9pVmfEUv6ci9iBQ==",
+        "checksum": "44cf1bab72214db5be91db25c31ba139bfbe1fe8e10cc6c18563f49be7525085"
+      }
+    ]
+  },
+  {
+    "slug": "comm-ntfy",
+    "name": "ntfy",
+    "author": "McSparrow <support@mcsparrow.eu>",
+    "license": "Apache-2.0",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "ntfy.sh or self-hosted ntfy notification channel. POSTs Title + Message to <server_url>/<topic> with optional Priority + Tags headers, plus HTTP Basic or Bearer-token auth. Install this plugin to add 'ntfy' as a channel_type in Settings > Notifications > Channels.",
+    "category": "Communication channels",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610161440",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/comm-ntfy-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "NHmiFHQhtycmWENes2nZKBt8ezYT+uYO5xsgfov9YuI5twAEHlGu4rxcOFcYBZBmmylCKU66hoWR7KLQ938qCA==",
+        "checksum": "4d9c2cb9d90dca55f27042e0e446c300e9c04d1478fa6fa94241cb359be55fa5"
+      }
+    ]
+  },
+  {
+    "slug": "comm-otrs",
+    "name": "OTRS / Znuny / OTOBO",
+    "author": "McSparrow <support@mcsparrow.eu>",
+    "license": "Apache-2.0",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "OTRS-family ITSM channel. Opens, updates and closes tickets in OTRS, Znuny or OTOBO through a GenericInterface REST web service and reads their state back.",
+    "category": "Communication channels",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610161443",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/comm-otrs-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "HAP0t3+stB5RAmSgVmxMZ0eI7JoNv7S4ZpZdwtepJ8tHFydEXMvrhuqTaf+1SZFN754NxCQzrRT9vKqaIOlvAg==",
+        "checksum": "b5c061ab3534a769761a88235c11632a52da8a6060ab99d2aa338f62bf191001"
+      }
+    ]
+  },
+  {
+    "slug": "comm-pagerduty",
+    "name": "PagerDuty",
+    "author": "McSparrow <support@mcsparrow.eu>",
+    "license": "Apache-2.0",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "PagerDuty incident channel. Triggers, re-notifies and resolves PagerDuty incidents through Events API v2 and reads acknowledge/resolve back through signed v3 webhooks or REST polling.",
+    "category": "Communication channels",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610161443",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/comm-pagerduty-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "LzX8fErzDJpbigjbKY3qwfS9wIwkmzxT+srfBylGxZN15FIw6xpyiZg2q0SrWRAZWqE0nD2xPwIsEB1hLNvnBA==",
+        "checksum": "e8a6de54af663a56b76a8b2d5fb8863981386d057e9907d2779be7ce2d872fcd"
+      }
+    ]
+  },
+  {
+    "slug": "comm-request-tracker",
+    "name": "Request Tracker",
+    "author": "McSparrow <support@mcsparrow.eu>",
+    "license": "Apache-2.0",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "Creates, comments on and resolves Best Practical Request Tracker (RT) tickets from McHarbor alerts through REST2, with a signed Scrip callout or polling for status.",
+    "category": "Communication channels",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610161443",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/comm-request-tracker-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "hM1JYLLP02A6VYFGBQuo4zSU/Mu/HxQmQXWOeA7j3saHUOTdQC5g14x7aeTcTqqIUxP8iv4Dqs4alvv+5TuDCA==",
+        "checksum": "e9ad3fd908009308e06d4ce8796602e04d766777066fe1cc65d49d7bc37837da"
+      }
+    ]
+  },
+  {
+    "slug": "comm-signal",
+    "name": "Signal",
+    "author": "McSparrow <support@mcsparrow.eu>",
+    "license": "Apache-2.0",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "Signal notification channel. Delivers workflow and backup events to phone numbers via one of four connection methods: official signal-cli-rest-api, token-based bot server, signald JSON-RPC daemon, or a no-auth community relay. Install this plugin to add 'Signal' as a channel_type in Settings > Notifications > Channels.",
+    "category": "Communication channels",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610161440",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/comm-signal-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "7Q1SDDuBeU7PIiItwLnQaofCGNX+s2XnRH/VjRSBGZC35ZyPkrxx8ccZGkAldiZ6D8G10Sd4htPszrCEeN1PCQ==",
+        "checksum": "518bb5bebf13a26d4e9f1fff15a38b47740ec89d5eb739ebce938aaff02d104e"
+      }
+    ]
+  },
+  {
+    "slug": "comm-slack",
+    "name": "Slack",
+    "author": "McSparrow <support@mcsparrow.eu>",
+    "license": "Apache-2.0",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "Adds Slack incoming webhooks as a communication channel for workflow, alert, and backup notifications. This is a channel adapter owned by the plugin runtime.",
+    "category": "Communication channels",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610161441",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/comm-slack-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "avPYLNxjat9Upp5kCfmUxdmj1plApriHOaaL2pv2NlUefq/h4l+VKX+jP329S47j8WexUQcdr5Hks2o8XhZqDw==",
+        "checksum": "8f26d4df9ccded102536c385e60fc5c4189fd4ddf69caa49f55438a057edf1ed"
+      }
+    ]
+  },
+  {
+    "slug": "comm-smtp",
+    "name": "SMTP",
+    "author": "McSparrow <support@mcsparrow.eu>",
+    "license": "Apache-2.0",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "Adds SMTP email as a communication channel for workflow, alert, and backup notifications. This is a channel adapter, not an email-server adapter.",
+    "category": "Communication channels",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610212129",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/comm-smtp-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "lElNOpCip4m6KMhkwxF8BO+fBMCKroyPPO6W685cMcgE+72tO08Kg4T4JrEdGGtfnBBT/SzOJsPBcj6rznM5Cg==",
+        "checksum": "74810697cbead22e43a1f33bd868e17c9cc264eef97dcfc8841ad2fab5c31415"
+      }
+    ]
+  },
+  {
+    "slug": "comm-teams",
+    "name": "Microsoft Teams",
+    "author": "McSparrow <support@mcsparrow.eu>",
+    "license": "Apache-2.0",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "Microsoft Teams Incoming Webhook connector channel. POSTs an Adaptive Card with Title as a bold TextBlock header and Message as a wrapping TextBlock body to a Teams channel webhook URL. Install this plugin to add 'teams' as a channel_type in Settings > Notifications > Channels.",
+    "category": "Communication channels",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610161441",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/comm-teams-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "djZ0mRq0AXHPA+be4M1mEdX4kTIpQNfFBpf4iNMmEfke6tl61v8xhIyeKEdJep3hnlgla4b4GvlzxngzkGu0BQ==",
+        "checksum": "ca91166e02ef6aaa6464983bebb93677fa4924f5c6548bf689517db70d8ffa80"
+      }
+    ]
+  },
+  {
+    "slug": "comm-telegram",
+    "name": "Telegram",
+    "author": "McSparrow <support@mcsparrow.eu>",
+    "license": "Apache-2.0",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "Telegram Bot API notification channel. Delivers workflow and backup events to a chat via bot_token + chat_id. Supports Markdown/HTML parse_mode and silent sends. Install this plugin to add 'Telegram' as a channel_type in Settings > Notifications > Channels.",
+    "category": "Communication channels",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610161441",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/comm-telegram-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "h7HbzWUsB7U9mqyElIxgsa7Adw7hBshK/mYsadmFRl1/xHfj3+KaiKKViuTNPFiKEosrUziw8IznLARngz+jBA==",
+        "checksum": "412b4051c2f6639f153344bb07c9502f62f7b6ecfc20fb50764bf3af463205be"
+      }
+    ]
+  },
+  {
+    "slug": "comm-whatsapp",
+    "name": "WhatsApp",
+    "author": "McSparrow <support@mcsparrow.eu>",
+    "license": "Apache-2.0",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "WhatsApp notification channel. Delivers workflow and backup events to a phone number via one of four connection methods: Meta Cloud API, self-hosted gateway, WhatsApp Business API platform, or a third-party SaaS provider. Install this plugin to add 'WhatsApp' as a channel_type in Settings > Notifications > Channels.",
+    "category": "Communication channels",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610161441",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/comm-whatsapp-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "WHdT+QU+pxxeWtgrgV8v3pFVp2pZMzvU+2ySlZ3ScXB0gVx+AIedxH9BRc8wRqGzzp5aA19iwSuWuKkqI2mBAA==",
+        "checksum": "4fde909bc01cafa80ccca3772cdcf77480a4be7a39553fe695d009f232e7daaf"
+      }
+    ]
+  },
+  {
+    "slug": "comm-zammad",
+    "name": "Zammad",
+    "author": "McSparrow <support@mcsparrow.eu>",
+    "license": "Apache-2.0",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "Opens, notes and closes Zammad tickets from McHarbor alerts through the Zammad REST API, with HMAC-signed trigger webhooks or polling for status.",
+    "category": "Communication channels",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610161443",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/comm-zammad-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "CKjWvPJU+CT/gRTMiAhVbLlDPkgqymPOwjVIDH5vufsrbEH4fZNqlvvUMe25LLk34VlmUK7JReTeSk8kAJ/2Bw==",
+        "checksum": "87587fc978d2bb23e0da152eb0784cfc8f4d296ad064fc8132b365e3e70a7c7e"
+      }
+    ]
+  },
+  {
+    "slug": "identity-entra-id",
+    "name": "Microsoft Entra ID",
+    "author": "McSparrow <support@mcsparrow.eu>",
+    "license": "Apache-2.0",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "Microsoft Entra ID identity provider. OIDC authorization-code flow against the v2.0 endpoints at login.microsoftonline.com plus the Microsoft Graph API for group fetching. Install this plugin to add 'Microsoft Entra ID' as a provider_type in Settings > Security > Identity Providers.",
+    "category": "Identity providers",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610161443",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/identity-entra-id-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "FDkUibaYmXsk6Zw5DZ4Sdg2JDXJ+eX+LSlRqbtknQdR2KFCu/tDDihMNPKL4u2GkoOE5E8LkHHfxsZRnswLkCg==",
+        "checksum": "6e927fbfe37445e28700fe49138ab950170c2357dbcf3a7df7a2a4c44eb014ca"
+      }
+    ]
+  },
+  {
+    "slug": "identity-generic-oidc",
+    "name": "Generic OpenID Connect",
+    "author": "McSparrow <support@mcsparrow.eu>",
+    "license": "Apache-2.0",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "Generic OpenID Connect identity provider. OIDC authorization-code flow for any compliant IdP — Auth0, Okta, Keycloak, AWS Cognito, Ping, ForgeRock, LemonLDAP, and others. The plugin discovers endpoints via <issuer>/.well-known/openid-configuration. Install to add 'Generic OpenID Connect' as a provider_type in Settings > Security > Identity Providers.",
+    "category": "Identity providers",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610161443",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/identity-generic-oidc-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "N7JQDjjnb2aVkmnqMctjkcnGsoIALPUgf7JFxSoCXsaFfJLhUPBo2OXTaUG1clyCyusdH8Ijhb2VDz+D9RxwDQ==",
+        "checksum": "a9f623a5b57c9f9a7d4aa411554ff8e4b852b2e731e49b08f91cd83389f9502e"
+      }
+    ]
+  },
+  {
+    "slug": "identity-google",
+    "name": "Google",
+    "author": "McSparrow <support@mcsparrow.eu>",
+    "license": "Apache-2.0",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "Google identity provider. OIDC authorization-code flow against accounts.google.com. Supports both personal Google accounts and Google Workspace tenants (the Workspace Domain field gates the latter via the OIDC hd= hint). Optional Admin SDK Directory API group fetching via a service account with domain-wide delegation. Install to add 'Google' as a provider_type in Settings > Security > Identity Providers.",
+    "category": "Identity providers",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610161443",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/identity-google-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "eUHVUhaQsyOFCsusZ9k5+xVncxdzGBMYCXS2t6FD6B8xNAcAqN5fYUYAgkBb4lRJ4i5Vx49HFgMSONgsNV2PAw==",
+        "checksum": "b6f07af4237a917aaf0f1e6b729a6603ea7da2b48edbb9840d4569ca379a4772"
+      }
+    ]
+  },
+  {
+    "slug": "identity-ldap",
+    "name": "LDAP / Active Directory",
+    "author": "McSparrow <support@mcsparrow.eu>",
+    "license": "Apache-2.0",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "LDAP / Active Directory identity provider. Form-based bind-and-search authentication (search-then-rebind) against OpenLDAP, AD, 389 DS, etc. Optional StartTLS or LDAPS. Install this plugin to add 'LDAP / Active Directory' as a provider_type in Settings > Security > Identity Providers.",
+    "category": "Identity providers",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610212129",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/identity-ldap-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "Y6y3tp0ttUlAuqnKVC7bsZprr2WpLL6gOpt0ROY6jcZPyCtBSuf1RP2NKFCcLbSPG02XuYSpAoLcnLJZDsVBAA==",
+        "checksum": "bf35af98c4da9adc65d7697cbee9ed16cd5b07f9a45efe9de3a32637d554c487"
+      }
+    ]
+  },
+  {
+    "slug": "identity-saml",
+    "name": "SAML 2.0",
+    "author": "McSparrow <support@mcsparrow.eu>",
+    "license": "Apache-2.0",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "SAML 2.0 identity provider. Service-Provider-side flow against any SAML 2.0 IdP (Okta, Auth0, Keycloak, ADFS, Google Workspace, Azure AD). SP metadata is auto-generated; optional signed AuthnRequests via uploaded SP keypair. Install to add 'SAML 2.0' as a provider_type in Settings > Security > Identity Providers.",
+    "category": "Identity providers",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610161444",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/identity-saml-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "Yxgov2gOsjbGaf9jSP2Mg7VwB1gfPPbvIUxXfOqsjphaAZTS/YMUg+yMdksZA5U1io54DBegAZiVXCps4drKAA==",
+        "checksum": "4bb7772a13d1d98309b78394ac0ce68855bf47ac5758da783508451e6788d4f4"
+      }
+    ]
+  },
+  {
+    "slug": "logging-siem",
+    "name": "SIEM",
+    "author": "McSparrow <support@mcsparrow.eu>",
+    "license": "Apache-2.0",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "Forwards McHarbor audit events to an HTTP SIEM collector (Splunk HEC, Microsoft Sentinel, Elastic, Datadog). Each event is POSTed as a JSON document with an HMAC-SHA256 signature and a SHA-256 body checksum so the collector can verify integrity and origin. This is a log forwarder adapter owned by the plugin runtime; configure it in Settings > Integrations > Logging.",
+    "category": "Audit log forwarders",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610161444",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/logging-siem-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "lRId4LeCoq/y1i9blNcz7pEQkZBzG2Gr05AeWrO1fZnAvskc6PQRxaY1G9ThVOQRtB7ArzMW6gdlWZjrnYzmBw==",
+        "checksum": "511ba99d93355d6c2244e2636e46266b06900c832d454e16f40705ecded20948"
+      }
+    ]
+  },
+  {
+    "slug": "logging-syslog",
+    "name": "Syslog",
+    "author": "McSparrow <support@mcsparrow.eu>",
+    "license": "Apache-2.0",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "Forwards McHarbor audit events to a syslog collector (rsyslog, syslog-ng, QRadar, ArcSight) as RFC5424 messages over UDP, TCP, or TCP+TLS. Facility, tag, and per-event severity mapping are configurable. This is a log forwarder adapter owned by the plugin runtime; configure it in Settings > Integrations > Logging.",
+    "category": "Audit log forwarders",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610212129",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/logging-syslog-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "h9FdvhhryRuUW7E9ZT8dvq50o5KdvIPi8Kvl0NMfm5bPP0weiEu/AlydQuf8EYNzOK1xv50PLjwSXyxOOvkYBQ==",
+        "checksum": "4785046aba162d60aa2901f61b849e98302cf1cd6c207a8f3bc20f18907b3929"
+      }
+    ]
+  },
+  {
+    "slug": "scanner-clair",
+    "name": "Clair",
+    "author": "McSparrow <support@mcsparrow.eu>",
+    "license": "Apache-2.0",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "Scans container images against an external Clair v4 server. Indexes the image through Clair's indexer API and reports matched CVEs from its matcher API, with an optional bearer token stored encrypted. Because a scanner is a named instance, one install can back a production Clair and a staging one. Configure it in Security > Scanners.",
+    "category": "Vulnerability scanners",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610161444",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/scanner-clair-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "JwJ32+A74LB5GjBiEctPPRHh1yJ5ack5iUKggv9wVF33juzjRzM+I/f45yJH7KpBOSYKiEFP4zWeLXd8X+dtDA==",
+        "checksum": "04ba85a5ff909a5584b0d63aefd855fc05933f69e8c33e01a3034a8346147188"
+      }
+    ]
+  },
+  {
+    "slug": "scanner-grype",
+    "name": "Grype",
+    "author": "McSparrow <support@mcsparrow.eu>",
+    "license": "Apache-2.0",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "Scans container images for vulnerabilities with Anchore's Grype. Covers OS and language packages, runs entirely inside the McHarbor container, and needs no external service. Grype and Trivy draw on overlapping but not identical advisory feeds, so running both is a reasonable arrangement. Configure it in Security > Scanners.",
+    "category": "Vulnerability scanners",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610161444",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/scanner-grype-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "Lum43JkjMmHPvBYOsCCxyFgo5U9dOrjUHm6kAVh1FvV1YEdGRv2bB3257n4DWLOmOFAemP87c8eFeNG8PPYDAg==",
+        "checksum": "79a5d20a376fe4e7c177eb064c1024006aa8ee078e74933225c6a0f1dcd0c2a1"
+      }
+    ]
+  },
+  {
+    "slug": "scanner-trivy",
+    "name": "Trivy",
+    "author": "McSparrow <support@mcsparrow.eu>",
+    "license": "Apache-2.0",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "Scans container images for vulnerabilities with Aqua Security's Trivy. Covers OS packages and language dependencies, runs entirely inside the McHarbor container, and needs no external service. This is an image scanner adapter owned by the plugin runtime; configure it in Security > Scanners.",
+    "category": "Vulnerability scanners",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610161445",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/scanner-trivy-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "UyzOlBZ7MZPxbZTWuFyJ4tWUU8CcH+HkAiuXFLGc+iMXH4ED+Z1U4Xe3rvuUKo1c40knaKUjsPJiXOX7RMi3Cg==",
+        "checksum": "0ab2ce593130c3b818097f65e5d0f4c601c7a9e29cc37c27ad6a4aea4a34b24a"
+      }
+    ]
+  },
+  {
+    "slug": "snapshot-synology",
+    "name": "Synology DSM",
+    "author": "McSparrow <support@mcsparrow.eu>",
+    "license": "Apache-2.0",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "Synology DSM snapshot repository via the DSM 7.x REST API. Take filesystem-level snapshots without `docker pause`. Supports Hyper Backup vault and shared folder snapshots.",
+    "category": "Snapshots",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610161446",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/snapshot-synology-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "03GwUKUBpdPo+5IdCMO/xh1wIu/vcxy2Ol2BVgGMvpLVazhQzl/K95E/VmHssyQWkV6Q3Od1XevijwSe60LeCw==",
+        "checksum": "fb17ba81b8facc4bc8e5975c1a22714b39b2fa38654846aa589f9b38d58d5605"
+      }
+    ]
+  },
+  {
+    "slug": "snapshot-truenas",
+    "name": "TrueNAS",
+    "author": "McSparrow <support@mcsparrow.eu>",
+    "license": "Apache-2.0",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "TrueNAS SCALE / CORE snapshot repository via the middleware API. Filesystem-level ZFS snapshots without `docker pause`.",
+    "category": "Snapshots",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610161446",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/snapshot-truenas-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "UvOZ6WFCZlM/87CF4oPbYR4wW7PdphbxNb4oDH/CAa/PrRq594dTehSYvak7cI1cojFj+fQTMwDJ1oIJD8RMAg==",
+        "checksum": "4a93d8482df859a9162d7e79ef3090498c9090f8444403540f2b30deac8820b5"
+      }
+    ]
+  },
+  {
+    "slug": "storage-box",
+    "name": "Box",
+    "author": "McSparrow <info@mcsparrow.eu>",
+    "license": "McHarbor",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "Backup destination backed by Box (box.com). OAuth 2.0 refresh-token flow + chunked upload session.",
+    "category": "Storage destinations",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610161446",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/storage-box-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "eGiSN6ZgV7n0OWocSyXs8/Qsw/nFS/3FaMeAW0KFWErQ/vf4q3Q5o46tDiCDDEhzw8XJ3HqzdnYYooGjgA/eBw==",
+        "checksum": "05e727a9672203fb5dd5a68811e93e7cb923176144f1ec6497caa9388efceb54"
+      }
+    ]
+  },
+  {
+    "slug": "storage-dropbox",
+    "name": "Dropbox",
+    "author": "McSparrow <info@mcsparrow.eu>",
+    "license": "McHarbor",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "Backup destination backed by Dropbox (Dropbox API v2). Long-lived access token from a Dropbox app.",
+    "category": "Storage destinations",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610161446",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/storage-dropbox-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "ZmrFKRCb0yJidzhTlqVc93rZpJhbOr7JGSe7AS79gJBb6oRBJXfhmRxOorUIaF0FdojuydahhepUjXx5VgffAw==",
+        "checksum": "0b1e7d721189ca18f018330cf178699a1f3fdfb774e54029fea3f9849fbe8212"
+      }
+    ]
+  },
+  {
+    "slug": "storage-ftp",
+    "name": "FTP/FTPS",
+    "author": "McSparrow <support@mcsparrow.eu>",
+    "license": "McHarbor",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "Backup destination backed by an FTP (RFC 959) or FTPS (RFC 4217) server. Auth methods: anonymous, password, FTPS-explicit (AUTH TLS), FTPS-implicit (port 990), and client-certificate (mTLS).",
+    "category": "Storage destinations",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610161446",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/storage-ftp-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "2M/fPLq/J5U5Cdd1A1wwDoekYR7CmKcvZ9cetyGPLLPRjdB99weJxq8/zZuVksXb+5Hp8FuwUpM9SuV5E8lWAA==",
+        "checksum": "f7127fc7f923da6554177bf0c5a91a8149e888fcf1c7026ff8f9c6f9af6e6987"
+      }
+    ]
+  },
+  {
+    "slug": "storage-google-drive",
+    "name": "Google Drive",
+    "author": "McSparrow <support@mcsparrow.eu>",
+    "license": "Apache-2.0",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "Google Drive backup destination. OAuth refresh-token flow + Drive API v3 resumable upload so backups of any size are supported. List/Delete use the same API surface. Requires a Google Cloud project with the Drive API enabled and an OAuth client with the drive.file scope.",
+    "category": "Storage destinations",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610161446",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/storage-google-drive-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "Q9k2Q5yZIGYlhdVW3sGMRelvCPrerFh33ZFApUItY0mPDbmkDCawI+7TsMAUSUNx3c+KYC2O6IuUZSZQ4ZzUCQ==",
+        "checksum": "d3c61963594ac19f60368044c7df4476ce03e4c16bffe697f2b2bc542cd603e3"
+      }
+    ]
+  },
+  {
+    "slug": "storage-nextcloud",
+    "name": "Nextcloud",
+    "author": "McSparrow <support@mcsparrow.eu>",
+    "license": "Apache-2.0",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "Back up containers to a Nextcloud instance via WebDAV (RFC 4918). Two auth modes: OAuth 2.0 refresh-token flow (with the operator creating an OAuth2 client in /settings/admin/oauth2) or direct app-password authentication (the operator generates an app password in Personal settings → Security). Chunked uploads use the WebDAV PUT stream with Content-Length + Content-Range; large uploads work because Nextcloud's WebDAV server supports chunked ranges server-side. Same Test round-trip shape (write / change / delete) as the SharePoint and Google Drive plugins.",
+    "category": "Storage destinations",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610161446",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/storage-nextcloud-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "zO6BX87w32a6L5lEO/ZyhqKMTvSAAt3qa+PZbDBCiOHF1kEAqgMy1+ZS6tHhpxmBp0GkwYS/cJnYmOvj6GNZCA==",
+        "checksum": "efcbc409359420f53f4942bdc262013d382395a1c9a7983c4226f8b3b0e1c7b5"
+      }
+    ]
+  },
+  {
+    "slug": "storage-nfs",
+    "name": "NFS",
+    "author": "McSparrow <info@mcsparrow.eu>",
+    "license": "McHarbor",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "Backup destination backed by an NFS (RFC 7530) export. AUTH_SYS (UID-based) plus Kerberos flavors (krb5/krb5i/krb5p) via the kernel nfs client.",
+    "category": "Storage destinations",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610161447",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/storage-nfs-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "NC/b40VMjQ8ICfe++ciiVXTefV6/pgRRfIV0fBLhCBAbO5YskG6BbfcFwTicEHDRGkFxBSmkshhj24TYy3n0DA==",
+        "checksum": "ae4f8ad6ea490005854c351e201a5623c0e8257f035533fba091112a2940a249"
+      }
+    ]
+  },
+  {
+    "slug": "storage-onedrive-business",
+    "name": "OneDrive for Business",
+    "author": "McSparrow <support@mcsparrow.eu>",
+    "license": "Apache-2.0",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "OneDrive for Business backup destination. Tenant-scoped Microsoft Graph API (/users/{upn}/drive). OAuth refresh-token flow + chunked upload session. Install storage-sharepoint-online separately for SharePoint document libraries.",
+    "category": "Storage destinations",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610161447",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/storage-onedrive-business-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "jANQQZ+NlClyTPuFcezRN/8NcIzV6GJz8Zqyy2FIcaNAjPaZIMv6OAfym7CEEB0FnpSci3bA1YPk5gbW2LFAAg==",
+        "checksum": "1c0b5245a7b628e038297142d51d8df2d14d27061c5156982e967ef042864528"
+      }
+    ]
+  },
+  {
+    "slug": "storage-onedrive-personal",
+    "name": "OneDrive (Personal)",
+    "author": "McSparrow <support@mcsparrow.eu>",
+    "license": "Apache-2.0",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "OneDrive Personal (consumer endpoint) backup destination. Talks to Microsoft Graph /me/drive for upload/download/delete/list and login.microsoftonline.com/consumers for OAuth tokens. Large uploads use Microsoft's chunked upload session so backups of any size are supported.",
+    "category": "Storage destinations",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610161447",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/storage-onedrive-personal-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "gQ8VAK5uXVjYvlZvPlSwhlrzDSIR9E8BVnCnMe69wFL5XAXeoWsZ4hVMiwtdO5kOv1dLbBWIHRwW4ClDh8EvDQ==",
+        "checksum": "bdbcadb85c98c5d695456435452f49be5ba66c02de2f8a5d94f810a696578547"
+      }
+    ]
+  },
+  {
+    "slug": "storage-opencloud",
+    "name": "OpenCloud",
+    "author": "McSparrow <support@mcsparrow.eu>",
+    "license": "Apache-2.0",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "Back up containers to an OpenCloud instance via WebDAV (RFC 4918). OpenCloud is a Nextcloud-compatible server (same protocol surface) so the plugin uses the Nextcloud WebDAV paths (/remote.php/dav/files/{user}/). Two auth modes: OAuth 2.0 refresh-token flow or direct app-password authentication. Chunked uploads use Content-Range PUT, supported server-side by OpenCloud's WebDAV. Same Test round-trip shape (write / change / delete) as the SharePoint, Google Drive, and Nextcloud plugins.",
+    "category": "Storage destinations",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610161447",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/storage-opencloud-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "xfNjeT8Ly1tvaJk/yQcrgN+fruzZuCAmYxdL5FrUW9eFWQ8YDLmkzvx+YGyFuHRCmpxUOsSdfJlqm7SfrGPXBA==",
+        "checksum": "82a671c20e0ac1ba61622d2a0f88e2bac2c2afbec6bc4dc37916c515457de74c"
+      }
+    ]
+  },
+  {
+    "slug": "storage-owncloud",
+    "name": "ownCloud",
+    "author": "McSparrow <support@mcsparrow.eu>",
+    "license": "Apache-2.0",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "Back up containers to an ownCloud (Classic) instance via WebDAV (RFC 4918). ownCloud uses the same WebDAV surface as Nextcloud (/remote.php/dav/files/{user}/) for compatibility, so the plugin uses the same path and Basic auth flow as the Nextcloud plugin. Two auth modes: OAuth 2.0 refresh-token flow or direct app-password authentication. Chunked uploads use Content-Range PUT, supported server-side by ownCloud's WebDAV. Same Test round-trip shape (write / change / delete) as the SharePoint, Google Drive, and Nextcloud plugins.",
+    "category": "Storage destinations",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610161447",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/storage-owncloud-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "cSpyLvj8iNYmpU9ARVNyv0mUNDLEyWUhTDcS/1emb3RcuBRyjoI3dze9G3h+dlQnQxgaUg8cWxD5UZNhoS++Dg==",
+        "checksum": "c871777d2766316695a4e0ba5b68fbc7bf531728ba04f962c8345f42fffc426a"
+      }
+    ]
+  },
+  {
+    "slug": "storage-samba",
+    "name": "Samba",
+    "author": "McSparrow <support@mcsparrow.eu>",
+    "license": "McHarbor",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "Backup destination backed by an SMB/CIFS share (samba.org). Anonymous, basic user/password, or NTLMv2 domain auth via go-smb2.",
+    "category": "Storage destinations",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610212129",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/storage-samba-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "v0Wbk3yAD2DbXCsE14pg3H8EaZP8YAtzfqXsE1V6rANCiq4fF9fz7iRFG4opdoGVA3815PXAMDyb2E4yre/pAA==",
+        "checksum": "74ad1f659ac3f92f13b9567e5349381cf27b8bac3368a67b3568227afef5cda2"
+      }
+    ]
+  },
+  {
+    "slug": "storage-sftp",
+    "name": "SFTP",
+    "author": "McSparrow <support@mcsparrow.eu>",
+    "license": "Apache-2.0",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "SFTP (SSH File Transfer Protocol) backup destination. Auth methods: password, publickey (private key + optional passphrase), keyboard-interactive, and SSH agent. Uses github.com/pkg/sftp over golang.org/x/crypto/ssh.",
+    "category": "Storage destinations",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610161448",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/storage-sftp-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "0Y+bex4a7xCkSV8MGMCa+E1SKgpSNAP+YUpEdIAQ51mGQzaX3PYM9MBb8BoQx5rEUDJKp2zjY4VtOjnvFrOzDg==",
+        "checksum": "52f9b5155d0ab39d7886e9a959bb16bd90549b97d43377357f2161c870001c54"
+      }
+    ]
+  },
+  {
+    "slug": "storage-sharepoint-online",
+    "name": "SharePoint Online",
+    "author": "McSparrow <support@mcsparrow.eu>",
+    "license": "Apache-2.0",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "SharePoint document library backup destination. Tenant-scoped Microsoft Graph API (/sites/{site_id}/drive). OAuth refresh-token flow + chunked upload session. Requires Sites.ReadWrite.All delegated permission. Install storage-onedrive-business separately for OneDrive for Business drives.",
+    "category": "Storage destinations",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610161449",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/storage-sharepoint-online-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "M6/a3YfMdzfBQMIV05RXmtAkH3KD0febtm604B6P3cHi0asQYopgk0tqKCxAm8IdxivJODJ3st7+p3wzv5lGAQ==",
+        "checksum": "ab0c1115a329d21398fbcc62d84c0b5c8f0646085665c4aeacf6398120033a4a"
+      }
+    ]
+  },
+  {
+    "slug": "storage-truenas",
+    "name": "TrueNAS",
+    "author": "McSparrow <support@mcsparrow.eu>",
+    "license": "Apache-2.0",
+    "homepage": "https://www.mcharbor.eu/docs/plugins",
+    "description": "Back up containers to a TrueNAS instance via WebDAV (RFC 4918). TrueNAS exposes WebDAV on the share's configured path (default `/webdav` for the standard WebDAV share). Operators authenticate with a local TrueNAS user + password over HTTP Basic auth. Chunked uploads use Content-Range PUT; the TrueNAS Samba server is built on samba.org which supports Content-Range PUT in WebDAV. Same Test round-trip shape (write / change / delete) as the SharePoint, Google Drive, and Nextcloud plugins.",
+    "category": "Storage destinations",
+    "icon": "plugin.svg",
+    "versions": [
+      {
+        "version": "2026.10.01",
+        "build": "202610161449",
+        "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/storage-truenas-2026.10.01.tar.gz",
+        "built_for": "2026.10.01",
+        "signature": "AwYxDNlq7ydz8cFr0brJZYqik+8vN92Q+bPGeAfJ8VaJVNCJlbKFcbVfBAKxTPX6QA/8bU15nj1WUy4ta+l8BQ==",
+        "checksum": "3f6f13bed50b098984c4261839886ca6fdf305f51a413b9335d88f7cbc17cd04"
+      }
+    ]
+  }
+]

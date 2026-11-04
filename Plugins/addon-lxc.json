@@ -1,0 +1,19 @@
+{
+  "slug": "addon-lxc",
+  "name": "System Containers",
+  "author": "McSparrow <support@mcsparrow.eu>",
+  "license": "Apache-2.0",
+  "homepage": "https://www.mcharbor.eu/docs/plugins",
+  "description": "Run full-system LXC containers on your own hosts: a whole distribution with its own init, users and services, in a fraction of a virtual machine's memory and starting in about a second. Unprivileged by default, with CPU, memory and process limits that apply without a restart, a browser console, mounts, snapshots, clones and templates. McHarbor drives libcontainer directly — there is no LXD, no Incus and no lxc-* toolchain.",
+  "category": "Orchestration",
+  "icon": "plugin.svg",
+  "versions": [
+    {
+      "version": "2026.10.01",
+      "build": "202610161436",
+      "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/addon-lxc-2026.10.01.tar.gz",
+      "built_for": "2026.10.01",
+      "signature": "HrwG4CVTmz7420XoM5oUUJ7itMgSuUTgeuvrlldtgz3691Mz2y0d6ARqhqV7hn5OHbQdHgNymsqWwcuYw8/iBw=="
+    }
+  ]
+}

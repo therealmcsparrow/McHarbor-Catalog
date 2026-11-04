@@ -1,0 +1,19 @@
+{
+  "slug": "comm-slack",
+  "name": "Slack",
+  "author": "McSparrow <support@mcsparrow.eu>",
+  "license": "Apache-2.0",
+  "homepage": "https://www.mcharbor.eu/docs/plugins",
+  "description": "Adds Slack incoming webhooks as a communication channel for workflow, alert, and backup notifications. This is a channel adapter owned by the plugin runtime.",
+  "category": "Communication channels",
+  "icon": "plugin.svg",
+  "versions": [
+    {
+      "version": "2026.10.01",
+      "build": "202610161441",
+      "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/comm-slack-2026.10.01.tar.gz",
+      "built_for": "2026.10.01",
+      "signature": "avPYLNxjat9Upp5kCfmUxdmj1plApriHOaaL2pv2NlUefq/h4l+VKX+jP329S47j8WexUQcdr5Hks2o8XhZqDw=="
+    }
+  ]
+}

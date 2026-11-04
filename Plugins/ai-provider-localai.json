@@ -1,0 +1,19 @@
+{
+  "slug": "ai-provider-localai",
+  "name": "LocalAI",
+  "author": "McSparrow <support@mcsparrow.eu>",
+  "license": "Apache-2.0",
+  "homepage": "https://www.mcharbor.eu/docs/plugins",
+  "description": "Routes McHarbor AI chat completions through a self-hosted LocalAI instance.",
+  "category": "AI providers",
+  "icon": "plugin.svg",
+  "versions": [
+    {
+      "version": "2026.10.01",
+      "build": "202610161438",
+      "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/ai-provider-localai-2026.10.01.tar.gz",
+      "built_for": "2026.10.01",
+      "signature": "8uK4jmm/7YcbI2dJ3D5WWc/mhucHmyL9ufxozRQQlBTOkdZjKjuXoyLZW7UH+rRORYjYDyS3b50B9lFQcKxyDw=="
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "slug": "ai-provider-minimax",
+  "name": "MiniMax",
+  "author": "McSparrow <support@mcsparrow.eu>",
+  "license": "Apache-2.0",
+  "homepage": "https://www.mcharbor.eu/docs/plugins",
+  "description": "Routes McHarbor AI chat completions through MiniMax's OpenAI-compatible API.",
+  "category": "AI providers",
+  "icon": "plugin.svg",
+  "versions": [
+    {
+      "version": "2026.10.01",
+      "build": "202610161439",
+      "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/ai-provider-minimax-2026.10.01.tar.gz",
+      "built_for": "2026.10.01",
+      "signature": "1PsJ66/tD0pmuEJ1mK5cS85E8hpWcVITRXrao31CD6bsuOeaPHmxCZgqru4Tdxmi130otStmKp4a3UCkMwGDDA=="
+    }
+  ]
+}

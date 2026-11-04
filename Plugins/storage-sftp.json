@@ -1,0 +1,19 @@
+{
+  "slug": "storage-sftp",
+  "name": "SFTP",
+  "author": "McSparrow <support@mcsparrow.eu>",
+  "license": "Apache-2.0",
+  "homepage": "https://www.mcharbor.eu/docs/plugins",
+  "description": "SFTP (SSH File Transfer Protocol) backup destination. Auth methods: password, publickey (private key + optional passphrase), keyboard-interactive, and SSH agent. Uses github.com/pkg/sftp over golang.org/x/crypto/ssh.",
+  "category": "Storage destinations",
+  "icon": "plugin.svg",
+  "versions": [
+    {
+      "version": "2026.10.01",
+      "build": "202610161448",
+      "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/storage-sftp-2026.10.01.tar.gz",
+      "built_for": "2026.10.01",
+      "signature": "0Y+bex4a7xCkSV8MGMCa+E1SKgpSNAP+YUpEdIAQ51mGQzaX3PYM9MBb8BoQx5rEUDJKp2zjY4VtOjnvFrOzDg=="
+    }
+  ]
+}

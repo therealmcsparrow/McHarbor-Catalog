@@ -1,0 +1,19 @@
+{
+  "slug": "comm-discord",
+  "name": "Discord",
+  "author": "McSparrow <support@mcsparrow.eu>",
+  "license": "Apache-2.0",
+  "homepage": "https://www.mcharbor.eu/docs/plugins",
+  "description": "Adds Discord webhooks as a communication channel for workflow, alert, and backup notifications. This is a channel adapter owned by the plugin runtime.",
+  "category": "Communication channels",
+  "icon": "plugin.svg",
+  "versions": [
+    {
+      "version": "2026.10.01",
+      "build": "202610161440",
+      "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/comm-discord-2026.10.01.tar.gz",
+      "built_for": "2026.10.01",
+      "signature": "bhaBYPW9fkc7BrdtVr9KKVQGPvC1cFY15f40/1oXxdvttnqWgzLthjB8GoAuWF5K57pdwh/QE8R0uU/I3DjqDQ=="
+    }
+  ]
+}

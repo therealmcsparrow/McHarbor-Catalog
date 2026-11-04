@@ -1,0 +1,19 @@
+{
+  "slug": "ai-provider-groq",
+  "name": "Groq",
+  "author": "McSparrow <support@mcsparrow.eu>",
+  "license": "Apache-2.0",
+  "homepage": "https://www.mcharbor.eu/docs/plugins",
+  "description": "Routes McHarbor AI chat completions through Groq's low-latency LPU inference API.",
+  "category": "AI providers",
+  "icon": "plugin.svg",
+  "versions": [
+    {
+      "version": "2026.10.01",
+      "build": "202610161438",
+      "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/ai-provider-groq-2026.10.01.tar.gz",
+      "built_for": "2026.10.01",
+      "signature": "3V1pFW/tbQz8qhnwt55nj3MLUiX+yvj+D1f9Yln/UxPtplxCRn5/yRpuFk5GOUc/n8Dih+NYK9K3yDahoL8XCg=="
+    }
+  ]
+}

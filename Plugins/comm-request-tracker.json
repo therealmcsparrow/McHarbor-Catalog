@@ -1,0 +1,19 @@
+{
+  "slug": "comm-request-tracker",
+  "name": "Request Tracker",
+  "author": "McSparrow <support@mcsparrow.eu>",
+  "license": "Apache-2.0",
+  "homepage": "https://www.mcharbor.eu/docs/plugins",
+  "description": "Creates, comments on and resolves Best Practical Request Tracker (RT) tickets from McHarbor alerts through REST2, with a signed Scrip callout or polling for status.",
+  "category": "Communication channels",
+  "icon": "plugin.svg",
+  "versions": [
+    {
+      "version": "2026.10.01",
+      "build": "202610161443",
+      "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/comm-request-tracker-2026.10.01.tar.gz",
+      "built_for": "2026.10.01",
+      "signature": "hM1JYLLP02A6VYFGBQuo4zSU/Mu/HxQmQXWOeA7j3saHUOTdQC5g14x7aeTcTqqIUxP8iv4Dqs4alvv+5TuDCA=="
+    }
+  ]
+}
