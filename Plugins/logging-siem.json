@@ -10,10 +10,10 @@
   "versions": [
     {
       "version": "2026.10.01",
-      "build": "202610161444",
+      "build": "202611060444",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/logging-siem-2026.10.01.tar.gz",
-      "built_for": "2026.10.01",
-      "signature": "lRId4LeCoq/y1i9blNcz7pEQkZBzG2Gr05AeWrO1fZnAvskc6PQRxaY1G9ThVOQRtB7ArzMW6gdlWZjrnYzmBw=="
+      "built_for": "2026.11.01",
+      "signature": "Me5W7r+D5WG4bvgHYgUpEf78bDBYDWdpMAvFoRK+TGKzwF2eOVE0sPr3EP8fzw6gglcYzHqfKhBNszRUodavBA=="
     }
   ]
 }

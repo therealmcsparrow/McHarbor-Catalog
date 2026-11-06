@@ -10,10 +10,10 @@
   "versions": [
     {
       "version": "2026.10.01",
-      "build": "202610161436",
+      "build": "202611060439",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/addon-lxc-2026.10.01.tar.gz",
-      "built_for": "2026.10.01",
-      "signature": "HrwG4CVTmz7420XoM5oUUJ7itMgSuUTgeuvrlldtgz3691Mz2y0d6ARqhqV7hn5OHbQdHgNymsqWwcuYw8/iBw=="
+      "built_for": "2026.11.01",
+      "signature": "A7+RO4NQW9SA59Yfa7oGnvuh73FceonFgphALqeVWkpchIzi5qM61mkJ5WrHs3zGwzH8hsnwygxIAljHdJWiDA=="
     }
   ]
 }

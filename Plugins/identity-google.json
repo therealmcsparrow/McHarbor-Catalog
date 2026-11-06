@@ -10,10 +10,10 @@
   "versions": [
     {
       "version": "2026.10.01",
-      "build": "202610161443",
+      "build": "202611060444",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/identity-google-2026.10.01.tar.gz",
-      "built_for": "2026.10.01",
-      "signature": "eUHVUhaQsyOFCsusZ9k5+xVncxdzGBMYCXS2t6FD6B8xNAcAqN5fYUYAgkBb4lRJ4i5Vx49HFgMSONgsNV2PAw=="
+      "built_for": "2026.11.01",
+      "signature": "bpSrZyf8stBHHyOXKT6r50rF8vSChmRrlKeUUe/GgC3WQ0v2vZy0Y+oiLp/92ogHI7MaBzjzYsib6HY4JIA1BQ=="
     }
   ]
 }

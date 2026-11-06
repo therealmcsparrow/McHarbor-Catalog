@@ -10,10 +10,10 @@
   "versions": [
     {
       "version": "2026.10.01",
-      "build": "202610161443",
+      "build": "202611060444",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/comm-request-tracker-2026.10.01.tar.gz",
-      "built_for": "2026.10.01",
-      "signature": "hM1JYLLP02A6VYFGBQuo4zSU/Mu/HxQmQXWOeA7j3saHUOTdQC5g14x7aeTcTqqIUxP8iv4Dqs4alvv+5TuDCA=="
+      "built_for": "2026.11.01",
+      "signature": "kGCDIUyx0C+U7Qta2TzcMdZDqKSEdpcSVHsaKVyQh0O0sC99ZfWyVFGKV9qd0T8AX8EEAs7tZmLoOZFYq0wEBA=="
     }
   ]
 }

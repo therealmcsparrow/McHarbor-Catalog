@@ -1,7 +1,7 @@
 >>> plugin      comm-smtp@2026.10.01
 >>> source      /z/projects/web/management/McHarbor/src/plugins/Plugins/comm-smtp
 >>> output      /z/projects/web/management/McHarbor/mnt/plugin-catalog
->>> catalog     https://www.mcharbor.eu/catalog/plugins
+>>> catalog     https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins
 
 >>> building frontend UMD bundle for comm-smtp
 
@@ -23,133 +23,131 @@ computing gzip size...
 
 [33m[33m[MIXED_EXPORTS] [0mEntry module "src/index.tsx" is using named (including "ConfigForm", "SetupGuide", "default", "mount") and default exports together. Consumers of your bundle will have to use `McharborPlugin_comm_smtp.default` to access the default export, which may not be what you want. Use `output.exports: "named"` to disable this warning.
 [39m
-[32m✓ built in 24.32s[39m
+[32m✓ built in 1.53s[39m
 >>> built /z/projects/web/management/McHarbor/src/plugins/Plugins/comm-smtp/frontend/comm-smtp.umd.cjs (has McharborPlugin_comm_smtp + mount)
 >>> running plugin-packager for comm-smtp@2026.10.01 (first run: 3-5 min cold)
 #0 building with "desktop-linux" instance using docker driver
 
 #1 [internal] load build definition from Dockerfile.plugin-packager
+#1 transferring dockerfile: 13.10kB done
 #1 DONE 0.0s
 
-#1 [internal] load build definition from Dockerfile.plugin-packager
-#1 transferring dockerfile: 13.10kB done
-#1 DONE 0.3s
-
 #2 [internal] load metadata for docker.io/library/golang:1.27.2-bookworm
-#2 DONE 0.7s
+#2 DONE 0.1s
 
 #3 [internal] load .dockerignore
+#3 transferring context:
 #3 transferring context: 1.67kB done
-#3 DONE 0.1s
+#3 DONE 0.0s
 
 #4 [builder  1/14] FROM docker.io/library/golang:1.27.2-bookworm@sha256:5cf287a799e6b94384bad13d16b14904c531f51ba65792237e122ce42b392f61
 #4 resolve docker.io/library/golang:1.27.2-bookworm@sha256:5cf287a799e6b94384bad13d16b14904c531f51ba65792237e122ce42b392f61 0.1s done
 #4 CACHED
 
 #5 [internal] load build context
-#5 transferring context: 1.01MB 0.2s done
-#5 DONE 0.4s
+#5 transferring context: 1.01MB 0.3s done
+#5 DONE 0.3s
 
 #6 [builder  2/14] RUN apt-get update     && apt-get install -y --no-install-recommends git bash gcc libc6-dev     && apt-get clean && find /var/lib/apt/lists -mindepth 1 -delete
-#6 0.335 Get:1 http://deb.debian.org/debian bookworm InRelease [151 kB]
-#6 0.350 Get:2 http://deb.debian.org/debian bookworm-updates InRelease [55.4 kB]
-#6 0.358 Get:3 http://deb.debian.org/debian-security bookworm-security InRelease [34.8 kB]
-#6 0.393 Get:4 http://deb.debian.org/debian bookworm/main amd64 Packages [8790 kB]
-#6 1.005 Get:5 http://deb.debian.org/debian bookworm-updates/main amd64 Packages [6924 B]
-#6 1.006 Get:6 http://deb.debian.org/debian-security bookworm-security/main amd64 Packages [355 kB]
-#6 1.595 Fetched 9394 kB in 1s (7316 kB/s)
-#6 1.595 Reading package lists...
-#6 1.932 Reading package lists...
-#6 2.258 Building dependency tree...
-#6 2.372 Reading state information...
-#6 2.473 git is already the newest version (1:2.39.5-0+deb12u3).
-#6 2.473 bash is already the newest version (5.2.15-2+b13).
-#6 2.473 bash set to manually installed.
-#6 2.473 gcc is already the newest version (4:12.2.0-3).
-#6 2.473 libc6-dev is already the newest version (2.36-9+deb12u14).
-#6 2.473 0 upgraded, 0 newly installed, 0 to remove and 6 not upgraded.
-#6 DONE 2.6s
+#6 0.358 Get:1 http://deb.debian.org/debian bookworm InRelease [151 kB]
+#6 0.378 Get:2 http://deb.debian.org/debian bookworm-updates InRelease [55.4 kB]
+#6 0.386 Get:3 http://deb.debian.org/debian-security bookworm-security InRelease [34.8 kB]
+#6 0.478 Get:4 http://deb.debian.org/debian bookworm/main amd64 Packages [8790 kB]
+#6 0.997 Get:5 http://deb.debian.org/debian bookworm-updates/main amd64 Packages [6924 B]
+#6 0.997 Get:6 http://deb.debian.org/debian-security bookworm-security/main amd64 Packages [361 kB]
+#6 1.898 Fetched 9400 kB in 2s (6031 kB/s)
+#6 1.898 Reading package lists...
+#6 2.474 Reading package lists...
+#6 3.029 Building dependency tree...
+#6 3.193 Reading state information...
+#6 3.401 git is already the newest version (1:2.39.5-0+deb12u3).
+#6 3.401 bash is already the newest version (5.2.15-2+b13).
+#6 3.401 bash set to manually installed.
+#6 3.401 gcc is already the newest version (4:12.2.0-3).
+#6 3.401 libc6-dev is already the newest version (2.36-9+deb12u14).
+#6 3.401 0 upgraded, 0 newly installed, 0 to remove and 15 not upgraded.
+#6 DONE 3.5s
 
 #7 [builder  3/14] WORKDIR /build
-#7 DONE 0.4s
+#7 DONE 0.1s
 
 #8 [builder  4/14] COPY src/backend/ ./src/backend/
-#8 DONE 0.9s
+#8 DONE 0.3s
 
 #9 [builder  5/14] COPY src/plugins/Plugins/comm-smtp/ ./src/plugins/Plugins/comm-smtp/
-#9 DONE 0.4s
+#9 DONE 0.1s
 
 #10 [builder  6/14] RUN if [ -z "2026.10.01" ]; then         PLUGIN_VERSION=$(awk '/^version:[[:space:]]*/{print $2; exit}' "src/plugins/Plugins/comm-smtp/plugin.yaml" | tr -d '"\r');         echo "resolved PLUGIN_VERSION=2026.10.01 from plugin.yaml";     fi
-#10 DONE 0.6s
+#10 DONE 0.4s
 
 #11 [builder  7/14] RUN mkdir -p src/backend/_plugin_build/comm-smtp/backend     && cp -R src/plugins/Plugins/comm-smtp/backend/.         src/backend/_plugin_build/comm-smtp/backend/     && ls src/backend/_plugin_build/comm-smtp/backend/
-#11 0.393 destination_guard.go
-#11 0.393 destination_guard_test.go
-#11 0.393 main.go
-#11 0.393 smtp_client.go
-#11 DONE 0.4s
+#11 0.293 destination_guard.go
+#11 0.293 destination_guard_test.go
+#11 0.293 main.go
+#11 0.293 smtp_client.go
+#11 DONE 0.3s
 
 #12 [builder  8/14] RUN PLUGIN_MODULE="$(awk '/^module /{print $2; exit}' src/plugins/Plugins/comm-smtp/go.mod | tr -d '\r')"     && HOST_MODULE="$(awk '/^module /{print $2; exit}' src/backend/go.mod | tr -d '\r')"     && echo "rewriting imports ${PLUGIN_MODULE}/backend -> ${HOST_MODULE}/_plugin_build/comm-smtp/backend"     && find src/backend/_plugin_build/comm-smtp/backend -name '*.go' -print0        | xargs -0 sed -i "s#"${PLUGIN_MODULE}/backend/#"${HOST_MODULE}/_plugin_build/comm-smtp/backend/#g"
-#12 0.410 rewriting imports github.com/therealmcsparrow/mcharbor-addons/plugins/comm-smtp/backend -> github.com/therealmcsparrow/mcharbor/_plugin_build/comm-smtp/backend
-#12 DONE 0.5s
+#12 0.280 rewriting imports github.com/therealmcsparrow/mcharbor-addons/plugins/comm-smtp/backend -> github.com/therealmcsparrow/mcharbor/_plugin_build/comm-smtp/backend
+#12 DONE 0.3s
 
 #13 [builder  9/14] WORKDIR /build/src/backend
-#13 DONE 0.2s
+#13 DONE 0.1s
 
 #14 [builder 10/14] RUN PLUGIN_KEEP_FILE=/build/src/backend/_plugin_build/comm-smtp/backend/host_link_keep.go &&     go run ./cmd/extract-core-plugin-symbols ./core/plugin > "$PLUGIN_KEEP_FILE" &&     echo "=== generated $PLUGIN_KEEP_FILE ===" &&     wc -l "$PLUGIN_KEEP_FILE" &&     head -25 "$PLUGIN_KEEP_FILE"
-#14 3.583 === generated /build/src/backend/_plugin_build/comm-smtp/backend/host_link_keep.go ===
-#14 3.584 864 /build/src/backend/_plugin_build/comm-smtp/backend/host_link_keep.go
-#14 3.584 // Code generated by docker/cmd/extract-core-plugin-symbols. DO NOT EDIT.
-#14 3.584 //
-#14 3.584 // Force-link every exported top-level symbol of every Go subpackage
-#14 3.584 // under github.com/therealmcsparrow/mcharbor/core/plugin/* so each
-#14 3.584 // subpackage's per-package ABI hash in the plugin .so matches the
-#14 3.584 // host binary's. Without this, the plugin linker prunes symbols the
-#14 3.584 // plugin does not directly use from each shared package, producing a
-#14 3.584 // strict-subset view that fails to load with "different version of
-#14 3.584 // package <subpkg>".
-#14 3.584 
-#14 3.584 package main
-#14 3.584 
-#14 3.584 import (
-#14 3.584 	"reflect"
-#14 3.584 	plugin "github.com/therealmcsparrow/mcharbor/core/plugin"
-#14 3.584 	contract "github.com/therealmcsparrow/mcharbor/core/plugin/contract"
-#14 3.584 	host "github.com/therealmcsparrow/mcharbor/core/plugin/host"
-#14 3.584 	services "github.com/therealmcsparrow/mcharbor/core/plugin/services"
-#14 3.584 	abac "github.com/therealmcsparrow/mcharbor/core/plugin/specs/abac"
-#14 3.584 	ai "github.com/therealmcsparrow/mcharbor/core/plugin/specs/ai"
-#14 3.584 	alerting "github.com/therealmcsparrow/mcharbor/core/plugin/specs/alerting"
-#14 3.584 	backup "github.com/therealmcsparrow/mcharbor/core/plugin/specs/backup"
-#14 3.584 	desiredstate "github.com/therealmcsparrow/mcharbor/core/plugin/specs/desiredstate"
-#14 3.584 	identity "github.com/therealmcsparrow/mcharbor/core/plugin/specs/identity"
-#14 3.584 	incident "github.com/therealmcsparrow/mcharbor/core/plugin/specs/incident"
-#14 DONE 3.6s
+#14 4.373 === generated /build/src/backend/_plugin_build/comm-smtp/backend/host_link_keep.go ===
+#14 4.374 864 /build/src/backend/_plugin_build/comm-smtp/backend/host_link_keep.go
+#14 4.376 // Code generated by docker/cmd/extract-core-plugin-symbols. DO NOT EDIT.
+#14 4.376 //
+#14 4.376 // Force-link every exported top-level symbol of every Go subpackage
+#14 4.376 // under github.com/therealmcsparrow/mcharbor/core/plugin/* so each
+#14 4.376 // subpackage's per-package ABI hash in the plugin .so matches the
+#14 4.376 // host binary's. Without this, the plugin linker prunes symbols the
+#14 4.376 // plugin does not directly use from each shared package, producing a
+#14 4.376 // strict-subset view that fails to load with "different version of
+#14 4.376 // package <subpkg>".
+#14 4.376 
+#14 4.376 package main
+#14 4.376 
+#14 4.376 import (
+#14 4.376 	"reflect"
+#14 4.376 	plugin "github.com/therealmcsparrow/mcharbor/core/plugin"
+#14 4.376 	contract "github.com/therealmcsparrow/mcharbor/core/plugin/contract"
+#14 4.376 	host "github.com/therealmcsparrow/mcharbor/core/plugin/host"
+#14 4.376 	services "github.com/therealmcsparrow/mcharbor/core/plugin/services"
+#14 4.376 	abac "github.com/therealmcsparrow/mcharbor/core/plugin/specs/abac"
+#14 4.376 	ai "github.com/therealmcsparrow/mcharbor/core/plugin/specs/ai"
+#14 4.376 	alerting "github.com/therealmcsparrow/mcharbor/core/plugin/specs/alerting"
+#14 4.376 	backup "github.com/therealmcsparrow/mcharbor/core/plugin/specs/backup"
+#14 4.376 	desiredstate "github.com/therealmcsparrow/mcharbor/core/plugin/specs/desiredstate"
+#14 4.376 	identity "github.com/therealmcsparrow/mcharbor/core/plugin/specs/identity"
+#14 4.376 	incident "github.com/therealmcsparrow/mcharbor/core/plugin/specs/incident"
+#14 DONE 4.4s
 
 #15 [builder 11/14] WORKDIR /build/src/backend
 #15 DONE 0.2s
 
 #16 [builder 12/14] RUN awk '/^[[:space:]]+[A-Za-z0-9.-]+\.[A-Za-z]+\/[^ ]+ v[0-9]/{print $1}' go.mod         | tr -d '\r' | sort -u > /tmp/host-modules.txt  && PLUGIN_DEPS=$(grep -E '^\s+[A-Za-z0-9.-]+\.[A-Za-z]+/[^ ]+ v[0-9]'         /build/src/plugins/Plugins/comm-smtp/go.mod 2>/dev/null |         tr -d '\r' |         awk '{print $1 "@" $2}' |         grep -v 'github.com/therealmcsparrow/mcharbor' || true) &&     if [ -n "$PLUGIN_DEPS" ]; then         for dep in $PLUGIN_DEPS; do             mod="${dep%@*}";             if grep -Fxq "$mod" /tmp/host-modules.txt; then                 echo "keeping host pin for $mod (plugin asked for ${dep#*@})";                 continue;             fi;             go get "$dep" >/tmp/goget.log 2>&1 || { echo "go get $dep failed:"; cat /tmp/goget.log; };         done;     fi
-#16 DONE 0.6s
+#16 DONE 0.4s
 
 #17 [builder 13/14] RUN CGO_ENABLED=1 go build -trimpath -buildmode=plugin          -o /tmp/comm-smtp.so         ./_plugin_build/comm-smtp/backend
-#17 DONE 13.0s
+#17 DONE 15.1s
 
-#18 [builder 14/14] RUN RESOLVED_PLUGIN_VERSION="2026.10.01"     && if [ -z "${RESOLVED_PLUGIN_VERSION}" ]; then          RESOLVED_PLUGIN_VERSION=$(awk '/^version:[[:space:]]*/{print $2; exit}' "/build/src/plugins/Plugins/comm-smtp/plugin.yaml" | tr -d '"\r');        fi     && test -n "${RESOLVED_PLUGIN_VERSION}"     && mkdir -p /tmp/payload/backend     && cp /build/src/plugins/Plugins/comm-smtp/plugin.yaml /tmp/payload/     && if [ -n "202610212129" ]; then          sed -i '/^build:/d' /tmp/payload/plugin.yaml &&          { [ -z "$(tail -c1 /tmp/payload/plugin.yaml)" ] || echo >> /tmp/payload/plugin.yaml; } &&          echo "build:    "202610212129"" >> /tmp/payload/plugin.yaml;        fi     && if [ -d /build/src/plugins/Plugins/comm-smtp/i18n ]; then          cp -R /build/src/plugins/Plugins/comm-smtp/i18n /tmp/payload/;        fi     && if [ -f /build/src/plugins/Plugins/comm-smtp/frontend/comm-smtp.umd.cjs ]; then          mkdir -p /tmp/payload/frontend &&            cp /build/src/plugins/Plugins/comm-smtp/frontend/comm-smtp.umd.cjs /tmp/payload/frontend/;        else          echo "warning: frontend/comm-smtp.umd.cjs missing — ConfigForm/SetupGuide will render blank" >&2;        fi     && if [ -d /build/src/plugins/Plugins/comm-smtp/icons ]; then          mkdir -p /tmp/payload/icons &&            cp -R /build/src/plugins/Plugins/comm-smtp/icons/. /tmp/payload/icons/;        fi     && if [ -d /build/src/plugins/Plugins/comm-smtp/migrations ]; then          cp -R /build/src/plugins/Plugins/comm-smtp/migrations /tmp/payload/;        fi     && if [ -f /build/src/plugins/Plugins/comm-smtp/THIRD_PARTY_NOTICES.md ]; then          cp /build/src/plugins/Plugins/comm-smtp/THIRD_PARTY_NOTICES.md /tmp/payload/;        fi     && cp /tmp/comm-smtp.so /tmp/payload/backend/comm-smtp.so     && mkdir -p /tmp/packaged     && tar -C /tmp/payload -czf /tmp/packaged/comm-smtp-${RESOLVED_PLUGIN_VERSION}.tar.gz .     && ls -la /tmp/packaged/
-#18 1.243 total 7484
-#18 1.243 drwxr-xr-x 2 root root    4096 Oct 21 21:31 .
-#18 1.243 drwxrwxrwt 1 root root    4096 Oct 21 21:31 ..
-#18 1.243 -rw-r--r-- 1 root root 7654354 Oct 21 21:31 comm-smtp-2026.10.01.tar.gz
-#18 DONE 1.3s
+#18 [builder 14/14] RUN RESOLVED_PLUGIN_VERSION="2026.10.01"     && if [ -z "${RESOLVED_PLUGIN_VERSION}" ]; then          RESOLVED_PLUGIN_VERSION=$(awk '/^version:[[:space:]]*/{print $2; exit}' "/build/src/plugins/Plugins/comm-smtp/plugin.yaml" | tr -d '"\r');        fi     && test -n "${RESOLVED_PLUGIN_VERSION}"     && mkdir -p /tmp/payload/backend     && cp /build/src/plugins/Plugins/comm-smtp/plugin.yaml /tmp/payload/     && if [ -n "202611060443" ]; then          sed -i '/^build:/d' /tmp/payload/plugin.yaml &&          { [ -z "$(tail -c1 /tmp/payload/plugin.yaml)" ] || echo >> /tmp/payload/plugin.yaml; } &&          echo "build:    "202611060443"" >> /tmp/payload/plugin.yaml;        fi     && if [ -d /build/src/plugins/Plugins/comm-smtp/i18n ]; then          cp -R /build/src/plugins/Plugins/comm-smtp/i18n /tmp/payload/;        fi     && if [ -f /build/src/plugins/Plugins/comm-smtp/frontend/comm-smtp.umd.cjs ]; then          mkdir -p /tmp/payload/frontend &&            cp /build/src/plugins/Plugins/comm-smtp/frontend/comm-smtp.umd.cjs /tmp/payload/frontend/;        else          echo "warning: frontend/comm-smtp.umd.cjs missing — ConfigForm/SetupGuide will render blank" >&2;        fi     && if [ -d /build/src/plugins/Plugins/comm-smtp/icons ]; then          mkdir -p /tmp/payload/icons &&            cp -R /build/src/plugins/Plugins/comm-smtp/icons/. /tmp/payload/icons/;        fi     && if [ -d /build/src/plugins/Plugins/comm-smtp/migrations ]; then          cp -R /build/src/plugins/Plugins/comm-smtp/migrations /tmp/payload/;        fi     && if [ -f /build/src/plugins/Plugins/comm-smtp/THIRD_PARTY_NOTICES.md ]; then          cp /build/src/plugins/Plugins/comm-smtp/THIRD_PARTY_NOTICES.md /tmp/payload/;        fi     && cp /tmp/comm-smtp.so /tmp/payload/backend/comm-smtp.so     && mkdir -p /tmp/packaged     && tar -C /tmp/payload -czf /tmp/packaged/comm-smtp-${RESOLVED_PLUGIN_VERSION}.tar.gz .     && ls -la /tmp/packaged/
+#18 1.442 total 7484
+#18 1.442 drwxr-xr-x 2 root root    4096 Nov  6 04:43 .
+#18 1.442 drwxrwxrwt 1 root root    4096 Nov  6 04:43 ..
+#18 1.442 -rw-r--r-- 1 root root 7654358 Nov  6 04:43 comm-smtp-2026.10.01.tar.gz
+#18 DONE 1.5s
 
 #19 [plugin-packager 1/1] COPY --from=builder /tmp/packaged/ /packaged/
-#19 DONE 0.2s
+#19 DONE 0.1s
 
 #20 exporting to client tarball
 #20 sending tarball 0.1s done
 #20 DONE 0.1s
 
-View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/xbs6kxdpg281ckm82siur2cui
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/1ih32fvzv90d9grx9uk93z17w
 >>> extracting packaged/comm-smtp-2026.10.01.tar.gz
 >>> signing comm-smtp-2026.10.01.tar.gz with plugin-signing.key and verifying against plugin-signing.pub
 pluginsigner: verified 1 signature(s) against Z:/projects/web/management/McHarbor/signing/plugin-signing.pub
@@ -161,7 +159,7 @@ pluginsigner: signed 1 tarballs, recorded 0 catalog signatures
 >>> wrote /z/projects/web/management/McHarbor/mnt/plugin-catalog/files/comm-smtp-2026.10.01.tar.gz.sig
 >>> wrote /z/projects/web/management/McHarbor/mnt/plugin-catalog/icons/comm-smtp/ (1 icon(s))
 
-    download_url: https://www.mcharbor.eu/catalog/plugins/files/comm-smtp-2026.10.01.tar.gz
+    download_url: https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/comm-smtp-2026.10.01.tar.gz
 
     Copy the contents of /z/projects/web/management/McHarbor/mnt/plugin-catalog
     over the catalog root, then restart the container so the

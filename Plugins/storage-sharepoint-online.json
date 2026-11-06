@@ -10,10 +10,10 @@
   "versions": [
     {
       "version": "2026.10.01",
-      "build": "202610161449",
+      "build": "202611060446",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/storage-sharepoint-online-2026.10.01.tar.gz",
-      "built_for": "2026.10.01",
-      "signature": "M6/a3YfMdzfBQMIV05RXmtAkH3KD0febtm604B6P3cHi0asQYopgk0tqKCxAm8IdxivJODJ3st7+p3wzv5lGAQ=="
+      "built_for": "2026.11.01",
+      "signature": "R37fq4acBreoRVWZ95ytyFbfVzZ3Wz+YcNy4ul+Vvi5dw4rKA2Ugb13owRKBRKhkSTps91GhhuEuj2Yvo4BaAw=="
     }
   ]
 }

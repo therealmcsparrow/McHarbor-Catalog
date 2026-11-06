@@ -1,14 +1,14 @@
 >>> plugin      identity-ldap@2026.10.01
 >>> source      /z/projects/web/management/McHarbor/src/plugins/Plugins/identity-ldap
 >>> output      /z/projects/web/management/McHarbor/mnt/plugin-catalog
->>> catalog     https://www.mcharbor.eu/catalog/plugins
+>>> catalog     https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins
 
 >>> building frontend UMD bundle for identity-ldap
 
 > mcharbor-plugin-identity-ldap-frontend@1.0.0 build
 > vite build --config vite-plugin.config.ts
 
-[2m23:29:20[22m [33m[1m[vite][22m[39m [33mwarning: `esbuild` option was specified by "vite:react-babel" plugin. This option is deprecated, please use `oxc` instead.[39m
+[2m05:44:40[22m [33m[1m[vite][22m[39m [33mwarning: `esbuild` option was specified by "vite:react-babel" plugin. This option is deprecated, please use `oxc` instead.[39m
 `optimizeDeps.rollupOptions` / `ssr.optimizeDeps.rollupOptions` is deprecated. Use `optimizeDeps.rolldownOptions` instead. Note that this option may be set by a plugin. Set VITE_DEPRECATION_TRACE=1 to see where it is called.
 [vite:react-babel] We recommend switching to `@vitejs/plugin-react-oxc` for improved performance. More information at https://vite.dev/rolldown
 [33m
@@ -25,29 +25,28 @@ computing gzip size...
 
 [33m[33m[MIXED_EXPORTS] [0mEntry module "src/index.tsx" is using named (including "ConfigForm", "SetupGuide", "default", "mount") and default exports together. Consumers of your bundle will have to use `McharborPlugin_identity_ldap.default` to access the default export, which may not be what you want. Use `output.exports: "named"` to disable this warning.
 [39m
-[32m✓ built in 496ms[39m
+[32m✓ built in 189ms[39m
 >>> built /z/projects/web/management/McHarbor/src/plugins/Plugins/identity-ldap/frontend/identity-ldap.umd.cjs (has McharborPlugin_identity_ldap + mount)
 >>> running plugin-packager for identity-ldap@2026.10.01 (first run: 3-5 min cold)
 #0 building with "desktop-linux" instance using docker driver
 
 #1 [internal] load build definition from Dockerfile.plugin-packager
-#1 transferring dockerfile:
 #1 transferring dockerfile: 13.10kB done
-#1 DONE 54.9s
+#1 DONE 0.1s
 
 #2 [internal] load metadata for docker.io/library/golang:1.27.2-bookworm
-#2 DONE 0.9s
+#2 DONE 0.1s
 
-#3 [internal] load .dockerignore
-#3 transferring context: 1.67kB done
-#3 DONE 0.1s
+#3 [builder  1/14] FROM docker.io/library/golang:1.27.2-bookworm@sha256:5cf287a799e6b94384bad13d16b14904c531f51ba65792237e122ce42b392f61
+#3 resolve docker.io/library/golang:1.27.2-bookworm@sha256:5cf287a799e6b94384bad13d16b14904c531f51ba65792237e122ce42b392f61 0.1s done
+#3 CACHED
 
-#4 [builder  1/14] FROM docker.io/library/golang:1.27.2-bookworm@sha256:5cf287a799e6b94384bad13d16b14904c531f51ba65792237e122ce42b392f61
-#4 resolve docker.io/library/golang:1.27.2-bookworm@sha256:5cf287a799e6b94384bad13d16b14904c531f51ba65792237e122ce42b392f61 0.1s done
-#4 CACHED
+#4 [internal] load .dockerignore
+#4 transferring context: 1.67kB done
+#4 DONE 0.0s
 
 #5 [internal] load build context
-#5 transferring context: 989.65kB 0.2s done
+#5 transferring context: 991.66kB 0.3s done
 #5 DONE 0.4s
 
 #6 [builder  2/14] RUN apt-get update     && apt-get install -y --no-install-recommends git bash gcc libc6-dev     && apt-get clean && find /var/lib/apt/lists -mindepth 1 -delete
@@ -57,88 +56,88 @@ computing gzip size...
 #7 CACHED
 
 #8 [builder  4/14] COPY src/backend/ ./src/backend/
-#8 DONE 1.0s
+#8 DONE 0.3s
 
 #9 [builder  5/14] COPY src/plugins/Plugins/identity-ldap/ ./src/plugins/Plugins/identity-ldap/
-#9 DONE 0.4s
+#9 DONE 0.3s
 
 #10 [builder  6/14] RUN if [ -z "2026.10.01" ]; then         PLUGIN_VERSION=$(awk '/^version:[[:space:]]*/{print $2; exit}' "src/plugins/Plugins/identity-ldap/plugin.yaml" | tr -d '"\r');         echo "resolved PLUGIN_VERSION=2026.10.01 from plugin.yaml";     fi
-#10 DONE 0.6s
+#10 DONE 0.9s
 
 #11 [builder  7/14] RUN mkdir -p src/backend/_plugin_build/identity-ldap/backend     && cp -R src/plugins/Plugins/identity-ldap/backend/.         src/backend/_plugin_build/identity-ldap/backend/     && ls src/backend/_plugin_build/identity-ldap/backend/
-#11 0.722 auth_flow_test.go
-#11 0.722 destination_guard.go
-#11 0.722 destination_guard_test.go
-#11 0.722 directory.go
-#11 0.722 external_login.go
-#11 0.722 ldap_client.go
-#11 0.722 main.go
-#11 0.722 main_test.go
-#11 DONE 0.8s
+#11 0.928 auth_flow_test.go
+#11 0.928 destination_guard.go
+#11 0.928 destination_guard_test.go
+#11 0.928 directory.go
+#11 0.928 external_login.go
+#11 0.928 ldap_client.go
+#11 0.928 main.go
+#11 0.928 main_test.go
+#11 DONE 1.0s
 
 #12 [builder  8/14] RUN PLUGIN_MODULE="$(awk '/^module /{print $2; exit}' src/plugins/Plugins/identity-ldap/go.mod | tr -d '\r')"     && HOST_MODULE="$(awk '/^module /{print $2; exit}' src/backend/go.mod | tr -d '\r')"     && echo "rewriting imports ${PLUGIN_MODULE}/backend -> ${HOST_MODULE}/_plugin_build/identity-ldap/backend"     && find src/backend/_plugin_build/identity-ldap/backend -name '*.go' -print0        | xargs -0 sed -i "s#"${PLUGIN_MODULE}/backend/#"${HOST_MODULE}/_plugin_build/identity-ldap/backend/#g"
-#12 0.662 rewriting imports github.com/therealmcsparrow/mcharbor-plugin-identity-ldap/backend -> github.com/therealmcsparrow/mcharbor/_plugin_build/identity-ldap/backend
-#12 DONE 0.8s
+#12 0.867 rewriting imports github.com/therealmcsparrow/mcharbor-plugin-identity-ldap/backend -> github.com/therealmcsparrow/mcharbor/_plugin_build/identity-ldap/backend
+#12 DONE 0.9s
 
 #13 [builder  9/14] WORKDIR /build/src/backend
-#13 DONE 0.5s
+#13 DONE 0.3s
 
 #14 [builder 10/14] RUN PLUGIN_KEEP_FILE=/build/src/backend/_plugin_build/identity-ldap/backend/host_link_keep.go &&     go run ./cmd/extract-core-plugin-symbols ./core/plugin > "$PLUGIN_KEEP_FILE" &&     echo "=== generated $PLUGIN_KEEP_FILE ===" &&     wc -l "$PLUGIN_KEEP_FILE" &&     head -25 "$PLUGIN_KEEP_FILE"
-#14 4.280 === generated /build/src/backend/_plugin_build/identity-ldap/backend/host_link_keep.go ===
-#14 4.281 864 /build/src/backend/_plugin_build/identity-ldap/backend/host_link_keep.go
-#14 4.281 // Code generated by docker/cmd/extract-core-plugin-symbols. DO NOT EDIT.
-#14 4.281 //
-#14 4.281 // Force-link every exported top-level symbol of every Go subpackage
-#14 4.281 // under github.com/therealmcsparrow/mcharbor/core/plugin/* so each
-#14 4.281 // subpackage's per-package ABI hash in the plugin .so matches the
-#14 4.281 // host binary's. Without this, the plugin linker prunes symbols the
-#14 4.281 // plugin does not directly use from each shared package, producing a
-#14 4.281 // strict-subset view that fails to load with "different version of
-#14 4.281 // package <subpkg>".
-#14 4.281 
-#14 4.281 package main
-#14 4.281 
-#14 4.281 import (
-#14 4.281 	"reflect"
-#14 4.281 	plugin "github.com/therealmcsparrow/mcharbor/core/plugin"
-#14 4.281 	contract "github.com/therealmcsparrow/mcharbor/core/plugin/contract"
-#14 4.281 	host "github.com/therealmcsparrow/mcharbor/core/plugin/host"
-#14 4.281 	services "github.com/therealmcsparrow/mcharbor/core/plugin/services"
-#14 4.281 	abac "github.com/therealmcsparrow/mcharbor/core/plugin/specs/abac"
-#14 4.281 	ai "github.com/therealmcsparrow/mcharbor/core/plugin/specs/ai"
-#14 4.281 	alerting "github.com/therealmcsparrow/mcharbor/core/plugin/specs/alerting"
-#14 4.281 	backup "github.com/therealmcsparrow/mcharbor/core/plugin/specs/backup"
-#14 4.281 	desiredstate "github.com/therealmcsparrow/mcharbor/core/plugin/specs/desiredstate"
-#14 4.281 	identity "github.com/therealmcsparrow/mcharbor/core/plugin/specs/identity"
-#14 4.281 	incident "github.com/therealmcsparrow/mcharbor/core/plugin/specs/incident"
-#14 DONE 4.3s
+#14 5.620 === generated /build/src/backend/_plugin_build/identity-ldap/backend/host_link_keep.go ===
+#14 5.621 864 /build/src/backend/_plugin_build/identity-ldap/backend/host_link_keep.go
+#14 5.621 // Code generated by docker/cmd/extract-core-plugin-symbols. DO NOT EDIT.
+#14 5.621 //
+#14 5.621 // Force-link every exported top-level symbol of every Go subpackage
+#14 5.621 // under github.com/therealmcsparrow/mcharbor/core/plugin/* so each
+#14 5.621 // subpackage's per-package ABI hash in the plugin .so matches the
+#14 5.621 // host binary's. Without this, the plugin linker prunes symbols the
+#14 5.621 // plugin does not directly use from each shared package, producing a
+#14 5.621 // strict-subset view that fails to load with "different version of
+#14 5.621 // package <subpkg>".
+#14 5.621 
+#14 5.621 package main
+#14 5.621 
+#14 5.621 import (
+#14 5.621 	"reflect"
+#14 5.621 	plugin "github.com/therealmcsparrow/mcharbor/core/plugin"
+#14 5.621 	contract "github.com/therealmcsparrow/mcharbor/core/plugin/contract"
+#14 5.621 	host "github.com/therealmcsparrow/mcharbor/core/plugin/host"
+#14 5.621 	services "github.com/therealmcsparrow/mcharbor/core/plugin/services"
+#14 5.621 	abac "github.com/therealmcsparrow/mcharbor/core/plugin/specs/abac"
+#14 5.621 	ai "github.com/therealmcsparrow/mcharbor/core/plugin/specs/ai"
+#14 5.621 	alerting "github.com/therealmcsparrow/mcharbor/core/plugin/specs/alerting"
+#14 5.621 	backup "github.com/therealmcsparrow/mcharbor/core/plugin/specs/backup"
+#14 5.621 	desiredstate "github.com/therealmcsparrow/mcharbor/core/plugin/specs/desiredstate"
+#14 5.621 	identity "github.com/therealmcsparrow/mcharbor/core/plugin/specs/identity"
+#14 5.621 	incident "github.com/therealmcsparrow/mcharbor/core/plugin/specs/incident"
+#14 DONE 5.7s
 
 #15 [builder 11/14] WORKDIR /build/src/backend
-#15 DONE 0.4s
+#15 DONE 0.2s
 
 #16 [builder 12/14] RUN awk '/^[[:space:]]+[A-Za-z0-9.-]+\.[A-Za-z]+\/[^ ]+ v[0-9]/{print $1}' go.mod         | tr -d '\r' | sort -u > /tmp/host-modules.txt  && PLUGIN_DEPS=$(grep -E '^\s+[A-Za-z0-9.-]+\.[A-Za-z]+/[^ ]+ v[0-9]'         /build/src/plugins/Plugins/identity-ldap/go.mod 2>/dev/null |         tr -d '\r' |         awk '{print $1 "@" $2}' |         grep -v 'github.com/therealmcsparrow/mcharbor' || true) &&     if [ -n "$PLUGIN_DEPS" ]; then         for dep in $PLUGIN_DEPS; do             mod="${dep%@*}";             if grep -Fxq "$mod" /tmp/host-modules.txt; then                 echo "keeping host pin for $mod (plugin asked for ${dep#*@})";                 continue;             fi;             go get "$dep" >/tmp/goget.log 2>&1 || { echo "go get $dep failed:"; cat /tmp/goget.log; };         done;     fi
-#16 4.691 keeping host pin for github.com/google/uuid (plugin asked for v1.6.0)
-#16 4.896 keeping host pin for golang.org/x/crypto (plugin asked for v0.57.0)
-#16 DONE 5.0s
+#16 1.927 keeping host pin for github.com/google/uuid (plugin asked for v1.6.0)
+#16 2.057 keeping host pin for golang.org/x/crypto (plugin asked for v0.57.0)
+#16 DONE 2.1s
 
 #17 [builder 13/14] RUN CGO_ENABLED=1 go build -trimpath -buildmode=plugin          -o /tmp/identity-ldap.so         ./_plugin_build/identity-ldap/backend
-#17 DONE 12.5s
+#17 DONE 16.2s
 
-#18 [builder 14/14] RUN RESOLVED_PLUGIN_VERSION="2026.10.01"     && if [ -z "${RESOLVED_PLUGIN_VERSION}" ]; then          RESOLVED_PLUGIN_VERSION=$(awk '/^version:[[:space:]]*/{print $2; exit}' "/build/src/plugins/Plugins/identity-ldap/plugin.yaml" | tr -d '"\r');        fi     && test -n "${RESOLVED_PLUGIN_VERSION}"     && mkdir -p /tmp/payload/backend     && cp /build/src/plugins/Plugins/identity-ldap/plugin.yaml /tmp/payload/     && if [ -n "202610212129" ]; then          sed -i '/^build:/d' /tmp/payload/plugin.yaml &&          { [ -z "$(tail -c1 /tmp/payload/plugin.yaml)" ] || echo >> /tmp/payload/plugin.yaml; } &&          echo "build:    "202610212129"" >> /tmp/payload/plugin.yaml;        fi     && if [ -d /build/src/plugins/Plugins/identity-ldap/i18n ]; then          cp -R /build/src/plugins/Plugins/identity-ldap/i18n /tmp/payload/;        fi     && if [ -f /build/src/plugins/Plugins/identity-ldap/frontend/identity-ldap.umd.cjs ]; then          mkdir -p /tmp/payload/frontend &&            cp /build/src/plugins/Plugins/identity-ldap/frontend/identity-ldap.umd.cjs /tmp/payload/frontend/;        else          echo "warning: frontend/identity-ldap.umd.cjs missing — ConfigForm/SetupGuide will render blank" >&2;        fi     && if [ -d /build/src/plugins/Plugins/identity-ldap/icons ]; then          mkdir -p /tmp/payload/icons &&            cp -R /build/src/plugins/Plugins/identity-ldap/icons/. /tmp/payload/icons/;        fi     && if [ -d /build/src/plugins/Plugins/identity-ldap/migrations ]; then          cp -R /build/src/plugins/Plugins/identity-ldap/migrations /tmp/payload/;        fi     && if [ -f /build/src/plugins/Plugins/identity-ldap/THIRD_PARTY_NOTICES.md ]; then          cp /build/src/plugins/Plugins/identity-ldap/THIRD_PARTY_NOTICES.md /tmp/payload/;        fi     && cp /tmp/identity-ldap.so /tmp/payload/backend/identity-ldap.so     && mkdir -p /tmp/packaged     && tar -C /tmp/payload -czf /tmp/packaged/identity-ldap-${RESOLVED_PLUGIN_VERSION}.tar.gz .     && ls -la /tmp/packaged/
-#18 1.106 total 8076
-#18 1.106 drwxr-xr-x 2 root root    4096 Oct 21 21:31 .
-#18 1.106 drwxrwxrwt 1 root root    4096 Oct 21 21:31 ..
-#18 1.106 -rw-r--r-- 1 root root 8260510 Oct 21 21:31 identity-ldap-2026.10.01.tar.gz
-#18 DONE 1.2s
+#18 [builder 14/14] RUN RESOLVED_PLUGIN_VERSION="2026.10.01"     && if [ -z "${RESOLVED_PLUGIN_VERSION}" ]; then          RESOLVED_PLUGIN_VERSION=$(awk '/^version:[[:space:]]*/{print $2; exit}' "/build/src/plugins/Plugins/identity-ldap/plugin.yaml" | tr -d '"\r');        fi     && test -n "${RESOLVED_PLUGIN_VERSION}"     && mkdir -p /tmp/payload/backend     && cp /build/src/plugins/Plugins/identity-ldap/plugin.yaml /tmp/payload/     && if [ -n "202611060444" ]; then          sed -i '/^build:/d' /tmp/payload/plugin.yaml &&          { [ -z "$(tail -c1 /tmp/payload/plugin.yaml)" ] || echo >> /tmp/payload/plugin.yaml; } &&          echo "build:    "202611060444"" >> /tmp/payload/plugin.yaml;        fi     && if [ -d /build/src/plugins/Plugins/identity-ldap/i18n ]; then          cp -R /build/src/plugins/Plugins/identity-ldap/i18n /tmp/payload/;        fi     && if [ -f /build/src/plugins/Plugins/identity-ldap/frontend/identity-ldap.umd.cjs ]; then          mkdir -p /tmp/payload/frontend &&            cp /build/src/plugins/Plugins/identity-ldap/frontend/identity-ldap.umd.cjs /tmp/payload/frontend/;        else          echo "warning: frontend/identity-ldap.umd.cjs missing — ConfigForm/SetupGuide will render blank" >&2;        fi     && if [ -d /build/src/plugins/Plugins/identity-ldap/icons ]; then          mkdir -p /tmp/payload/icons &&            cp -R /build/src/plugins/Plugins/identity-ldap/icons/. /tmp/payload/icons/;        fi     && if [ -d /build/src/plugins/Plugins/identity-ldap/migrations ]; then          cp -R /build/src/plugins/Plugins/identity-ldap/migrations /tmp/payload/;        fi     && if [ -f /build/src/plugins/Plugins/identity-ldap/THIRD_PARTY_NOTICES.md ]; then          cp /build/src/plugins/Plugins/identity-ldap/THIRD_PARTY_NOTICES.md /tmp/payload/;        fi     && cp /tmp/identity-ldap.so /tmp/payload/backend/identity-ldap.so     && mkdir -p /tmp/packaged     && tar -C /tmp/payload -czf /tmp/packaged/identity-ldap-${RESOLVED_PLUGIN_VERSION}.tar.gz .     && ls -la /tmp/packaged/
+#18 1.247 total 8076
+#18 1.247 drwxr-xr-x 2 root root    4096 Nov  6 04:45 .
+#18 1.247 drwxrwxrwt 1 root root    4096 Nov  6 04:45 ..
+#18 1.247 -rw-r--r-- 1 root root 8260509 Nov  6 04:45 identity-ldap-2026.10.01.tar.gz
+#18 DONE 1.3s
 
 #19 [plugin-packager 1/1] COPY --from=builder /tmp/packaged/ /packaged/
-#19 DONE 0.2s
+#19 DONE 0.1s
 
 #20 exporting to client tarball
-#20 sending tarball 0.0s done
-#20 DONE 0.0s
+#20 sending tarball 0.1s done
+#20 DONE 0.1s
 
-View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/65uytw601qsw9cbzt09bxho0a
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/p15s0n616kzyv5yl0dmsssk1h
 >>> extracting packaged/identity-ldap-2026.10.01.tar.gz
 >>> signing identity-ldap-2026.10.01.tar.gz with plugin-signing.key and verifying against plugin-signing.pub
 pluginsigner: verified 1 signature(s) against Z:/projects/web/management/McHarbor/signing/plugin-signing.pub
@@ -150,7 +149,7 @@ pluginsigner: signed 1 tarballs, recorded 0 catalog signatures
 >>> wrote /z/projects/web/management/McHarbor/mnt/plugin-catalog/files/identity-ldap-2026.10.01.tar.gz.sig
 >>> wrote /z/projects/web/management/McHarbor/mnt/plugin-catalog/icons/identity-ldap/ (2 icon(s))
 
-    download_url: https://www.mcharbor.eu/catalog/plugins/files/identity-ldap-2026.10.01.tar.gz
+    download_url: https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/identity-ldap-2026.10.01.tar.gz
 
     Copy the contents of /z/projects/web/management/McHarbor/mnt/plugin-catalog
     over the catalog root, then restart the container so the

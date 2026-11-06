@@ -10,10 +10,10 @@
   "versions": [
     {
       "version": "2026.10.01",
-      "build": "202610211556",
+      "build": "202611060439",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/addon-kubernetes-2026.10.01.tar.gz",
-      "built_for": "2026.10.01",
-      "signature": "nbTl0unF5O9mIMGQpqiE6jHIS3CPo+ODTwan+QAKf5w5kW1eGdxaKrGC+6w4QdnWODSgGrtHBIgt+Bq6Kew4Aw=="
+      "built_for": "2026.11.01",
+      "signature": "qjPFqnSrAbIMTiB71VNknAuXWAxzawW+BsNbXZ35xJw2UrYYeLblYF1p4VYt0k4p1u/RHNivWHbpmcQ6AMTOBQ=="
     }
   ]
 }

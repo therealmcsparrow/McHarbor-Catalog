@@ -1,7 +1,7 @@
 >>> plugin      snapshot-truenas@2026.10.01
 >>> source      /z/projects/web/management/McHarbor/src/plugins/Plugins/snapshot-truenas
 >>> output      /z/projects/web/management/McHarbor/mnt/plugin-catalog
->>> catalog     https://www.mcharbor.eu/catalog/plugins
+>>> catalog     https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins
 
 >>> building frontend UMD bundle for snapshot-truenas
 
@@ -17,7 +17,7 @@ transforming...
 rendering chunks...
 computing gzip size...
 [2m./[22m[36msnapshot-truenas.umd.cjs  [39m[1m[33m530.03 kB[39m[22m[2m │ gzip: 165.87 kB[22m
-[32m✓ built in 1m 5s[39m
+[32m✓ built in 6.51s[39m
 >>> built /z/projects/web/management/McHarbor/src/plugins/Plugins/snapshot-truenas/frontend/snapshot-truenas.umd.cjs (has McharborPlugin_snapshot_truenas + mount)
 >>> running plugin-packager for snapshot-truenas@2026.10.01 (first run: 3-5 min cold)
 #0 building with "desktop-linux" instance using docker driver
@@ -27,45 +27,28 @@ computing gzip size...
 #1 DONE 0.0s
 
 #2 [internal] load metadata for docker.io/library/golang:1.27.2-bookworm
-#2 DONE 0.8s
+#2 DONE 0.1s
 
-#3 [internal] load .dockerignore
-#3 transferring context: 1.67kB done
-#3 DONE 0.1s
+#3 [builder  1/14] FROM docker.io/library/golang:1.27.2-bookworm@sha256:5cf287a799e6b94384bad13d16b14904c531f51ba65792237e122ce42b392f61
+#3 resolve docker.io/library/golang:1.27.2-bookworm@sha256:5cf287a799e6b94384bad13d16b14904c531f51ba65792237e122ce42b392f61 0.1s done
+#3 CACHED
 
-#4 [builder  1/14] FROM docker.io/library/golang:1.27.2-bookworm@sha256:5cf287a799e6b94384bad13d16b14904c531f51ba65792237e122ce42b392f61
-#4 resolve docker.io/library/golang:1.27.2-bookworm@sha256:5cf287a799e6b94384bad13d16b14904c531f51ba65792237e122ce42b392f61 0.0s done
-#4 CACHED
+#4 [internal] load .dockerignore
+#4 transferring context: 1.67kB done
+#4 DONE 0.1s
 
 #5 [internal] load build context
-#5 transferring context: 777.33kB 0.3s done
-#5 DONE 0.3s
+#5 transferring context: 779.80kB 0.3s done
+#5 DONE 0.4s
 
 #6 [builder  2/14] RUN apt-get update     && apt-get install -y --no-install-recommends git bash gcc libc6-dev     && apt-get clean && find /var/lib/apt/lists -mindepth 1 -delete
-#6 0.475 Get:1 http://deb.debian.org/debian bookworm InRelease [151 kB]
-#6 0.494 Get:2 http://deb.debian.org/debian bookworm-updates InRelease [55.4 kB]
-#6 0.506 Get:3 http://deb.debian.org/debian-security bookworm-security InRelease [34.8 kB]
-#6 0.543 Get:4 http://deb.debian.org/debian bookworm/main amd64 Packages [8790 kB]
-#6 0.917 Get:5 http://deb.debian.org/debian bookworm-updates/main amd64 Packages [6924 B]
-#6 0.920 Get:6 http://deb.debian.org/debian-security bookworm-security/main amd64 Packages [353 kB]
-#6 1.608 Fetched 9391 kB in 1s (8064 kB/s)
-#6 1.608 Reading package lists...
-#6 2.070 Reading package lists...
-#6 2.583 Building dependency tree...
-#6 2.714 Reading state information...
-#6 2.902 git is already the newest version (1:2.39.5-0+deb12u3).
-#6 2.902 bash is already the newest version (5.2.15-2+b13).
-#6 2.902 bash set to manually installed.
-#6 2.902 gcc is already the newest version (4:12.2.0-3).
-#6 2.902 libc6-dev is already the newest version (2.36-9+deb12u14).
-#6 2.902 0 upgraded, 0 newly installed, 0 to remove and 4 not upgraded.
-#6 DONE 3.0s
+#6 CACHED
 
 #7 [builder  3/14] WORKDIR /build
-#7 DONE 0.3s
+#7 CACHED
 
 #8 [builder  4/14] COPY src/backend/ ./src/backend/
-#8 DONE 0.4s
+#8 DONE 0.5s
 
 #9 [builder  5/14] COPY src/plugins/Plugins/snapshot-truenas/ ./src/plugins/Plugins/snapshot-truenas/
 #9 DONE 0.2s
@@ -74,72 +57,72 @@ computing gzip size...
 #10 DONE 0.5s
 
 #11 [builder  7/14] RUN mkdir -p src/backend/_plugin_build/snapshot-truenas/backend     && cp -R src/plugins/Plugins/snapshot-truenas/backend/.         src/backend/_plugin_build/snapshot-truenas/backend/     && ls src/backend/_plugin_build/snapshot-truenas/backend/
-#11 0.932 http_helpers.go
-#11 0.932 main.go
-#11 0.932 truenas_client.go
-#11 DONE 1.0s
+#11 0.586 http_helpers.go
+#11 0.586 main.go
+#11 0.586 truenas_client.go
+#11 DONE 0.6s
 
 #12 [builder  8/14] RUN PLUGIN_MODULE="$(awk '/^module /{print $2; exit}' src/plugins/Plugins/snapshot-truenas/go.mod | tr -d '\r')"     && HOST_MODULE="$(awk '/^module /{print $2; exit}' src/backend/go.mod | tr -d '\r')"     && echo "rewriting imports ${PLUGIN_MODULE}/backend -> ${HOST_MODULE}/_plugin_build/snapshot-truenas/backend"     && find src/backend/_plugin_build/snapshot-truenas/backend -name '*.go' -print0        | xargs -0 sed -i "s#"${PLUGIN_MODULE}/backend/#"${HOST_MODULE}/_plugin_build/snapshot-truenas/backend/#g"
-#12 0.671 rewriting imports github.com/therealmcsparrow/mcharbor/plugins/snapshot-truenas/backend -> github.com/therealmcsparrow/mcharbor/_plugin_build/snapshot-truenas/backend
-#12 DONE 0.7s
+#12 0.810 rewriting imports github.com/therealmcsparrow/mcharbor/plugins/snapshot-truenas/backend -> github.com/therealmcsparrow/mcharbor/_plugin_build/snapshot-truenas/backend
+#12 DONE 0.9s
 
 #13 [builder  9/14] WORKDIR /build/src/backend
 #13 DONE 0.3s
 
 #14 [builder 10/14] RUN PLUGIN_KEEP_FILE=/build/src/backend/_plugin_build/snapshot-truenas/backend/host_link_keep.go &&     go run ./cmd/extract-core-plugin-symbols ./core/plugin > "$PLUGIN_KEEP_FILE" &&     echo "=== generated $PLUGIN_KEEP_FILE ===" &&     wc -l "$PLUGIN_KEEP_FILE" &&     head -25 "$PLUGIN_KEEP_FILE"
-#14 3.880 === generated /build/src/backend/_plugin_build/snapshot-truenas/backend/host_link_keep.go ===
-#14 3.881 864 /build/src/backend/_plugin_build/snapshot-truenas/backend/host_link_keep.go
-#14 3.882 // Code generated by docker/cmd/extract-core-plugin-symbols. DO NOT EDIT.
-#14 3.882 //
-#14 3.882 // Force-link every exported top-level symbol of every Go subpackage
-#14 3.882 // under github.com/therealmcsparrow/mcharbor/core/plugin/* so each
-#14 3.882 // subpackage's per-package ABI hash in the plugin .so matches the
-#14 3.882 // host binary's. Without this, the plugin linker prunes symbols the
-#14 3.882 // plugin does not directly use from each shared package, producing a
-#14 3.882 // strict-subset view that fails to load with "different version of
-#14 3.882 // package <subpkg>".
-#14 3.882 
-#14 3.882 package main
-#14 3.882 
-#14 3.882 import (
-#14 3.882 	"reflect"
-#14 3.882 	plugin "github.com/therealmcsparrow/mcharbor/core/plugin"
-#14 3.882 	contract "github.com/therealmcsparrow/mcharbor/core/plugin/contract"
-#14 3.882 	host "github.com/therealmcsparrow/mcharbor/core/plugin/host"
-#14 3.882 	services "github.com/therealmcsparrow/mcharbor/core/plugin/services"
-#14 3.882 	abac "github.com/therealmcsparrow/mcharbor/core/plugin/specs/abac"
-#14 3.882 	ai "github.com/therealmcsparrow/mcharbor/core/plugin/specs/ai"
-#14 3.882 	alerting "github.com/therealmcsparrow/mcharbor/core/plugin/specs/alerting"
-#14 3.882 	backup "github.com/therealmcsparrow/mcharbor/core/plugin/specs/backup"
-#14 3.882 	desiredstate "github.com/therealmcsparrow/mcharbor/core/plugin/specs/desiredstate"
-#14 3.882 	identity "github.com/therealmcsparrow/mcharbor/core/plugin/specs/identity"
-#14 3.882 	incident "github.com/therealmcsparrow/mcharbor/core/plugin/specs/incident"
-#14 DONE 3.9s
+#14 6.910 === generated /build/src/backend/_plugin_build/snapshot-truenas/backend/host_link_keep.go ===
+#14 6.911 864 /build/src/backend/_plugin_build/snapshot-truenas/backend/host_link_keep.go
+#14 6.913 // Code generated by docker/cmd/extract-core-plugin-symbols. DO NOT EDIT.
+#14 6.913 //
+#14 6.913 // Force-link every exported top-level symbol of every Go subpackage
+#14 6.913 // under github.com/therealmcsparrow/mcharbor/core/plugin/* so each
+#14 6.913 // subpackage's per-package ABI hash in the plugin .so matches the
+#14 6.913 // host binary's. Without this, the plugin linker prunes symbols the
+#14 6.913 // plugin does not directly use from each shared package, producing a
+#14 6.913 // strict-subset view that fails to load with "different version of
+#14 6.913 // package <subpkg>".
+#14 6.913 
+#14 6.913 package main
+#14 6.913 
+#14 6.913 import (
+#14 6.913 	"reflect"
+#14 6.913 	plugin "github.com/therealmcsparrow/mcharbor/core/plugin"
+#14 6.913 	contract "github.com/therealmcsparrow/mcharbor/core/plugin/contract"
+#14 6.913 	host "github.com/therealmcsparrow/mcharbor/core/plugin/host"
+#14 6.913 	services "github.com/therealmcsparrow/mcharbor/core/plugin/services"
+#14 6.913 	abac "github.com/therealmcsparrow/mcharbor/core/plugin/specs/abac"
+#14 6.913 	ai "github.com/therealmcsparrow/mcharbor/core/plugin/specs/ai"
+#14 6.913 	alerting "github.com/therealmcsparrow/mcharbor/core/plugin/specs/alerting"
+#14 6.913 	backup "github.com/therealmcsparrow/mcharbor/core/plugin/specs/backup"
+#14 6.913 	desiredstate "github.com/therealmcsparrow/mcharbor/core/plugin/specs/desiredstate"
+#14 6.913 	identity "github.com/therealmcsparrow/mcharbor/core/plugin/specs/identity"
+#14 6.913 	incident "github.com/therealmcsparrow/mcharbor/core/plugin/specs/incident"
+#14 DONE 7.0s
 
 #15 [builder 11/14] WORKDIR /build/src/backend
-#15 DONE 0.1s
+#15 DONE 0.2s
 
 #16 [builder 12/14] RUN awk '/^[[:space:]]+[A-Za-z0-9.-]+\.[A-Za-z]+\/[^ ]+ v[0-9]/{print $1}' go.mod         | tr -d '\r' | sort -u > /tmp/host-modules.txt  && PLUGIN_DEPS=$(grep -E '^\s+[A-Za-z0-9.-]+\.[A-Za-z]+/[^ ]+ v[0-9]'         /build/src/plugins/Plugins/snapshot-truenas/go.mod 2>/dev/null |         tr -d '\r' |         awk '{print $1 "@" $2}' |         grep -v 'github.com/therealmcsparrow/mcharbor' || true) &&     if [ -n "$PLUGIN_DEPS" ]; then         for dep in $PLUGIN_DEPS; do             mod="${dep%@*}";             if grep -Fxq "$mod" /tmp/host-modules.txt; then                 echo "keeping host pin for $mod (plugin asked for ${dep#*@})";                 continue;             fi;             go get "$dep" >/tmp/goget.log 2>&1 || { echo "go get $dep failed:"; cat /tmp/goget.log; };         done;     fi
-#16 DONE 0.6s
+#16 DONE 0.5s
 
 #17 [builder 13/14] RUN CGO_ENABLED=1 go build -trimpath -buildmode=plugin          -o /tmp/snapshot-truenas.so         ./_plugin_build/snapshot-truenas/backend
-#17 DONE 19.3s
+#17 DONE 17.2s
 
-#18 [builder 14/14] RUN RESOLVED_PLUGIN_VERSION="2026.10.01"     && if [ -z "${RESOLVED_PLUGIN_VERSION}" ]; then          RESOLVED_PLUGIN_VERSION=$(awk '/^version:[[:space:]]*/{print $2; exit}' "/build/src/plugins/Plugins/snapshot-truenas/plugin.yaml" | tr -d '"\r');        fi     && test -n "${RESOLVED_PLUGIN_VERSION}"     && mkdir -p /tmp/payload/backend     && cp /build/src/plugins/Plugins/snapshot-truenas/plugin.yaml /tmp/payload/     && if [ -n "202610161446" ]; then          sed -i '/^build:/d' /tmp/payload/plugin.yaml &&          { [ -z "$(tail -c1 /tmp/payload/plugin.yaml)" ] || echo >> /tmp/payload/plugin.yaml; } &&          echo "build:    "202610161446"" >> /tmp/payload/plugin.yaml;        fi     && if [ -d /build/src/plugins/Plugins/snapshot-truenas/i18n ]; then          cp -R /build/src/plugins/Plugins/snapshot-truenas/i18n /tmp/payload/;        fi     && if [ -f /build/src/plugins/Plugins/snapshot-truenas/frontend/snapshot-truenas.umd.cjs ]; then          mkdir -p /tmp/payload/frontend &&            cp /build/src/plugins/Plugins/snapshot-truenas/frontend/snapshot-truenas.umd.cjs /tmp/payload/frontend/;        else          echo "warning: frontend/snapshot-truenas.umd.cjs missing — ConfigForm/SetupGuide will render blank" >&2;        fi     && if [ -d /build/src/plugins/Plugins/snapshot-truenas/icons ]; then          mkdir -p /tmp/payload/icons &&            cp -R /build/src/plugins/Plugins/snapshot-truenas/icons/. /tmp/payload/icons/;        fi     && if [ -d /build/src/plugins/Plugins/snapshot-truenas/migrations ]; then          cp -R /build/src/plugins/Plugins/snapshot-truenas/migrations /tmp/payload/;        fi     && if [ -f /build/src/plugins/Plugins/snapshot-truenas/THIRD_PARTY_NOTICES.md ]; then          cp /build/src/plugins/Plugins/snapshot-truenas/THIRD_PARTY_NOTICES.md /tmp/payload/;        fi     && cp /tmp/snapshot-truenas.so /tmp/payload/backend/snapshot-truenas.so     && mkdir -p /tmp/packaged     && tar -C /tmp/payload -czf /tmp/packaged/snapshot-truenas-${RESOLVED_PLUGIN_VERSION}.tar.gz .     && ls -la /tmp/packaged/
-#18 1.199 total 8300
-#18 1.199 drwxr-xr-x 2 root root    4096 Oct 16 14:47 .
-#18 1.199 drwxrwxrwt 1 root root    4096 Oct 16 14:47 ..
-#18 1.199 -rw-r--r-- 1 root root 8490143 Oct 16 14:47 snapshot-truenas-2026.10.01.tar.gz
-#18 DONE 1.3s
+#18 [builder 14/14] RUN RESOLVED_PLUGIN_VERSION="2026.10.01"     && if [ -z "${RESOLVED_PLUGIN_VERSION}" ]; then          RESOLVED_PLUGIN_VERSION=$(awk '/^version:[[:space:]]*/{print $2; exit}' "/build/src/plugins/Plugins/snapshot-truenas/plugin.yaml" | tr -d '"\r');        fi     && test -n "${RESOLVED_PLUGIN_VERSION}"     && mkdir -p /tmp/payload/backend     && cp /build/src/plugins/Plugins/snapshot-truenas/plugin.yaml /tmp/payload/     && if [ -n "202611060445" ]; then          sed -i '/^build:/d' /tmp/payload/plugin.yaml &&          { [ -z "$(tail -c1 /tmp/payload/plugin.yaml)" ] || echo >> /tmp/payload/plugin.yaml; } &&          echo "build:    "202611060445"" >> /tmp/payload/plugin.yaml;        fi     && if [ -d /build/src/plugins/Plugins/snapshot-truenas/i18n ]; then          cp -R /build/src/plugins/Plugins/snapshot-truenas/i18n /tmp/payload/;        fi     && if [ -f /build/src/plugins/Plugins/snapshot-truenas/frontend/snapshot-truenas.umd.cjs ]; then          mkdir -p /tmp/payload/frontend &&            cp /build/src/plugins/Plugins/snapshot-truenas/frontend/snapshot-truenas.umd.cjs /tmp/payload/frontend/;        else          echo "warning: frontend/snapshot-truenas.umd.cjs missing — ConfigForm/SetupGuide will render blank" >&2;        fi     && if [ -d /build/src/plugins/Plugins/snapshot-truenas/icons ]; then          mkdir -p /tmp/payload/icons &&            cp -R /build/src/plugins/Plugins/snapshot-truenas/icons/. /tmp/payload/icons/;        fi     && if [ -d /build/src/plugins/Plugins/snapshot-truenas/migrations ]; then          cp -R /build/src/plugins/Plugins/snapshot-truenas/migrations /tmp/payload/;        fi     && if [ -f /build/src/plugins/Plugins/snapshot-truenas/THIRD_PARTY_NOTICES.md ]; then          cp /build/src/plugins/Plugins/snapshot-truenas/THIRD_PARTY_NOTICES.md /tmp/payload/;        fi     && cp /tmp/snapshot-truenas.so /tmp/payload/backend/snapshot-truenas.so     && mkdir -p /tmp/packaged     && tar -C /tmp/payload -czf /tmp/packaged/snapshot-truenas-${RESOLVED_PLUGIN_VERSION}.tar.gz .     && ls -la /tmp/packaged/
+#18 1.329 total 8300
+#18 1.329 drwxr-xr-x 2 root root    4096 Nov  6 04:45 .
+#18 1.329 drwxrwxrwt 1 root root    4096 Nov  6 04:45 ..
+#18 1.329 -rw-r--r-- 1 root root 8489263 Nov  6 04:45 snapshot-truenas-2026.10.01.tar.gz
+#18 DONE 1.4s
 
 #19 [plugin-packager 1/1] COPY --from=builder /tmp/packaged/ /packaged/
-#19 DONE 0.3s
+#19 DONE 0.1s
 
 #20 exporting to client tarball
 #20 sending tarball 0.1s done
 #20 DONE 0.1s
 
-View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/ozuoi19qe0fa8osc6rbt7i2al
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/vfj5jrz8afrmk511xdo1c3arr
 >>> extracting packaged/snapshot-truenas-2026.10.01.tar.gz
 >>> signing snapshot-truenas-2026.10.01.tar.gz with plugin-signing.key and verifying against plugin-signing.pub
 pluginsigner: verified 1 signature(s) against Z:/projects/web/management/McHarbor/signing/plugin-signing.pub
@@ -151,7 +134,7 @@ pluginsigner: signed 1 tarballs, recorded 0 catalog signatures
 >>> wrote /z/projects/web/management/McHarbor/mnt/plugin-catalog/files/snapshot-truenas-2026.10.01.tar.gz.sig
 >>> wrote /z/projects/web/management/McHarbor/mnt/plugin-catalog/icons/snapshot-truenas/ (2 icon(s))
 
-    download_url: https://www.mcharbor.eu/catalog/plugins/files/snapshot-truenas-2026.10.01.tar.gz
+    download_url: https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/snapshot-truenas-2026.10.01.tar.gz
 
     Copy the contents of /z/projects/web/management/McHarbor/mnt/plugin-catalog
     over the catalog root, then restart the container so the

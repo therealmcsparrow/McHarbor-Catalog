@@ -10,10 +10,10 @@
   "versions": [
     {
       "version": "2026.10.01",
-      "build": "202610161438",
+      "build": "202611060441",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/ai-provider-lmstudio-2026.10.01.tar.gz",
-      "built_for": "2026.10.01",
-      "signature": "P:/Programs/Git/sQV1n6ojWikZNTB0wQ+LWWqwAGYqHSl53we3DU8ffVndksCxy+/jmaLcZ2KyXv43lrM2Qtzjh+zohwYx0xvDg=="
+      "built_for": "2026.11.01",
+      "signature": "eixtW+2kJGVgJr4fXXXlezNDTJgtYYJOPU5b5m21D4AWWjZBV3q45Fz1E4JMs7/2NRkotP+BH3bjIwYe+bhhCw=="
     }
   ]
 }

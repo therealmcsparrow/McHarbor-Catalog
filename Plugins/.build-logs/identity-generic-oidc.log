@@ -1,14 +1,14 @@
 >>> plugin      identity-generic-oidc@2026.10.01
 >>> source      /z/projects/web/management/McHarbor/src/plugins/Plugins/identity-generic-oidc
 >>> output      /z/projects/web/management/McHarbor/mnt/plugin-catalog
->>> catalog     https://www.mcharbor.eu/catalog/plugins
+>>> catalog     https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins
 
 >>> building frontend UMD bundle for identity-generic-oidc
 
 > mcharbor-plugin-identity-generic-oidc-frontend@1.0.0 build
 > vite build --config vite-plugin.config.ts
 
-[2m16:43:39[22m [33m[1m[vite][22m[39m [33mwarning: `esbuild` option was specified by "vite:react-babel" plugin. This option is deprecated, please use `oxc` instead.[39m
+[2m05:44:15[22m [33m[1m[vite][22m[39m [33mwarning: `esbuild` option was specified by "vite:react-babel" plugin. This option is deprecated, please use `oxc` instead.[39m
 `optimizeDeps.rollupOptions` / `ssr.optimizeDeps.rollupOptions` is deprecated. Use `optimizeDeps.rolldownOptions` instead. Note that this option may be set by a plugin. Set VITE_DEPRECATION_TRACE=1 to see where it is called.
 [vite:react-babel] We recommend switching to `@vitejs/plugin-react-oxc` for improved performance. More information at https://vite.dev/rolldown
 [33m
@@ -25,7 +25,7 @@ computing gzip size...
 
 [33m[33m[MIXED_EXPORTS] [0mEntry module "src/index.tsx" is using named (including "ConfigForm", "SetupGuide", "default", "mount") and default exports together. Consumers of your bundle will have to use `McharborPlugin_identity_generic_oidc.default` to access the default export, which may not be what you want. Use `output.exports: "named"` to disable this warning.
 [39m
-[32m✓ built in 543ms[39m
+[32m✓ built in 371ms[39m
 >>> built /z/projects/web/management/McHarbor/src/plugins/Plugins/identity-generic-oidc/frontend/identity-generic-oidc.umd.cjs (has McharborPlugin_identity_generic_oidc + mount)
 >>> running plugin-packager for identity-generic-oidc@2026.10.01 (first run: 3-5 min cold)
 #0 building with "desktop-linux" instance using docker driver
@@ -35,7 +35,7 @@ computing gzip size...
 #1 DONE 0.0s
 
 #2 [internal] load metadata for docker.io/library/golang:1.27.2-bookworm
-#2 DONE 0.3s
+#2 DONE 0.1s
 
 #3 [builder  1/14] FROM docker.io/library/golang:1.27.2-bookworm@sha256:5cf287a799e6b94384bad13d16b14904c531f51ba65792237e122ce42b392f61
 #3 resolve docker.io/library/golang:1.27.2-bookworm@sha256:5cf287a799e6b94384bad13d16b14904c531f51ba65792237e122ce42b392f61 0.1s done
@@ -46,107 +46,90 @@ computing gzip size...
 #4 DONE 0.0s
 
 #5 [internal] load build context
-#5 transferring context: 1.54MB 0.2s done
-#5 DONE 0.2s
+#5 transferring context: 1.55MB 0.4s done
+#5 DONE 0.4s
 
 #6 [builder  2/14] RUN apt-get update     && apt-get install -y --no-install-recommends git bash gcc libc6-dev     && apt-get clean && find /var/lib/apt/lists -mindepth 1 -delete
-#6 0.328 Get:1 http://deb.debian.org/debian bookworm InRelease [151 kB]
-#6 0.344 Get:2 http://deb.debian.org/debian bookworm-updates InRelease [55.4 kB]
-#6 0.362 Get:3 http://deb.debian.org/debian-security bookworm-security InRelease [34.8 kB]
-#6 0.399 Get:4 http://deb.debian.org/debian bookworm/main amd64 Packages [8790 kB]
-#6 0.994 Get:5 http://deb.debian.org/debian bookworm-updates/main amd64 Packages [6924 B]
-#6 0.994 Get:6 http://deb.debian.org/debian-security bookworm-security/main amd64 Packages [353 kB]
-#6 1.634 Fetched 9391 kB in 1s (7108 kB/s)
-#6 1.634 Reading package lists...
-#6 2.044 Reading package lists...
-#6 2.433 Building dependency tree...
-#6 2.537 Reading state information...
-#6 2.652 git is already the newest version (1:2.39.5-0+deb12u3).
-#6 2.652 bash is already the newest version (5.2.15-2+b13).
-#6 2.652 bash set to manually installed.
-#6 2.652 gcc is already the newest version (4:12.2.0-3).
-#6 2.652 libc6-dev is already the newest version (2.36-9+deb12u14).
-#6 2.652 0 upgraded, 0 newly installed, 0 to remove and 4 not upgraded.
-#6 DONE 2.9s
+#6 CACHED
 
 #7 [builder  3/14] WORKDIR /build
-#7 DONE 0.2s
+#7 CACHED
 
 #8 [builder  4/14] COPY src/backend/ ./src/backend/
-#8 DONE 0.3s
+#8 DONE 0.5s
 
 #9 [builder  5/14] COPY src/plugins/Plugins/identity-generic-oidc/ ./src/plugins/Plugins/identity-generic-oidc/
-#9 DONE 0.6s
+#9 DONE 0.3s
 
 #10 [builder  6/14] RUN if [ -z "2026.10.01" ]; then         PLUGIN_VERSION=$(awk '/^version:[[:space:]]*/{print $2; exit}' "src/plugins/Plugins/identity-generic-oidc/plugin.yaml" | tr -d '"\r');         echo "resolved PLUGIN_VERSION=2026.10.01 from plugin.yaml";     fi
-#10 DONE 0.4s
+#10 DONE 0.5s
 
 #11 [builder  7/14] RUN mkdir -p src/backend/_plugin_build/identity-generic-oidc/backend     && cp -R src/plugins/Plugins/identity-generic-oidc/backend/.         src/backend/_plugin_build/identity-generic-oidc/backend/     && ls src/backend/_plugin_build/identity-generic-oidc/backend/
-#11 0.333 generic_oidc_client.go
-#11 0.333 main.go
-#11 DONE 0.4s
+#11 0.446 generic_oidc_client.go
+#11 0.446 main.go
+#11 DONE 0.5s
 
 #12 [builder  8/14] RUN PLUGIN_MODULE="$(awk '/^module /{print $2; exit}' src/plugins/Plugins/identity-generic-oidc/go.mod | tr -d '\r')"     && HOST_MODULE="$(awk '/^module /{print $2; exit}' src/backend/go.mod | tr -d '\r')"     && echo "rewriting imports ${PLUGIN_MODULE}/backend -> ${HOST_MODULE}/_plugin_build/identity-generic-oidc/backend"     && find src/backend/_plugin_build/identity-generic-oidc/backend -name '*.go' -print0        | xargs -0 sed -i "s#"${PLUGIN_MODULE}/backend/#"${HOST_MODULE}/_plugin_build/identity-generic-oidc/backend/#g"
-#12 0.444 rewriting imports github.com/therealmcsparrow/mcharbor-plugin-identity-generic-oidc/backend -> github.com/therealmcsparrow/mcharbor/_plugin_build/identity-generic-oidc/backend
-#12 DONE 0.5s
+#12 0.321 rewriting imports github.com/therealmcsparrow/mcharbor-plugin-identity-generic-oidc/backend -> github.com/therealmcsparrow/mcharbor/_plugin_build/identity-generic-oidc/backend
+#12 DONE 0.4s
 
 #13 [builder  9/14] WORKDIR /build/src/backend
-#13 DONE 0.3s
+#13 DONE 0.1s
 
 #14 [builder 10/14] RUN PLUGIN_KEEP_FILE=/build/src/backend/_plugin_build/identity-generic-oidc/backend/host_link_keep.go &&     go run ./cmd/extract-core-plugin-symbols ./core/plugin > "$PLUGIN_KEEP_FILE" &&     echo "=== generated $PLUGIN_KEEP_FILE ===" &&     wc -l "$PLUGIN_KEEP_FILE" &&     head -25 "$PLUGIN_KEEP_FILE"
-#14 4.053 === generated /build/src/backend/_plugin_build/identity-generic-oidc/backend/host_link_keep.go ===
-#14 4.054 864 /build/src/backend/_plugin_build/identity-generic-oidc/backend/host_link_keep.go
-#14 4.054 // Code generated by docker/cmd/extract-core-plugin-symbols. DO NOT EDIT.
-#14 4.054 //
-#14 4.054 // Force-link every exported top-level symbol of every Go subpackage
-#14 4.054 // under github.com/therealmcsparrow/mcharbor/core/plugin/* so each
-#14 4.054 // subpackage's per-package ABI hash in the plugin .so matches the
-#14 4.054 // host binary's. Without this, the plugin linker prunes symbols the
-#14 4.054 // plugin does not directly use from each shared package, producing a
-#14 4.054 // strict-subset view that fails to load with "different version of
-#14 4.054 // package <subpkg>".
-#14 4.054 
-#14 4.054 package main
-#14 4.054 
-#14 4.054 import (
-#14 4.054 	"reflect"
-#14 4.054 	plugin "github.com/therealmcsparrow/mcharbor/core/plugin"
-#14 4.054 	contract "github.com/therealmcsparrow/mcharbor/core/plugin/contract"
-#14 4.054 	host "github.com/therealmcsparrow/mcharbor/core/plugin/host"
-#14 4.054 	services "github.com/therealmcsparrow/mcharbor/core/plugin/services"
-#14 4.054 	abac "github.com/therealmcsparrow/mcharbor/core/plugin/specs/abac"
-#14 4.054 	ai "github.com/therealmcsparrow/mcharbor/core/plugin/specs/ai"
-#14 4.054 	alerting "github.com/therealmcsparrow/mcharbor/core/plugin/specs/alerting"
-#14 4.054 	backup "github.com/therealmcsparrow/mcharbor/core/plugin/specs/backup"
-#14 4.054 	desiredstate "github.com/therealmcsparrow/mcharbor/core/plugin/specs/desiredstate"
-#14 4.054 	identity "github.com/therealmcsparrow/mcharbor/core/plugin/specs/identity"
-#14 4.054 	incident "github.com/therealmcsparrow/mcharbor/core/plugin/specs/incident"
-#14 DONE 4.1s
+#14 3.280 === generated /build/src/backend/_plugin_build/identity-generic-oidc/backend/host_link_keep.go ===
+#14 3.281 864 /build/src/backend/_plugin_build/identity-generic-oidc/backend/host_link_keep.go
+#14 3.282 // Code generated by docker/cmd/extract-core-plugin-symbols. DO NOT EDIT.
+#14 3.282 //
+#14 3.282 // Force-link every exported top-level symbol of every Go subpackage
+#14 3.282 // under github.com/therealmcsparrow/mcharbor/core/plugin/* so each
+#14 3.282 // subpackage's per-package ABI hash in the plugin .so matches the
+#14 3.282 // host binary's. Without this, the plugin linker prunes symbols the
+#14 3.282 // plugin does not directly use from each shared package, producing a
+#14 3.282 // strict-subset view that fails to load with "different version of
+#14 3.282 // package <subpkg>".
+#14 3.282 
+#14 3.282 package main
+#14 3.282 
+#14 3.282 import (
+#14 3.282 	"reflect"
+#14 3.282 	plugin "github.com/therealmcsparrow/mcharbor/core/plugin"
+#14 3.282 	contract "github.com/therealmcsparrow/mcharbor/core/plugin/contract"
+#14 3.282 	host "github.com/therealmcsparrow/mcharbor/core/plugin/host"
+#14 3.282 	services "github.com/therealmcsparrow/mcharbor/core/plugin/services"
+#14 3.282 	abac "github.com/therealmcsparrow/mcharbor/core/plugin/specs/abac"
+#14 3.282 	ai "github.com/therealmcsparrow/mcharbor/core/plugin/specs/ai"
+#14 3.282 	alerting "github.com/therealmcsparrow/mcharbor/core/plugin/specs/alerting"
+#14 3.282 	backup "github.com/therealmcsparrow/mcharbor/core/plugin/specs/backup"
+#14 3.282 	desiredstate "github.com/therealmcsparrow/mcharbor/core/plugin/specs/desiredstate"
+#14 3.282 	identity "github.com/therealmcsparrow/mcharbor/core/plugin/specs/identity"
+#14 3.282 	incident "github.com/therealmcsparrow/mcharbor/core/plugin/specs/incident"
+#14 DONE 3.3s
 
 #15 [builder 11/14] WORKDIR /build/src/backend
-#15 DONE 0.3s
+#15 DONE 0.2s
 
 #16 [builder 12/14] RUN awk '/^[[:space:]]+[A-Za-z0-9.-]+\.[A-Za-z]+\/[^ ]+ v[0-9]/{print $1}' go.mod         | tr -d '\r' | sort -u > /tmp/host-modules.txt  && PLUGIN_DEPS=$(grep -E '^\s+[A-Za-z0-9.-]+\.[A-Za-z]+/[^ ]+ v[0-9]'         /build/src/plugins/Plugins/identity-generic-oidc/go.mod 2>/dev/null |         tr -d '\r' |         awk '{print $1 "@" $2}' |         grep -v 'github.com/therealmcsparrow/mcharbor' || true) &&     if [ -n "$PLUGIN_DEPS" ]; then         for dep in $PLUGIN_DEPS; do             mod="${dep%@*}";             if grep -Fxq "$mod" /tmp/host-modules.txt; then                 echo "keeping host pin for $mod (plugin asked for ${dep#*@})";                 continue;             fi;             go get "$dep" >/tmp/goget.log 2>&1 || { echo "go get $dep failed:"; cat /tmp/goget.log; };         done;     fi
-#16 DONE 1.1s
+#16 DONE 1.0s
 
 #17 [builder 13/14] RUN CGO_ENABLED=1 go build -trimpath -buildmode=plugin          -o /tmp/identity-generic-oidc.so         ./_plugin_build/identity-generic-oidc/backend
-#17 DONE 14.0s
+#17 DONE 13.0s
 
-#18 [builder 14/14] RUN RESOLVED_PLUGIN_VERSION="2026.10.01"     && if [ -z "${RESOLVED_PLUGIN_VERSION}" ]; then          RESOLVED_PLUGIN_VERSION=$(awk '/^version:[[:space:]]*/{print $2; exit}' "/build/src/plugins/Plugins/identity-generic-oidc/plugin.yaml" | tr -d '"\r');        fi     && test -n "${RESOLVED_PLUGIN_VERSION}"     && mkdir -p /tmp/payload/backend     && cp /build/src/plugins/Plugins/identity-generic-oidc/plugin.yaml /tmp/payload/     && if [ -n "202610161443" ]; then          sed -i '/^build:/d' /tmp/payload/plugin.yaml &&          { [ -z "$(tail -c1 /tmp/payload/plugin.yaml)" ] || echo >> /tmp/payload/plugin.yaml; } &&          echo "build:    "202610161443"" >> /tmp/payload/plugin.yaml;        fi     && if [ -d /build/src/plugins/Plugins/identity-generic-oidc/i18n ]; then          cp -R /build/src/plugins/Plugins/identity-generic-oidc/i18n /tmp/payload/;        fi     && if [ -f /build/src/plugins/Plugins/identity-generic-oidc/frontend/identity-generic-oidc.umd.cjs ]; then          mkdir -p /tmp/payload/frontend &&            cp /build/src/plugins/Plugins/identity-generic-oidc/frontend/identity-generic-oidc.umd.cjs /tmp/payload/frontend/;        else          echo "warning: frontend/identity-generic-oidc.umd.cjs missing — ConfigForm/SetupGuide will render blank" >&2;        fi     && if [ -d /build/src/plugins/Plugins/identity-generic-oidc/icons ]; then          mkdir -p /tmp/payload/icons &&            cp -R /build/src/plugins/Plugins/identity-generic-oidc/icons/. /tmp/payload/icons/;        fi     && if [ -d /build/src/plugins/Plugins/identity-generic-oidc/migrations ]; then          cp -R /build/src/plugins/Plugins/identity-generic-oidc/migrations /tmp/payload/;        fi     && if [ -f /build/src/plugins/Plugins/identity-generic-oidc/THIRD_PARTY_NOTICES.md ]; then          cp /build/src/plugins/Plugins/identity-generic-oidc/THIRD_PARTY_NOTICES.md /tmp/payload/;        fi     && cp /tmp/identity-generic-oidc.so /tmp/payload/backend/identity-generic-oidc.so     && mkdir -p /tmp/packaged     && tar -C /tmp/payload -czf /tmp/packaged/identity-generic-oidc-${RESOLVED_PLUGIN_VERSION}.tar.gz .     && ls -la /tmp/packaged/
-#18 3.498 total 8396
-#18 3.498 drwxr-xr-x 2 root root    4096 Oct 16 14:44 .
-#18 3.498 drwxrwxrwt 1 root root    4096 Oct 16 14:44 ..
-#18 3.498 -rw-r--r-- 1 root root 8586775 Oct 16 14:44 identity-generic-oidc-2026.10.01.tar.gz
-#18 DONE 3.9s
+#18 [builder 14/14] RUN RESOLVED_PLUGIN_VERSION="2026.10.01"     && if [ -z "${RESOLVED_PLUGIN_VERSION}" ]; then          RESOLVED_PLUGIN_VERSION=$(awk '/^version:[[:space:]]*/{print $2; exit}' "/build/src/plugins/Plugins/identity-generic-oidc/plugin.yaml" | tr -d '"\r');        fi     && test -n "${RESOLVED_PLUGIN_VERSION}"     && mkdir -p /tmp/payload/backend     && cp /build/src/plugins/Plugins/identity-generic-oidc/plugin.yaml /tmp/payload/     && if [ -n "202611060444" ]; then          sed -i '/^build:/d' /tmp/payload/plugin.yaml &&          { [ -z "$(tail -c1 /tmp/payload/plugin.yaml)" ] || echo >> /tmp/payload/plugin.yaml; } &&          echo "build:    "202611060444"" >> /tmp/payload/plugin.yaml;        fi     && if [ -d /build/src/plugins/Plugins/identity-generic-oidc/i18n ]; then          cp -R /build/src/plugins/Plugins/identity-generic-oidc/i18n /tmp/payload/;        fi     && if [ -f /build/src/plugins/Plugins/identity-generic-oidc/frontend/identity-generic-oidc.umd.cjs ]; then          mkdir -p /tmp/payload/frontend &&            cp /build/src/plugins/Plugins/identity-generic-oidc/frontend/identity-generic-oidc.umd.cjs /tmp/payload/frontend/;        else          echo "warning: frontend/identity-generic-oidc.umd.cjs missing — ConfigForm/SetupGuide will render blank" >&2;        fi     && if [ -d /build/src/plugins/Plugins/identity-generic-oidc/icons ]; then          mkdir -p /tmp/payload/icons &&            cp -R /build/src/plugins/Plugins/identity-generic-oidc/icons/. /tmp/payload/icons/;        fi     && if [ -d /build/src/plugins/Plugins/identity-generic-oidc/migrations ]; then          cp -R /build/src/plugins/Plugins/identity-generic-oidc/migrations /tmp/payload/;        fi     && if [ -f /build/src/plugins/Plugins/identity-generic-oidc/THIRD_PARTY_NOTICES.md ]; then          cp /build/src/plugins/Plugins/identity-generic-oidc/THIRD_PARTY_NOTICES.md /tmp/payload/;        fi     && cp /tmp/identity-generic-oidc.so /tmp/payload/backend/identity-generic-oidc.so     && mkdir -p /tmp/packaged     && tar -C /tmp/payload -czf /tmp/packaged/identity-generic-oidc-${RESOLVED_PLUGIN_VERSION}.tar.gz .     && ls -la /tmp/packaged/
+#18 1.102 total 8396
+#18 1.102 drwxr-xr-x 2 root root    4096 Nov  6 04:44 .
+#18 1.102 drwxrwxrwt 1 root root    4096 Nov  6 04:44 ..
+#18 1.102 -rw-r--r-- 1 root root 8586637 Nov  6 04:44 identity-generic-oidc-2026.10.01.tar.gz
+#18 DONE 1.1s
 
 #19 [plugin-packager 1/1] COPY --from=builder /tmp/packaged/ /packaged/
-#19 DONE 0.4s
+#19 DONE 0.1s
 
 #20 exporting to client tarball
 #20 sending tarball 0.1s done
 #20 DONE 0.1s
 
-View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/o6glcm8sgjtc514nm0uueffst
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/lctzxu7aujb9dg6uhi4gg271a
 >>> extracting packaged/identity-generic-oidc-2026.10.01.tar.gz
 >>> signing identity-generic-oidc-2026.10.01.tar.gz with plugin-signing.key and verifying against plugin-signing.pub
 pluginsigner: verified 1 signature(s) against Z:/projects/web/management/McHarbor/signing/plugin-signing.pub
@@ -158,7 +141,7 @@ pluginsigner: signed 1 tarballs, recorded 0 catalog signatures
 >>> wrote /z/projects/web/management/McHarbor/mnt/plugin-catalog/files/identity-generic-oidc-2026.10.01.tar.gz.sig
 >>> wrote /z/projects/web/management/McHarbor/mnt/plugin-catalog/icons/identity-generic-oidc/ (1 icon(s))
 
-    download_url: https://www.mcharbor.eu/catalog/plugins/files/identity-generic-oidc-2026.10.01.tar.gz
+    download_url: https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/identity-generic-oidc-2026.10.01.tar.gz
 
     Copy the contents of /z/projects/web/management/McHarbor/mnt/plugin-catalog
     over the catalog root, then restart the container so the

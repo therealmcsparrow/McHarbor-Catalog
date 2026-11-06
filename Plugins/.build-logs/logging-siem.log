@@ -1,53 +1,36 @@
 >>> plugin      logging-siem@2026.10.01
 >>> source      /z/projects/web/management/McHarbor/src/plugins/Plugins/logging-siem
 >>> output      /z/projects/web/management/McHarbor/mnt/plugin-catalog
->>> catalog     https://www.mcharbor.eu/catalog/plugins
+>>> catalog     https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins
 
 >>> no frontend/ dir — Go-only plugin, skipping UMD build
 >>> running plugin-packager for logging-siem@2026.10.01 (first run: 3-5 min cold)
 #0 building with "desktop-linux" instance using docker driver
 
 #1 [internal] load build definition from Dockerfile.plugin-packager
-#1 transferring dockerfile: 13.10kB 0.0s done
-#1 DONE 0.1s
+#1 transferring dockerfile: 13.10kB done
+#1 DONE 0.0s
 
 #2 [internal] load metadata for docker.io/library/golang:1.27.2-bookworm
 #2 DONE 0.0s
 
 #3 [internal] load .dockerignore
-#3 transferring context: 1.67kB 0.0s done
-#3 DONE 0.1s
+#3 transferring context: 1.67kB done
+#3 DONE 0.0s
 
 #4 [builder  1/14] FROM docker.io/library/golang:1.27.2-bookworm@sha256:5cf287a799e6b94384bad13d16b14904c531f51ba65792237e122ce42b392f61
 #4 resolve docker.io/library/golang:1.27.2-bookworm@sha256:5cf287a799e6b94384bad13d16b14904c531f51ba65792237e122ce42b392f61 0.1s done
 #4 CACHED
 
 #5 [internal] load build context
-#5 transferring context: 226.60kB 0.2s done
-#5 DONE 0.3s
+#5 transferring context: 229.06kB 0.1s done
+#5 DONE 0.2s
 
 #6 [builder  2/14] RUN apt-get update     && apt-get install -y --no-install-recommends git bash gcc libc6-dev     && apt-get clean && find /var/lib/apt/lists -mindepth 1 -delete
-#6 0.826 Get:1 http://deb.debian.org/debian bookworm InRelease [151 kB]
-#6 0.856 Get:2 http://deb.debian.org/debian bookworm-updates InRelease [55.4 kB]
-#6 0.869 Get:3 http://deb.debian.org/debian-security bookworm-security InRelease [34.8 kB]
-#6 0.982 Get:4 http://deb.debian.org/debian bookworm/main amd64 Packages [8790 kB]
-#6 1.552 Get:5 http://deb.debian.org/debian bookworm-updates/main amd64 Packages [6924 B]
-#6 1.552 Get:6 http://deb.debian.org/debian-security bookworm-security/main amd64 Packages [353 kB]
-#6 2.592 Fetched 9391 kB in 2s (5234 kB/s)
-#6 2.592 Reading package lists...
-#6 3.722 Reading package lists...
-#6 4.658 Building dependency tree...
-#6 4.902 Reading state information...
-#6 5.089 git is already the newest version (1:2.39.5-0+deb12u3).
-#6 5.089 bash is already the newest version (5.2.15-2+b13).
-#6 5.089 bash set to manually installed.
-#6 5.089 gcc is already the newest version (4:12.2.0-3).
-#6 5.089 libc6-dev is already the newest version (2.36-9+deb12u14).
-#6 5.089 0 upgraded, 0 newly installed, 0 to remove and 4 not upgraded.
-#6 DONE 5.3s
+#6 CACHED
 
 #7 [builder  3/14] WORKDIR /build
-#7 DONE 0.2s
+#7 CACHED
 
 #8 [builder  4/14] COPY src/backend/ ./src/backend/
 #8 DONE 0.4s
@@ -56,80 +39,79 @@
 #9 DONE 0.2s
 
 #10 [builder  6/14] RUN if [ -z "2026.10.01" ]; then         PLUGIN_VERSION=$(awk '/^version:[[:space:]]*/{print $2; exit}' "src/plugins/Plugins/logging-siem/plugin.yaml" | tr -d '"\r');         echo "resolved PLUGIN_VERSION=2026.10.01 from plugin.yaml";     fi
-#10 DONE 0.6s
+#10 DONE 0.5s
 
 #11 [builder  7/14] RUN mkdir -p src/backend/_plugin_build/logging-siem/backend     && cp -R src/plugins/Plugins/logging-siem/backend/.         src/backend/_plugin_build/logging-siem/backend/     && ls src/backend/_plugin_build/logging-siem/backend/
-#11 0.785 forwarder.go
-#11 0.785 main.go
-#11 0.785 report_analysis.go
-#11 0.785 report_analysis_test.go
-#11 0.785 report_queries.go
-#11 0.785 reports.go
-#11 DONE 0.9s
+#11 0.584 forwarder.go
+#11 0.584 main.go
+#11 0.584 report_analysis.go
+#11 0.584 report_analysis_test.go
+#11 0.584 report_queries.go
+#11 0.584 reports.go
+#11 DONE 0.7s
 
 #12 [builder  8/14] RUN PLUGIN_MODULE="$(awk '/^module /{print $2; exit}' src/plugins/Plugins/logging-siem/go.mod | tr -d '\r')"     && HOST_MODULE="$(awk '/^module /{print $2; exit}' src/backend/go.mod | tr -d '\r')"     && echo "rewriting imports ${PLUGIN_MODULE}/backend -> ${HOST_MODULE}/_plugin_build/logging-siem/backend"     && find src/backend/_plugin_build/logging-siem/backend -name '*.go' -print0        | xargs -0 sed -i "s#"${PLUGIN_MODULE}/backend/#"${HOST_MODULE}/_plugin_build/logging-siem/backend/#g"
-#12 0.713 rewriting imports github.com/therealmcsparrow/mcharbor-addons/plugins/logging-siem/backend -> github.com/therealmcsparrow/mcharbor/_plugin_build/logging-siem/backend
-#12 DONE 0.8s
+#12 0.831 rewriting imports github.com/therealmcsparrow/mcharbor-addons/plugins/logging-siem/backend -> github.com/therealmcsparrow/mcharbor/_plugin_build/logging-siem/backend
+#12 DONE 0.9s
 
 #13 [builder  9/14] WORKDIR /build/src/backend
-#13 DONE 0.4s
+#13 DONE 0.2s
 
 #14 [builder 10/14] RUN PLUGIN_KEEP_FILE=/build/src/backend/_plugin_build/logging-siem/backend/host_link_keep.go &&     go run ./cmd/extract-core-plugin-symbols ./core/plugin > "$PLUGIN_KEEP_FILE" &&     echo "=== generated $PLUGIN_KEEP_FILE ===" &&     wc -l "$PLUGIN_KEEP_FILE" &&     head -25 "$PLUGIN_KEEP_FILE"
-#14 7.412 === generated /build/src/backend/_plugin_build/logging-siem/backend/host_link_keep.go ===
-#14 7.415 864 /build/src/backend/_plugin_build/logging-siem/backend/host_link_keep.go
-#14 7.419 // Code generated by docker/cmd/extract-core-plugin-symbols. DO NOT EDIT.
-#14 7.419 //
-#14 7.419 // Force-link every exported top-level symbol of every Go subpackage
-#14 7.419 // under github.com/therealmcsparrow/mcharbor/core/plugin/* so each
-#14 7.419 // subpackage's per-package ABI hash in the plugin .so matches the
-#14 7.419 // host binary's. Without this, the plugin linker prunes symbols the
-#14 7.419 // plugin does not directly use from each shared package, producing a
-#14 7.419 // strict-subset view that fails to load with "different version of
-#14 7.419 // package <subpkg>".
-#14 7.419 
-#14 7.419 package main
-#14 7.419 
-#14 7.419 import (
-#14 7.419 	"reflect"
-#14 7.419 	plugin "github.com/therealmcsparrow/mcharbor/core/plugin"
-#14 7.419 	contract "github.com/therealmcsparrow/mcharbor/core/plugin/contract"
-#14 7.419 	host "github.com/therealmcsparrow/mcharbor/core/plugin/host"
-#14 7.419 	services "github.com/therealmcsparrow/mcharbor/core/plugin/services"
-#14 7.419 	abac "github.com/therealmcsparrow/mcharbor/core/plugin/specs/abac"
-#14 7.419 	ai "github.com/therealmcsparrow/mcharbor/core/plugin/specs/ai"
-#14 7.419 	alerting "github.com/therealmcsparrow/mcharbor/core/plugin/specs/alerting"
-#14 7.419 	backup "github.com/therealmcsparrow/mcharbor/core/plugin/specs/backup"
-#14 7.419 	desiredstate "github.com/therealmcsparrow/mcharbor/core/plugin/specs/desiredstate"
-#14 7.419 	identity "github.com/therealmcsparrow/mcharbor/core/plugin/specs/identity"
-#14 7.419 	incident "github.com/therealmcsparrow/mcharbor/core/plugin/specs/incident"
-#14 DONE 7.5s
+#14 6.337 === generated /build/src/backend/_plugin_build/logging-siem/backend/host_link_keep.go ===
+#14 6.338 864 /build/src/backend/_plugin_build/logging-siem/backend/host_link_keep.go
+#14 6.339 // Code generated by docker/cmd/extract-core-plugin-symbols. DO NOT EDIT.
+#14 6.339 //
+#14 6.339 // Force-link every exported top-level symbol of every Go subpackage
+#14 6.339 // under github.com/therealmcsparrow/mcharbor/core/plugin/* so each
+#14 6.339 // subpackage's per-package ABI hash in the plugin .so matches the
+#14 6.339 // host binary's. Without this, the plugin linker prunes symbols the
+#14 6.339 // plugin does not directly use from each shared package, producing a
+#14 6.339 // strict-subset view that fails to load with "different version of
+#14 6.339 // package <subpkg>".
+#14 6.339 
+#14 6.339 package main
+#14 6.339 
+#14 6.339 import (
+#14 6.339 	"reflect"
+#14 6.339 	plugin "github.com/therealmcsparrow/mcharbor/core/plugin"
+#14 6.339 	contract "github.com/therealmcsparrow/mcharbor/core/plugin/contract"
+#14 6.339 	host "github.com/therealmcsparrow/mcharbor/core/plugin/host"
+#14 6.339 	services "github.com/therealmcsparrow/mcharbor/core/plugin/services"
+#14 6.339 	abac "github.com/therealmcsparrow/mcharbor/core/plugin/specs/abac"
+#14 6.339 	ai "github.com/therealmcsparrow/mcharbor/core/plugin/specs/ai"
+#14 6.339 	alerting "github.com/therealmcsparrow/mcharbor/core/plugin/specs/alerting"
+#14 6.339 	backup "github.com/therealmcsparrow/mcharbor/core/plugin/specs/backup"
+#14 6.339 	desiredstate "github.com/therealmcsparrow/mcharbor/core/plugin/specs/desiredstate"
+#14 6.339 	identity "github.com/therealmcsparrow/mcharbor/core/plugin/specs/identity"
+#14 6.339 	incident "github.com/therealmcsparrow/mcharbor/core/plugin/specs/incident"
+#14 DONE 6.4s
 
 #15 [builder 11/14] WORKDIR /build/src/backend
-#15 DONE 0.5s
+#15 DONE 0.2s
 
 #16 [builder 12/14] RUN awk '/^[[:space:]]+[A-Za-z0-9.-]+\.[A-Za-z]+\/[^ ]+ v[0-9]/{print $1}' go.mod         | tr -d '\r' | sort -u > /tmp/host-modules.txt  && PLUGIN_DEPS=$(grep -E '^\s+[A-Za-z0-9.-]+\.[A-Za-z]+/[^ ]+ v[0-9]'         /build/src/plugins/Plugins/logging-siem/go.mod 2>/dev/null |         tr -d '\r' |         awk '{print $1 "@" $2}' |         grep -v 'github.com/therealmcsparrow/mcharbor' || true) &&     if [ -n "$PLUGIN_DEPS" ]; then         for dep in $PLUGIN_DEPS; do             mod="${dep%@*}";             if grep -Fxq "$mod" /tmp/host-modules.txt; then                 echo "keeping host pin for $mod (plugin asked for ${dep#*@})";                 continue;             fi;             go get "$dep" >/tmp/goget.log 2>&1 || { echo "go get $dep failed:"; cat /tmp/goget.log; };         done;     fi
-#16 DONE 0.5s
+#16 DONE 0.4s
 
 #17 [builder 13/14] RUN CGO_ENABLED=1 go build -trimpath -buildmode=plugin          -o /tmp/logging-siem.so         ./_plugin_build/logging-siem/backend
-#17 DONE 47.3s
+#17 DONE 17.3s
 
-#18 [builder 14/14] RUN RESOLVED_PLUGIN_VERSION="2026.10.01"     && if [ -z "${RESOLVED_PLUGIN_VERSION}" ]; then          RESOLVED_PLUGIN_VERSION=$(awk '/^version:[[:space:]]*/{print $2; exit}' "/build/src/plugins/Plugins/logging-siem/plugin.yaml" | tr -d '"\r');        fi     && test -n "${RESOLVED_PLUGIN_VERSION}"     && mkdir -p /tmp/payload/backend     && cp /build/src/plugins/Plugins/logging-siem/plugin.yaml /tmp/payload/     && if [ -n "202610161444" ]; then          sed -i '/^build:/d' /tmp/payload/plugin.yaml &&          { [ -z "$(tail -c1 /tmp/payload/plugin.yaml)" ] || echo >> /tmp/payload/plugin.yaml; } &&          echo "build:    "202610161444"" >> /tmp/payload/plugin.yaml;        fi     && if [ -d /build/src/plugins/Plugins/logging-siem/i18n ]; then          cp -R /build/src/plugins/Plugins/logging-siem/i18n /tmp/payload/;        fi     && if [ -f /build/src/plugins/Plugins/logging-siem/frontend/logging-siem.umd.cjs ]; then          mkdir -p /tmp/payload/frontend &&            cp /build/src/plugins/Plugins/logging-siem/frontend/logging-siem.umd.cjs /tmp/payload/frontend/;        else          echo "warning: frontend/logging-siem.umd.cjs missing — ConfigForm/SetupGuide will render blank" >&2;        fi     && if [ -d /build/src/plugins/Plugins/logging-siem/icons ]; then          mkdir -p /tmp/payload/icons &&            cp -R /build/src/plugins/Plugins/logging-siem/icons/. /tmp/payload/icons/;        fi     && if [ -d /build/src/plugins/Plugins/logging-siem/migrations ]; then          cp -R /build/src/plugins/Plugins/logging-siem/migrations /tmp/payload/;        fi     && if [ -f /build/src/plugins/Plugins/logging-siem/THIRD_PARTY_NOTICES.md ]; then          cp /build/src/plugins/Plugins/logging-siem/THIRD_PARTY_NOTICES.md /tmp/payload/;        fi     && cp /tmp/logging-siem.so /tmp/payload/backend/logging-siem.so     && mkdir -p /tmp/packaged     && tar -C /tmp/payload -czf /tmp/packaged/logging-siem-${RESOLVED_PLUGIN_VERSION}.tar.gz .     && ls -la /tmp/packaged/
-#18 10.04 warning: frontend/logging-siem.umd.cjs missing — ConfigForm/SetupGuide will render blank
-#18 11.75 total 8196
-#18 11.75 drwxr-xr-x 2 root root    4096 Oct 16 14:45 .
-#18 11.75 drwxrwxrwt 1 root root    4096 Oct 16 14:45 ..
-#18 11.75 -rw-r--r-- 1 root root 8381344 Oct 16 14:45 logging-siem-2026.10.01.tar.gz
-#18 DONE 12.3s
+#18 [builder 14/14] RUN RESOLVED_PLUGIN_VERSION="2026.10.01"     && if [ -z "${RESOLVED_PLUGIN_VERSION}" ]; then          RESOLVED_PLUGIN_VERSION=$(awk '/^version:[[:space:]]*/{print $2; exit}' "/build/src/plugins/Plugins/logging-siem/plugin.yaml" | tr -d '"\r');        fi     && test -n "${RESOLVED_PLUGIN_VERSION}"     && mkdir -p /tmp/payload/backend     && cp /build/src/plugins/Plugins/logging-siem/plugin.yaml /tmp/payload/     && if [ -n "202611060444" ]; then          sed -i '/^build:/d' /tmp/payload/plugin.yaml &&          { [ -z "$(tail -c1 /tmp/payload/plugin.yaml)" ] || echo >> /tmp/payload/plugin.yaml; } &&          echo "build:    "202611060444"" >> /tmp/payload/plugin.yaml;        fi     && if [ -d /build/src/plugins/Plugins/logging-siem/i18n ]; then          cp -R /build/src/plugins/Plugins/logging-siem/i18n /tmp/payload/;        fi     && if [ -f /build/src/plugins/Plugins/logging-siem/frontend/logging-siem.umd.cjs ]; then          mkdir -p /tmp/payload/frontend &&            cp /build/src/plugins/Plugins/logging-siem/frontend/logging-siem.umd.cjs /tmp/payload/frontend/;        else          echo "warning: frontend/logging-siem.umd.cjs missing — ConfigForm/SetupGuide will render blank" >&2;        fi     && if [ -d /build/src/plugins/Plugins/logging-siem/icons ]; then          mkdir -p /tmp/payload/icons &&            cp -R /build/src/plugins/Plugins/logging-siem/icons/. /tmp/payload/icons/;        fi     && if [ -d /build/src/plugins/Plugins/logging-siem/migrations ]; then          cp -R /build/src/plugins/Plugins/logging-siem/migrations /tmp/payload/;        fi     && if [ -f /build/src/plugins/Plugins/logging-siem/THIRD_PARTY_NOTICES.md ]; then          cp /build/src/plugins/Plugins/logging-siem/THIRD_PARTY_NOTICES.md /tmp/payload/;        fi     && cp /tmp/logging-siem.so /tmp/payload/backend/logging-siem.so     && mkdir -p /tmp/packaged     && tar -C /tmp/payload -czf /tmp/packaged/logging-siem-${RESOLVED_PLUGIN_VERSION}.tar.gz .     && ls -la /tmp/packaged/
+#18 0.476 warning: frontend/logging-siem.umd.cjs missing — ConfigForm/SetupGuide will render blank
+#18 1.161 total 8196
+#18 1.161 drwxr-xr-x 2 root root    4096 Nov  6 04:45 .
+#18 1.161 drwxrwxrwt 1 root root    4096 Nov  6 04:45 ..
+#18 1.161 -rw-r--r-- 1 root root 8381339 Nov  6 04:45 logging-siem-2026.10.01.tar.gz
+#18 DONE 1.2s
 
 #19 [plugin-packager 1/1] COPY --from=builder /tmp/packaged/ /packaged/
-#19 DONE 0.4s
+#19 DONE 0.1s
 
 #20 exporting to client tarball
-#20 sending tarball
-#20 sending tarball 11.5s done
-#20 DONE 11.5s
+#20 sending tarball 0.1s done
+#20 DONE 0.1s
 
-View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/m4yts5bjj06kjngegcj36s321
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/oktotrfrln7x01qnw86pj7p41
 >>> extracting packaged/logging-siem-2026.10.01.tar.gz
 >>> signing logging-siem-2026.10.01.tar.gz with plugin-signing.key and verifying against plugin-signing.pub
 pluginsigner: verified 1 signature(s) against Z:/projects/web/management/McHarbor/signing/plugin-signing.pub
@@ -141,7 +123,7 @@ pluginsigner: signed 1 tarballs, recorded 0 catalog signatures
 >>> wrote /z/projects/web/management/McHarbor/mnt/plugin-catalog/files/logging-siem-2026.10.01.tar.gz.sig
 >>> wrote /z/projects/web/management/McHarbor/mnt/plugin-catalog/icons/logging-siem/ (2 icon(s))
 
-    download_url: https://www.mcharbor.eu/catalog/plugins/files/logging-siem-2026.10.01.tar.gz
+    download_url: https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/logging-siem-2026.10.01.tar.gz
 
     Copy the contents of /z/projects/web/management/McHarbor/mnt/plugin-catalog
     over the catalog root, then restart the container so the

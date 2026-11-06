@@ -10,10 +10,10 @@
   "versions": [
     {
       "version": "2026.10.01",
-      "build": "202610161437",
+      "build": "202611060440",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/ai-provider-deepseek-2026.10.01.tar.gz",
-      "built_for": "2026.10.01",
-      "signature": "qmZvDMZKFWpzbVYUTBi/DctAOmJ/+qQJg5zcyW1k8vvY93y4MDgjTAu3Qb8V9LXm1nZqf5yCpGJjmXlm2TMXDw=="
+      "built_for": "2026.11.01",
+      "signature": "CiJx7CGU/yWl5gXe8i2q+7aSjkWTCgtq7y1ujU/QmdYiIigCDt9eSu8Ls9gVGs9triJesAhLNQ6W3sQHsmqOAw=="
     }
   ]
 }

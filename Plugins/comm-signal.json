@@ -10,10 +10,10 @@
   "versions": [
     {
       "version": "2026.10.01",
-      "build": "202610161440",
+      "build": "202611060442",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/comm-signal-2026.10.01.tar.gz",
-      "built_for": "2026.10.01",
-      "signature": "7Q1SDDuBeU7PIiItwLnQaofCGNX+s2XnRH/VjRSBGZC35ZyPkrxx8ccZGkAldiZ6D8G10Sd4htPszrCEeN1PCQ=="
+      "built_for": "2026.11.01",
+      "signature": "mM1PY5HdaBHsS2+ySCwdoKVQkGvcz+LfbST1xupQMUaxHTg5FSoJ/rY2+tqW4jwWN5Zw0fMjXnjr0k2w/aKAAA=="
     }
   ]
 }

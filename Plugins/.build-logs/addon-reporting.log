@@ -1,7 +1,7 @@
 >>> plugin      addon-reporting@2026.10.01
 >>> source      /z/projects/web/management/McHarbor/src/plugins/Plugins/addon-reporting
 >>> output      /z/projects/web/management/McHarbor/mnt/plugin-catalog
->>> catalog     https://www.mcharbor.eu/catalog/plugins
+>>> catalog     https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins
 
 >>> building frontend UMD bundle for addon-reporting
 
@@ -23,17 +23,17 @@ computing gzip size...
 
 [33m[33m[MIXED_EXPORTS] [0mEntry module "src/index.tsx" is using named (including "default", "mount", "onNavigate", "unmount", "widgets") and default exports together. Consumers of your bundle will have to use `McharborPlugin_addon_reporting.default` to access the default export, which may not be what you want. Use `output.exports: "named"` to disable this warning.
 [39m
-[32m✓ built in 575ms[39m
+[32m✓ built in 1.77s[39m
 >>> built /z/projects/web/management/McHarbor/src/plugins/Plugins/addon-reporting/frontend/addon-reporting.umd.cjs (has McharborPlugin_addon_reporting + mount)
 >>> running plugin-packager for addon-reporting@2026.10.01 (first run: 3-5 min cold)
 #0 building with "desktop-linux" instance using docker driver
 
 #1 [internal] load build definition from Dockerfile.plugin-packager
-#1 transferring dockerfile: 13.10kB done
-#1 DONE 0.0s
+#1 transferring dockerfile: 13.10kB 0.0s done
+#1 DONE 0.1s
 
 #2 [internal] load metadata for docker.io/library/golang:1.27.2-bookworm
-#2 DONE 0.5s
+#2 DONE 0.0s
 
 #3 [internal] load .dockerignore
 #3 transferring context: 1.67kB done
@@ -43,236 +43,236 @@ computing gzip size...
 #4 DONE 0.0s
 
 #5 [builder  1/14] FROM docker.io/library/golang:1.27.2-bookworm@sha256:5cf287a799e6b94384bad13d16b14904c531f51ba65792237e122ce42b392f61
-#5 resolve docker.io/library/golang:1.27.2-bookworm@sha256:5cf287a799e6b94384bad13d16b14904c531f51ba65792237e122ce42b392f61 0.0s done
+#5 resolve docker.io/library/golang:1.27.2-bookworm@sha256:5cf287a799e6b94384bad13d16b14904c531f51ba65792237e122ce42b392f61 0.1s done
 #5 DONE 0.1s
 
 #5 [builder  1/14] FROM docker.io/library/golang:1.27.2-bookworm@sha256:5cf287a799e6b94384bad13d16b14904c531f51ba65792237e122ce42b392f61
 #5 CACHED
 
 #4 [internal] load build context
-#4 transferring context: 5.85MB 0.5s done
-#4 DONE 0.6s
+#4 transferring context: 916.17kB 1.0s done
+#4 DONE 1.2s
 
 #6 [builder  2/14] RUN apt-get update     && apt-get install -y --no-install-recommends git bash gcc libc6-dev     && apt-get clean && find /var/lib/apt/lists -mindepth 1 -delete
-#6 0.529 Get:1 http://deb.debian.org/debian bookworm InRelease [151 kB]
-#6 0.549 Get:2 http://deb.debian.org/debian bookworm-updates InRelease [55.4 kB]
-#6 0.557 Get:3 http://deb.debian.org/debian-security bookworm-security InRelease [34.8 kB]
-#6 0.611 Get:4 http://deb.debian.org/debian bookworm/main amd64 Packages [8790 kB]
-#6 1.161 Get:5 http://deb.debian.org/debian bookworm-updates/main amd64 Packages [6924 B]
-#6 1.165 Get:6 http://deb.debian.org/debian-security bookworm-security/main amd64 Packages [353 kB]
-#6 1.877 Fetched 9391 kB in 1s (6884 kB/s)
-#6 1.877 Reading package lists...
-#6 2.324 Reading package lists...
-#6 2.736 Building dependency tree...
-#6 2.838 Reading state information...
-#6 2.968 git is already the newest version (1:2.39.5-0+deb12u3).
-#6 2.968 bash is already the newest version (5.2.15-2+b13).
-#6 2.968 bash set to manually installed.
-#6 2.968 gcc is already the newest version (4:12.2.0-3).
-#6 2.968 libc6-dev is already the newest version (2.36-9+deb12u14).
-#6 2.968 0 upgraded, 0 newly installed, 0 to remove and 4 not upgraded.
-#6 DONE 3.0s
+#6 0.636 Get:1 http://deb.debian.org/debian bookworm InRelease [151 kB]
+#6 0.659 Get:2 http://deb.debian.org/debian bookworm-updates InRelease [55.4 kB]
+#6 0.667 Get:3 http://deb.debian.org/debian-security bookworm-security InRelease [34.8 kB]
+#6 0.746 Get:4 http://deb.debian.org/debian bookworm/main amd64 Packages [8790 kB]
+#6 1.719 Get:5 http://deb.debian.org/debian bookworm-updates/main amd64 Packages [6924 B]
+#6 1.720 Get:6 http://deb.debian.org/debian-security bookworm-security/main amd64 Packages [361 kB]
+#6 2.627 Fetched 9400 kB in 2s (4667 kB/s)
+#6 2.627 Reading package lists...
+#6 3.246 Reading package lists...
+#6 3.718 Building dependency tree...
+#6 3.874 Reading state information...
+#6 4.111 git is already the newest version (1:2.39.5-0+deb12u3).
+#6 4.111 bash is already the newest version (5.2.15-2+b13).
+#6 4.111 bash set to manually installed.
+#6 4.111 gcc is already the newest version (4:12.2.0-3).
+#6 4.111 libc6-dev is already the newest version (2.36-9+deb12u14).
+#6 4.111 0 upgraded, 0 newly installed, 0 to remove and 15 not upgraded.
+#6 DONE 4.2s
 
 #7 [builder  3/14] WORKDIR /build
-#7 DONE 0.4s
+#7 DONE 0.3s
 
 #8 [builder  4/14] COPY src/backend/ ./src/backend/
-#8 DONE 0.8s
+#8 DONE 1.2s
 
 #9 [builder  5/14] COPY src/plugins/Plugins/addon-reporting/ ./src/plugins/Plugins/addon-reporting/
-#9 DONE 0.2s
+#9 DONE 0.5s
 
 #10 [builder  6/14] RUN if [ -z "2026.10.01" ]; then         PLUGIN_VERSION=$(awk '/^version:[[:space:]]*/{print $2; exit}' "src/plugins/Plugins/addon-reporting/plugin.yaml" | tr -d '"\r');         echo "resolved PLUGIN_VERSION=2026.10.01 from plugin.yaml";     fi
-#10 DONE 0.5s
+#10 DONE 0.8s
 
 #11 [builder  7/14] RUN mkdir -p src/backend/_plugin_build/addon-reporting/backend     && cp -R src/plugins/Plugins/addon-reporting/backend/.         src/backend/_plugin_build/addon-reporting/backend/     && ls src/backend/_plugin_build/addon-reporting/backend/
-#11 0.495 adhoc_attestations_test.go
-#11 0.495 adhoc_author.go
-#11 0.495 adhoc_facets.go
-#11 0.495 adhoc_plan.go
-#11 0.495 adhoc_slice.go
-#11 0.495 adhoc_verify.go
-#11 0.495 alerts.go
-#11 0.495 analyze.go
-#11 0.495 assets
-#11 0.495 build_common.go
-#11 0.495 build_facets.go
-#11 0.495 build_reports.go
-#11 0.495 build_reports2.go
-#11 0.495 build_reports3.go
-#11 0.495 build_reports4.go
-#11 0.495 build_reports5.go
-#11 0.495 build_reports6.go
-#11 0.495 catalog.go
-#11 0.495 charts
-#11 0.495 cli.go
-#11 0.495 cli_test.go
-#11 0.495 collect.go
-#11 0.495 collect_sources_test.go
-#11 0.495 docx
-#11 0.495 embed.go
-#11 0.495 export_docx.go
-#11 0.495 export_pdf.go
-#11 0.495 facets.go
-#11 0.495 facets_docker.go
-#11 0.495 facets_test.go
-#11 0.495 failcause_test.go
-#11 0.495 families.go
-#11 0.495 family_governance.go
-#11 0.495 family_governance_approvals.go
-#11 0.495 family_governance_compliance.go
-#11 0.495 family_governance_packs.go
-#11 0.495 family_governance_secrets.go
-#11 0.495 family_governance_test.go
-#11 0.495 family_governance_webhooks.go
-#11 0.495 family_governance_workflows.go
-#11 0.495 family_resilience.go
-#11 0.495 family_resilience_dr.go
-#11 0.495 family_resilience_drift.go
-#11 0.495 family_resilience_ha.go
-#11 0.495 family_resilience_incidents.go
-#11 0.495 family_resilience_itsm.go
-#11 0.495 family_resilience_test.go
-#11 0.495 family_runbooks.go
-#11 0.495 family_runbooks_test.go
-#11 0.495 fontkit
-#11 0.495 format.go
-#11 0.495 handler.go
-#11 0.495 handler_schedules.go
-#11 0.495 hostapi.go
-#11 0.495 hostapi_auth_test.go
-#11 0.495 hostbranding.go
-#11 0.495 jobs.go
-#11 0.495 main.go
-#11 0.495 migrations_test.go
-#11 0.495 model.go
-#11 0.495 narrative.go
-#11 0.495 nodes.go
-#11 0.495 pagesize.go
-#11 0.495 pdf
-#11 0.495 providers.go
-#11 0.495 providers_test.go
-#11 0.495 scheduler.go
-#11 0.495 schedules.go
-#11 0.495 service.go
-#11 0.495 store.go
-#11 0.495 subject.go
-#11 0.495 subject_runbook.go
-#11 0.495 theme.go
-#11 0.495 triggers.go
-#11 DONE 0.5s
+#11 0.953 adhoc_attestations_test.go
+#11 0.953 adhoc_author.go
+#11 0.953 adhoc_facets.go
+#11 0.953 adhoc_plan.go
+#11 0.953 adhoc_slice.go
+#11 0.953 adhoc_verify.go
+#11 0.953 alerts.go
+#11 0.953 analyze.go
+#11 0.953 assets
+#11 0.953 build_common.go
+#11 0.953 build_facets.go
+#11 0.953 build_reports.go
+#11 0.953 build_reports2.go
+#11 0.953 build_reports3.go
+#11 0.953 build_reports4.go
+#11 0.953 build_reports5.go
+#11 0.953 build_reports6.go
+#11 0.953 catalog.go
+#11 0.953 charts
+#11 0.953 cli.go
+#11 0.953 cli_test.go
+#11 0.953 collect.go
+#11 0.953 collect_sources_test.go
+#11 0.953 docx
+#11 0.953 embed.go
+#11 0.953 export_docx.go
+#11 0.953 export_pdf.go
+#11 0.953 facets.go
+#11 0.953 facets_docker.go
+#11 0.953 facets_test.go
+#11 0.953 failcause_test.go
+#11 0.953 families.go
+#11 0.953 family_governance.go
+#11 0.953 family_governance_approvals.go
+#11 0.953 family_governance_compliance.go
+#11 0.953 family_governance_packs.go
+#11 0.953 family_governance_secrets.go
+#11 0.953 family_governance_test.go
+#11 0.953 family_governance_webhooks.go
+#11 0.953 family_governance_workflows.go
+#11 0.953 family_resilience.go
+#11 0.953 family_resilience_dr.go
+#11 0.953 family_resilience_drift.go
+#11 0.953 family_resilience_ha.go
+#11 0.953 family_resilience_incidents.go
+#11 0.953 family_resilience_itsm.go
+#11 0.953 family_resilience_test.go
+#11 0.953 family_runbooks.go
+#11 0.953 family_runbooks_test.go
+#11 0.953 fontkit
+#11 0.953 format.go
+#11 0.953 handler.go
+#11 0.953 handler_schedules.go
+#11 0.953 hostapi.go
+#11 0.953 hostapi_auth_test.go
+#11 0.953 hostbranding.go
+#11 0.953 jobs.go
+#11 0.953 main.go
+#11 0.953 migrations_test.go
+#11 0.953 model.go
+#11 0.953 narrative.go
+#11 0.953 nodes.go
+#11 0.953 pagesize.go
+#11 0.953 pdf
+#11 0.953 providers.go
+#11 0.953 providers_test.go
+#11 0.953 scheduler.go
+#11 0.953 schedules.go
+#11 0.953 service.go
+#11 0.953 store.go
+#11 0.953 subject.go
+#11 0.953 subject_runbook.go
+#11 0.953 theme.go
+#11 0.953 triggers.go
+#11 DONE 1.0s
 
 #12 [builder  8/14] RUN PLUGIN_MODULE="$(awk '/^module /{print $2; exit}' src/plugins/Plugins/addon-reporting/go.mod | tr -d '\r')"     && HOST_MODULE="$(awk '/^module /{print $2; exit}' src/backend/go.mod | tr -d '\r')"     && echo "rewriting imports ${PLUGIN_MODULE}/backend -> ${HOST_MODULE}/_plugin_build/addon-reporting/backend"     && find src/backend/_plugin_build/addon-reporting/backend -name '*.go' -print0        | xargs -0 sed -i "s#"${PLUGIN_MODULE}/backend/#"${HOST_MODULE}/_plugin_build/addon-reporting/backend/#g"
-#12 0.576 rewriting imports github.com/therealmcsparrow/mcharbor-addons/plugins/addon-reporting/backend -> github.com/therealmcsparrow/mcharbor/_plugin_build/addon-reporting/backend
-#12 DONE 0.7s
+#12 1.056 rewriting imports github.com/therealmcsparrow/mcharbor-addons/plugins/addon-reporting/backend -> github.com/therealmcsparrow/mcharbor/_plugin_build/addon-reporting/backend
+#12 DONE 1.1s
 
 #13 [builder  9/14] WORKDIR /build/src/backend
 #13 DONE 0.2s
 
 #14 [builder 10/14] RUN PLUGIN_KEEP_FILE=/build/src/backend/_plugin_build/addon-reporting/backend/host_link_keep.go &&     go run ./cmd/extract-core-plugin-symbols ./core/plugin > "$PLUGIN_KEEP_FILE" &&     echo "=== generated $PLUGIN_KEEP_FILE ===" &&     wc -l "$PLUGIN_KEEP_FILE" &&     head -25 "$PLUGIN_KEEP_FILE"
-#14 5.511 === generated /build/src/backend/_plugin_build/addon-reporting/backend/host_link_keep.go ===
-#14 5.512 864 /build/src/backend/_plugin_build/addon-reporting/backend/host_link_keep.go
-#14 5.513 // Code generated by docker/cmd/extract-core-plugin-symbols. DO NOT EDIT.
-#14 5.513 //
-#14 5.513 // Force-link every exported top-level symbol of every Go subpackage
-#14 5.513 // under github.com/therealmcsparrow/mcharbor/core/plugin/* so each
-#14 5.513 // subpackage's per-package ABI hash in the plugin .so matches the
-#14 5.513 // host binary's. Without this, the plugin linker prunes symbols the
-#14 5.513 // plugin does not directly use from each shared package, producing a
-#14 5.513 // strict-subset view that fails to load with "different version of
-#14 5.513 // package <subpkg>".
-#14 5.513 
-#14 5.513 package main
-#14 5.513 
-#14 5.513 import (
-#14 5.513 	"reflect"
-#14 5.513 	plugin "github.com/therealmcsparrow/mcharbor/core/plugin"
-#14 5.513 	contract "github.com/therealmcsparrow/mcharbor/core/plugin/contract"
-#14 5.513 	host "github.com/therealmcsparrow/mcharbor/core/plugin/host"
-#14 5.513 	services "github.com/therealmcsparrow/mcharbor/core/plugin/services"
-#14 5.513 	abac "github.com/therealmcsparrow/mcharbor/core/plugin/specs/abac"
-#14 5.513 	ai "github.com/therealmcsparrow/mcharbor/core/plugin/specs/ai"
-#14 5.513 	alerting "github.com/therealmcsparrow/mcharbor/core/plugin/specs/alerting"
-#14 5.513 	backup "github.com/therealmcsparrow/mcharbor/core/plugin/specs/backup"
-#14 5.513 	desiredstate "github.com/therealmcsparrow/mcharbor/core/plugin/specs/desiredstate"
-#14 5.513 	identity "github.com/therealmcsparrow/mcharbor/core/plugin/specs/identity"
-#14 5.513 	incident "github.com/therealmcsparrow/mcharbor/core/plugin/specs/incident"
-#14 DONE 5.5s
+#14 6.801 === generated /build/src/backend/_plugin_build/addon-reporting/backend/host_link_keep.go ===
+#14 6.804 864 /build/src/backend/_plugin_build/addon-reporting/backend/host_link_keep.go
+#14 6.805 // Code generated by docker/cmd/extract-core-plugin-symbols. DO NOT EDIT.
+#14 6.805 //
+#14 6.805 // Force-link every exported top-level symbol of every Go subpackage
+#14 6.805 // under github.com/therealmcsparrow/mcharbor/core/plugin/* so each
+#14 6.805 // subpackage's per-package ABI hash in the plugin .so matches the
+#14 6.805 // host binary's. Without this, the plugin linker prunes symbols the
+#14 6.805 // plugin does not directly use from each shared package, producing a
+#14 6.805 // strict-subset view that fails to load with "different version of
+#14 6.805 // package <subpkg>".
+#14 6.805 
+#14 6.805 package main
+#14 6.805 
+#14 6.805 import (
+#14 6.805 	"reflect"
+#14 6.805 	plugin "github.com/therealmcsparrow/mcharbor/core/plugin"
+#14 6.805 	contract "github.com/therealmcsparrow/mcharbor/core/plugin/contract"
+#14 6.805 	host "github.com/therealmcsparrow/mcharbor/core/plugin/host"
+#14 6.805 	services "github.com/therealmcsparrow/mcharbor/core/plugin/services"
+#14 6.805 	abac "github.com/therealmcsparrow/mcharbor/core/plugin/specs/abac"
+#14 6.805 	ai "github.com/therealmcsparrow/mcharbor/core/plugin/specs/ai"
+#14 6.805 	alerting "github.com/therealmcsparrow/mcharbor/core/plugin/specs/alerting"
+#14 6.805 	backup "github.com/therealmcsparrow/mcharbor/core/plugin/specs/backup"
+#14 6.805 	desiredstate "github.com/therealmcsparrow/mcharbor/core/plugin/specs/desiredstate"
+#14 6.805 	identity "github.com/therealmcsparrow/mcharbor/core/plugin/specs/identity"
+#14 6.805 	incident "github.com/therealmcsparrow/mcharbor/core/plugin/specs/incident"
+#14 DONE 6.8s
 
 #15 [builder 11/14] WORKDIR /build/src/backend
-#15 DONE 0.3s
+#15 DONE 0.2s
 
 #16 [builder 12/14] RUN awk '/^[[:space:]]+[A-Za-z0-9.-]+\.[A-Za-z]+\/[^ ]+ v[0-9]/{print $1}' go.mod         | tr -d '\r' | sort -u > /tmp/host-modules.txt  && PLUGIN_DEPS=$(grep -E '^\s+[A-Za-z0-9.-]+\.[A-Za-z]+/[^ ]+ v[0-9]'         /build/src/plugins/Plugins/addon-reporting/go.mod 2>/dev/null |         tr -d '\r' |         awk '{print $1 "@" $2}' |         grep -v 'github.com/therealmcsparrow/mcharbor' || true) &&     if [ -n "$PLUGIN_DEPS" ]; then         for dep in $PLUGIN_DEPS; do             mod="${dep%@*}";             if grep -Fxq "$mod" /tmp/host-modules.txt; then                 echo "keeping host pin for $mod (plugin asked for ${dep#*@})";                 continue;             fi;             go get "$dep" >/tmp/goget.log 2>&1 || { echo "go get $dep failed:"; cat /tmp/goget.log; };         done;     fi
-#16 0.433 keeping host pin for github.com/go-chi/chi/v5 (plugin asked for v5.3.2)
-#16 0.434 keeping host pin for modernc.org/sqlite (plugin asked for v1.58.0)
-#16 0.435 keeping host pin for filippo.io/edwards25519 (plugin asked for v1.2.0)
-#16 0.436 keeping host pin for github.com/caarlos0/env/v11 (plugin asked for v11.4.1)
-#16 0.437 keeping host pin for github.com/dustin/go-humanize (plugin asked for v1.0.1)
-#16 0.438 keeping host pin for github.com/go-sql-driver/mysql (plugin asked for v1.10.1)
-#16 0.439 keeping host pin for github.com/golang-sql/civil (plugin asked for v0.0.0-20220223132316-b832511892a9)
-#16 0.440 keeping host pin for github.com/golang-sql/sqlexp (plugin asked for v0.1.0)
-#16 0.441 keeping host pin for github.com/google/uuid (plugin asked for v1.6.0)
-#16 0.442 keeping host pin for github.com/jackc/pgpassfile (plugin asked for v1.0.0)
-#16 0.442 keeping host pin for github.com/jackc/pgservicefile (plugin asked for v0.0.0-20240606120523-5a60cdf6a761)
-#16 0.444 keeping host pin for github.com/jackc/pgx/v5 (plugin asked for v5.11.0)
-#16 0.445 keeping host pin for github.com/jackc/puddle/v2 (plugin asked for v2.2.2)
-#16 0.446 keeping host pin for github.com/mattn/go-isatty (plugin asked for v0.0.24)
-#16 0.447 keeping host pin for github.com/microsoft/go-mssqldb (plugin asked for v1.11.2)
-#16 0.449 keeping host pin for github.com/ncruces/go-strftime (plugin asked for v1.0.0)
-#16 0.450 keeping host pin for github.com/remyoudompheng/bigfft (plugin asked for v0.0.0-20230129092748-24d4a6f8daec)
-#16 0.451 keeping host pin for github.com/rs/xid (plugin asked for v1.6.0)
-#16 0.452 keeping host pin for github.com/shopspring/decimal (plugin asked for v1.4.0)
-#16 0.453 keeping host pin for golang.org/x/crypto (plugin asked for v0.57.0)
-#16 0.454 keeping host pin for golang.org/x/sync (plugin asked for v0.23.0)
-#16 0.455 keeping host pin for golang.org/x/sys (plugin asked for v0.48.0)
-#16 0.456 keeping host pin for golang.org/x/text (plugin asked for v0.42.0)
-#16 0.457 keeping host pin for modernc.org/libc (plugin asked for v1.75.7)
-#16 0.459 keeping host pin for modernc.org/mathutil (plugin asked for v1.7.1)
-#16 0.460 keeping host pin for modernc.org/memory (plugin asked for v1.12.1)
-#16 DONE 0.5s
+#16 0.784 keeping host pin for github.com/go-chi/chi/v5 (plugin asked for v5.3.2)
+#16 0.785 keeping host pin for modernc.org/sqlite (plugin asked for v1.58.0)
+#16 0.787 keeping host pin for filippo.io/edwards25519 (plugin asked for v1.2.0)
+#16 0.788 keeping host pin for github.com/caarlos0/env/v11 (plugin asked for v11.4.1)
+#16 0.789 keeping host pin for github.com/dustin/go-humanize (plugin asked for v1.0.1)
+#16 0.790 keeping host pin for github.com/go-sql-driver/mysql (plugin asked for v1.10.1)
+#16 0.791 keeping host pin for github.com/golang-sql/civil (plugin asked for v0.0.0-20220223132316-b832511892a9)
+#16 0.793 keeping host pin for github.com/golang-sql/sqlexp (plugin asked for v0.1.0)
+#16 0.794 keeping host pin for github.com/google/uuid (plugin asked for v1.6.0)
+#16 0.795 keeping host pin for github.com/jackc/pgpassfile (plugin asked for v1.0.0)
+#16 0.796 keeping host pin for github.com/jackc/pgservicefile (plugin asked for v0.0.0-20240606120523-5a60cdf6a761)
+#16 0.797 keeping host pin for github.com/jackc/pgx/v5 (plugin asked for v5.11.0)
+#16 0.798 keeping host pin for github.com/jackc/puddle/v2 (plugin asked for v2.2.2)
+#16 0.799 keeping host pin for github.com/mattn/go-isatty (plugin asked for v0.0.24)
+#16 0.800 keeping host pin for github.com/microsoft/go-mssqldb (plugin asked for v1.11.2)
+#16 0.801 keeping host pin for github.com/ncruces/go-strftime (plugin asked for v1.0.0)
+#16 0.802 keeping host pin for github.com/remyoudompheng/bigfft (plugin asked for v0.0.0-20230129092748-24d4a6f8daec)
+#16 0.803 keeping host pin for github.com/rs/xid (plugin asked for v1.6.0)
+#16 0.804 keeping host pin for github.com/shopspring/decimal (plugin asked for v1.4.0)
+#16 0.806 keeping host pin for golang.org/x/crypto (plugin asked for v0.57.0)
+#16 0.807 keeping host pin for golang.org/x/sync (plugin asked for v0.23.0)
+#16 0.807 keeping host pin for golang.org/x/sys (plugin asked for v0.48.0)
+#16 0.808 keeping host pin for golang.org/x/text (plugin asked for v0.42.0)
+#16 0.809 keeping host pin for modernc.org/libc (plugin asked for v1.75.7)
+#16 0.809 keeping host pin for modernc.org/mathutil (plugin asked for v1.7.1)
+#16 0.811 keeping host pin for modernc.org/memory (plugin asked for v1.12.1)
+#16 DONE 0.9s
 
 #17 [builder 13/14] RUN CGO_ENABLED=1 go build -trimpath -buildmode=plugin          -o /tmp/addon-reporting.so         ./_plugin_build/addon-reporting/backend
-#17 0.413 go: downloading github.com/go-chi/chi/v5 v5.3.2
-#17 0.427 go: downloading github.com/rs/xid v1.6.0
-#17 0.430 go: downloading golang.org/x/crypto v0.57.0
-#17 0.448 go: downloading github.com/caarlos0/env/v11 v11.4.1
-#17 0.455 go: downloading github.com/jackc/pgx/v5 v5.11.0
-#17 0.455 go: downloading modernc.org/sqlite v1.58.0
-#17 0.456 go: downloading github.com/go-sql-driver/mysql v1.10.1
-#17 0.456 go: downloading github.com/microsoft/go-mssqldb v1.11.2
-#17 0.684 go: downloading filippo.io/edwards25519 v1.2.0
-#17 0.732 go: downloading github.com/jackc/puddle/v2 v2.2.2
-#17 0.732 go: downloading golang.org/x/text v0.42.0
-#17 0.732 go: downloading github.com/jackc/pgservicefile v0.0.0-20240606120523-5a60cdf6a761
-#17 0.732 go: downloading github.com/jackc/pgpassfile v1.0.0
-#17 0.803 go: downloading golang.org/x/sync v0.23.0
-#17 0.813 go: downloading github.com/shopspring/decimal v1.4.0
-#17 0.813 go: downloading github.com/google/uuid v1.6.0
-#17 0.813 go: downloading github.com/golang-sql/civil v0.0.0-20220223132316-b832511892a9
-#17 0.813 go: downloading github.com/golang-sql/sqlexp v0.1.0
-#17 1.012 go: downloading golang.org/x/sys v0.48.0
-#17 4.297 go: downloading modernc.org/libc v1.75.7
-#17 7.264 go: downloading modernc.org/mathutil v1.7.1
-#17 7.264 go: downloading github.com/dustin/go-humanize v1.0.1
-#17 7.264 go: downloading modernc.org/memory v1.12.1
-#17 7.327 go: downloading github.com/remyoudompheng/bigfft v0.0.0-20230129092748-24d4a6f8daec
-#17 DONE 53.8s
+#17 0.533 go: downloading github.com/go-chi/chi/v5 v5.3.2
+#17 0.557 go: downloading github.com/rs/xid v1.6.0
+#17 0.585 go: downloading golang.org/x/crypto v0.57.0
+#17 0.631 go: downloading github.com/go-sql-driver/mysql v1.10.1
+#17 0.631 go: downloading github.com/microsoft/go-mssqldb v1.11.2
+#17 0.631 go: downloading github.com/jackc/pgx/v5 v5.11.0
+#17 0.631 go: downloading modernc.org/sqlite v1.58.0
+#17 0.635 go: downloading github.com/caarlos0/env/v11 v11.4.1
+#17 0.940 go: downloading filippo.io/edwards25519 v1.2.0
+#17 0.974 go: downloading github.com/jackc/puddle/v2 v2.2.2
+#17 0.974 go: downloading golang.org/x/text v0.42.0
+#17 0.974 go: downloading github.com/jackc/pgservicefile v0.0.0-20240606120523-5a60cdf6a761
+#17 0.975 go: downloading github.com/jackc/pgpassfile v1.0.0
+#17 1.183 go: downloading golang.org/x/sync v0.23.0
+#17 1.193 go: downloading github.com/google/uuid v1.6.0
+#17 1.193 go: downloading github.com/shopspring/decimal v1.4.0
+#17 1.193 go: downloading github.com/golang-sql/sqlexp v0.1.0
+#17 1.193 go: downloading github.com/golang-sql/civil v0.0.0-20220223132316-b832511892a9
+#17 1.242 go: downloading golang.org/x/sys v0.48.0
+#17 4.592 go: downloading modernc.org/libc v1.75.7
+#17 7.281 go: downloading github.com/dustin/go-humanize v1.0.1
+#17 7.281 go: downloading modernc.org/memory v1.12.1
+#17 7.281 go: downloading modernc.org/mathutil v1.7.1
+#17 7.314 go: downloading github.com/remyoudompheng/bigfft v0.0.0-20230129092748-24d4a6f8daec
+#17 DONE 42.3s
 
-#18 [builder 14/14] RUN RESOLVED_PLUGIN_VERSION="2026.10.01"     && if [ -z "${RESOLVED_PLUGIN_VERSION}" ]; then          RESOLVED_PLUGIN_VERSION=$(awk '/^version:[[:space:]]*/{print $2; exit}' "/build/src/plugins/Plugins/addon-reporting/plugin.yaml" | tr -d '"\r');        fi     && test -n "${RESOLVED_PLUGIN_VERSION}"     && mkdir -p /tmp/payload/backend     && cp /build/src/plugins/Plugins/addon-reporting/plugin.yaml /tmp/payload/     && if [ -n "202610161436" ]; then          sed -i '/^build:/d' /tmp/payload/plugin.yaml &&          { [ -z "$(tail -c1 /tmp/payload/plugin.yaml)" ] || echo >> /tmp/payload/plugin.yaml; } &&          echo "build:    "202610161436"" >> /tmp/payload/plugin.yaml;        fi     && if [ -d /build/src/plugins/Plugins/addon-reporting/i18n ]; then          cp -R /build/src/plugins/Plugins/addon-reporting/i18n /tmp/payload/;        fi     && if [ -f /build/src/plugins/Plugins/addon-reporting/frontend/addon-reporting.umd.cjs ]; then          mkdir -p /tmp/payload/frontend &&            cp /build/src/plugins/Plugins/addon-reporting/frontend/addon-reporting.umd.cjs /tmp/payload/frontend/;        else          echo "warning: frontend/addon-reporting.umd.cjs missing — ConfigForm/SetupGuide will render blank" >&2;        fi     && if [ -d /build/src/plugins/Plugins/addon-reporting/icons ]; then          mkdir -p /tmp/payload/icons &&            cp -R /build/src/plugins/Plugins/addon-reporting/icons/. /tmp/payload/icons/;        fi     && if [ -d /build/src/plugins/Plugins/addon-reporting/migrations ]; then          cp -R /build/src/plugins/Plugins/addon-reporting/migrations /tmp/payload/;        fi     && if [ -f /build/src/plugins/Plugins/addon-reporting/THIRD_PARTY_NOTICES.md ]; then          cp /build/src/plugins/Plugins/addon-reporting/THIRD_PARTY_NOTICES.md /tmp/payload/;        fi     && cp /tmp/addon-reporting.so /tmp/payload/backend/addon-reporting.so     && mkdir -p /tmp/packaged     && tar -C /tmp/payload -czf /tmp/packaged/addon-reporting-${RESOLVED_PLUGIN_VERSION}.tar.gz .     && ls -la /tmp/packaged/
-#18 2.635 total 19296
-#18 2.635 drwxr-xr-x 2 root root     4096 Oct 16 14:37 .
-#18 2.635 drwxrwxrwt 1 root root     4096 Oct 16 14:37 ..
-#18 2.635 -rw-r--r-- 1 root root 19750106 Oct 16 14:37 addon-reporting-2026.10.01.tar.gz
-#18 DONE 2.7s
+#18 [builder 14/14] RUN RESOLVED_PLUGIN_VERSION="2026.10.01"     && if [ -z "${RESOLVED_PLUGIN_VERSION}" ]; then          RESOLVED_PLUGIN_VERSION=$(awk '/^version:[[:space:]]*/{print $2; exit}' "/build/src/plugins/Plugins/addon-reporting/plugin.yaml" | tr -d '"\r');        fi     && test -n "${RESOLVED_PLUGIN_VERSION}"     && mkdir -p /tmp/payload/backend     && cp /build/src/plugins/Plugins/addon-reporting/plugin.yaml /tmp/payload/     && if [ -n "202611060439" ]; then          sed -i '/^build:/d' /tmp/payload/plugin.yaml &&          { [ -z "$(tail -c1 /tmp/payload/plugin.yaml)" ] || echo >> /tmp/payload/plugin.yaml; } &&          echo "build:    "202611060439"" >> /tmp/payload/plugin.yaml;        fi     && if [ -d /build/src/plugins/Plugins/addon-reporting/i18n ]; then          cp -R /build/src/plugins/Plugins/addon-reporting/i18n /tmp/payload/;        fi     && if [ -f /build/src/plugins/Plugins/addon-reporting/frontend/addon-reporting.umd.cjs ]; then          mkdir -p /tmp/payload/frontend &&            cp /build/src/plugins/Plugins/addon-reporting/frontend/addon-reporting.umd.cjs /tmp/payload/frontend/;        else          echo "warning: frontend/addon-reporting.umd.cjs missing — ConfigForm/SetupGuide will render blank" >&2;        fi     && if [ -d /build/src/plugins/Plugins/addon-reporting/icons ]; then          mkdir -p /tmp/payload/icons &&            cp -R /build/src/plugins/Plugins/addon-reporting/icons/. /tmp/payload/icons/;        fi     && if [ -d /build/src/plugins/Plugins/addon-reporting/migrations ]; then          cp -R /build/src/plugins/Plugins/addon-reporting/migrations /tmp/payload/;        fi     && if [ -f /build/src/plugins/Plugins/addon-reporting/THIRD_PARTY_NOTICES.md ]; then          cp /build/src/plugins/Plugins/addon-reporting/THIRD_PARTY_NOTICES.md /tmp/payload/;        fi     && cp /tmp/addon-reporting.so /tmp/payload/backend/addon-reporting.so     && mkdir -p /tmp/packaged     && tar -C /tmp/payload -czf /tmp/packaged/addon-reporting-${RESOLVED_PLUGIN_VERSION}.tar.gz .     && ls -la /tmp/packaged/
+#18 2.213 total 19300
+#18 2.213 drwxr-xr-x 2 root root     4096 Nov  6 04:40 .
+#18 2.213 drwxrwxrwt 1 root root     4096 Nov  6 04:40 ..
+#18 2.213 -rw-r--r-- 1 root root 19751315 Nov  6 04:40 addon-reporting-2026.10.01.tar.gz
+#18 DONE 2.3s
 
 #19 [plugin-packager 1/1] COPY --from=builder /tmp/packaged/ /packaged/
-#19 DONE 0.1s
+#19 DONE 0.2s
 
 #20 exporting to client tarball
 #20 sending tarball 0.1s done
 #20 DONE 0.1s
 
-View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/il09vj5c883wfli4cpx3kh5yp
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/vvpmb6vq46olak7lypaa9ufr7
 >>> extracting packaged/addon-reporting-2026.10.01.tar.gz
 >>> signing addon-reporting-2026.10.01.tar.gz with plugin-signing.key and verifying against plugin-signing.pub
 pluginsigner: verified 1 signature(s) against Z:/projects/web/management/McHarbor/signing/plugin-signing.pub
@@ -284,7 +284,7 @@ pluginsigner: signed 1 tarballs, recorded 0 catalog signatures
 >>> wrote /z/projects/web/management/McHarbor/mnt/plugin-catalog/files/addon-reporting-2026.10.01.tar.gz.sig
 >>> wrote /z/projects/web/management/McHarbor/mnt/plugin-catalog/icons/addon-reporting/ (6 icon(s))
 
-    download_url: https://www.mcharbor.eu/catalog/plugins/files/addon-reporting-2026.10.01.tar.gz
+    download_url: https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/addon-reporting-2026.10.01.tar.gz
 
     Copy the contents of /z/projects/web/management/McHarbor/mnt/plugin-catalog
     over the catalog root, then restart the container so the

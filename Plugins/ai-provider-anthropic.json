@@ -10,10 +10,10 @@
   "versions": [
     {
       "version": "2026.10.01",
-      "build": "202610161437",
+      "build": "202611060440",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/ai-provider-anthropic-2026.10.01.tar.gz",
-      "built_for": "2026.10.01",
-      "signature": "rUJ3drhLjXQ4gmKZY4LB1yaNfQmowTX6tZq/Fsf9+bdzlNyfVnQFwkxN7nHWNDOagZQveXXOG9l6zET1RfbkDA=="
+      "built_for": "2026.11.01",
+      "signature": "DbDu4RXtf5ye+NtIE6TmgZfVDHi+xqqFqAiy15xHqfAYIG0d0Z9mtah41tG9JrgZ2qHiu0F4QjNSQEBdVwuzAw=="
     }
   ]
 }

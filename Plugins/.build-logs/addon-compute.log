@@ -1,7 +1,7 @@
 >>> plugin      addon-compute@2026.10.01
 >>> source      /z/projects/web/management/McHarbor/src/plugins/Plugins/addon-compute
 >>> output      /z/projects/web/management/McHarbor/mnt/plugin-catalog
->>> catalog     https://www.mcharbor.eu/catalog/plugins
+>>> catalog     https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins
 
 >>> building frontend UMD bundle for addon-compute
 
@@ -23,222 +23,219 @@ computing gzip size...
 
 [33m[33m[MIXED_EXPORTS] [0mEntry module "src/index.tsx" is using named (including "default", "mount", "onNavigate", "tabs", "unmount", "widgets") and default exports together. Consumers of your bundle will have to use `McharborPlugin_addon_compute.default` to access the default export, which may not be what you want. Use `output.exports: "named"` to disable this warning.
 [39m
-[32m✓ built in 42.44s[39m
+[32m✓ built in 2.01s[39m
 >>> built /z/projects/web/management/McHarbor/src/plugins/Plugins/addon-compute/frontend/addon-compute.umd.cjs (has McharborPlugin_addon_compute + mount)
 >>> running plugin-packager for addon-compute@2026.10.01 (first run: 3-5 min cold)
 #0 building with "desktop-linux" instance using docker driver
 
 #1 [internal] load build definition from Dockerfile.plugin-packager
-#1 transferring dockerfile: 13.10kB 0.0s done
-#1 DONE 0.1s
+#1 transferring dockerfile:
+#1 transferring dockerfile: 13.10kB done
+#1 DONE 0.3s
 
 #2 [internal] load metadata for docker.io/library/golang:1.27.2-bookworm
-#2 DONE 0.9s
+#2 DONE 0.1s
 
 #3 [internal] load .dockerignore
 #3 transferring context:
 #3 transferring context: 1.67kB 0.0s done
-#3 DONE 0.2s
+#3 DONE 0.6s
 
-#4 [internal] load build context
-#4 DONE 0.0s
+#4 [builder  1/14] FROM docker.io/library/golang:1.27.2-bookworm@sha256:5cf287a799e6b94384bad13d16b14904c531f51ba65792237e122ce42b392f61
+#4 resolve docker.io/library/golang:1.27.2-bookworm@sha256:5cf287a799e6b94384bad13d16b14904c531f51ba65792237e122ce42b392f61 0.1s done
+#4 CACHED
 
-#5 [builder  1/14] FROM docker.io/library/golang:1.27.2-bookworm@sha256:5cf287a799e6b94384bad13d16b14904c531f51ba65792237e122ce42b392f61
-#5 resolve docker.io/library/golang:1.27.2-bookworm@sha256:5cf287a799e6b94384bad13d16b14904c531f51ba65792237e122ce42b392f61 0.0s done
-#5 CACHED
-
-#4 [internal] load build context
-#4 transferring context: 20.70MB 1.5s done
-#4 DONE 1.5s
+#5 [internal] load build context
+#5 transferring context: 20.86MB 1.8s done
+#5 DONE 2.0s
 
 #6 [builder  2/14] RUN apt-get update     && apt-get install -y --no-install-recommends git bash gcc libc6-dev     && apt-get clean && find /var/lib/apt/lists -mindepth 1 -delete
-#6 0.866 Get:1 http://deb.debian.org/debian bookworm InRelease [151 kB]
-#6 0.884 Get:2 http://deb.debian.org/debian bookworm-updates InRelease [55.4 kB]
-#6 0.893 Get:3 http://deb.debian.org/debian-security bookworm-security InRelease [34.8 kB]
-#6 0.994 Get:4 http://deb.debian.org/debian bookworm/main amd64 Packages [8790 kB]
-#6 1.402 Get:5 http://deb.debian.org/debian bookworm-updates/main amd64 Packages [6924 B]
-#6 1.402 Get:6 http://deb.debian.org/debian-security bookworm-security/main amd64 Packages [355 kB]
-#6 2.277 Fetched 9394 kB in 1s (6541 kB/s)
-#6 2.277 Reading package lists...
-#6 2.923 Reading package lists...
-#6 3.421 Building dependency tree...
-#6 3.585 Reading state information...
-#6 3.736 git is already the newest version (1:2.39.5-0+deb12u3).
-#6 3.736 bash is already the newest version (5.2.15-2+b13).
-#6 3.736 bash set to manually installed.
-#6 3.736 gcc is already the newest version (4:12.2.0-3).
-#6 3.736 libc6-dev is already the newest version (2.36-9+deb12u14).
-#6 3.736 0 upgraded, 0 newly installed, 0 to remove and 6 not upgraded.
-#6 DONE 3.8s
+#6 0.566 Get:1 http://deb.debian.org/debian bookworm InRelease [151 kB]
+#6 0.602 Get:2 http://deb.debian.org/debian bookworm-updates InRelease [55.4 kB]
+#6 0.618 Get:3 http://deb.debian.org/debian-security bookworm-security InRelease [34.8 kB]
+#6 0.676 Get:4 http://deb.debian.org/debian bookworm/main amd64 Packages [8790 kB]
+#6 1.483 Get:5 http://deb.debian.org/debian bookworm-updates/main amd64 Packages [6924 B]
+#6 1.484 Get:6 http://deb.debian.org/debian-security bookworm-security/main amd64 Packages [361 kB]
+#6 2.379 Fetched 9400 kB in 2s (5135 kB/s)
+#6 2.379 Reading package lists...
+#6 2.840 Reading package lists...
+#6 3.324 Building dependency tree...
+#6 3.447 Reading state information...
+#6 3.596 git is already the newest version (1:2.39.5-0+deb12u3).
+#6 3.596 bash is already the newest version (5.2.15-2+b13).
+#6 3.596 bash set to manually installed.
+#6 3.596 gcc is already the newest version (4:12.2.0-3).
+#6 3.596 libc6-dev is already the newest version (2.36-9+deb12u14).
+#6 3.596 0 upgraded, 0 newly installed, 0 to remove and 15 not upgraded.
+#6 DONE 3.7s
 
 #7 [builder  3/14] WORKDIR /build
-#7 DONE 0.2s
+#7 DONE 0.4s
 
 #8 [builder  4/14] COPY src/backend/ ./src/backend/
-#8 DONE 0.4s
+#8 DONE 0.3s
 
 #9 [builder  5/14] COPY src/plugins/Plugins/addon-compute/ ./src/plugins/Plugins/addon-compute/
-#9 DONE 0.1s
+#9 DONE 0.2s
 
 #10 [builder  6/14] RUN if [ -z "2026.10.01" ]; then         PLUGIN_VERSION=$(awk '/^version:[[:space:]]*/{print $2; exit}' "src/plugins/Plugins/addon-compute/plugin.yaml" | tr -d '"\r');         echo "resolved PLUGIN_VERSION=2026.10.01 from plugin.yaml";     fi
-#10 DONE 0.5s
+#10 DONE 0.4s
 
 #11 [builder  7/14] RUN mkdir -p src/backend/_plugin_build/addon-compute/backend     && cp -R src/plugins/Plugins/addon-compute/backend/.         src/backend/_plugin_build/addon-compute/backend/     && ls src/backend/_plugin_build/addon-compute/backend/
-#11 0.475 abac_provider.go
-#11 0.475 agent_bridge.go
-#11 0.475 agent_bridge_test.go
-#11 0.475 alerts.go
-#11 0.475 capability_install_test.go
-#11 0.475 catalog.go
-#11 0.475 cli.go
-#11 0.475 cli_test.go
-#11 0.475 compute_model.go
-#11 0.475 destination_guard.go
-#11 0.475 destination_guard_test.go
-#11 0.475 directnet.go
-#11 0.475 error_detail_test.go
-#11 0.475 errors.go
-#11 0.475 handler.go
-#11 0.475 handler_classify_test.go
-#11 0.475 handler_locations.go
-#11 0.475 handler_pool_files.go
-#11 0.475 handler_pool_move.go
-#11 0.475 hostlink.go
-#11 0.475 hostlink_test.go
-#11 0.475 image_errors_test.go
-#11 0.475 library.go
-#11 0.475 library_transfer.go
-#11 0.475 locations.go
-#11 0.475 main.go
-#11 0.475 migrate.go
-#11 0.475 model.go
-#11 0.475 nodes.go
-#11 0.475 pool_files.go
-#11 0.475 pool_in_use_test.go
-#11 0.475 report_blocks.go
-#11 0.475 reports.go
-#11 0.475 reports_facets.go
-#11 0.475 reports_facets_test.go
-#11 0.475 reports_hygiene.go
-#11 0.475 reports_hygiene_test.go
-#11 0.475 scan.go
-#11 0.475 schema.go
-#11 0.475 service.go
-#11 0.475 wire_agent.go
-#11 DONE 0.5s
+#11 0.608 abac_provider.go
+#11 0.608 agent_bridge.go
+#11 0.608 agent_bridge_test.go
+#11 0.608 alerts.go
+#11 0.608 capability_install_test.go
+#11 0.608 catalog.go
+#11 0.608 cli.go
+#11 0.608 cli_test.go
+#11 0.608 compute_model.go
+#11 0.608 destination_guard.go
+#11 0.608 destination_guard_test.go
+#11 0.608 directnet.go
+#11 0.608 error_detail_test.go
+#11 0.608 errors.go
+#11 0.608 handler.go
+#11 0.608 handler_classify_test.go
+#11 0.608 handler_locations.go
+#11 0.608 handler_pool_files.go
+#11 0.608 handler_pool_move.go
+#11 0.608 hostlink.go
+#11 0.608 hostlink_test.go
+#11 0.608 image_errors_test.go
+#11 0.608 library.go
+#11 0.608 library_transfer.go
+#11 0.608 locations.go
+#11 0.608 main.go
+#11 0.608 migrate.go
+#11 0.608 model.go
+#11 0.608 nodes.go
+#11 0.608 pool_files.go
+#11 0.608 pool_in_use_test.go
+#11 0.608 report_blocks.go
+#11 0.608 reports.go
+#11 0.608 reports_facets.go
+#11 0.608 reports_facets_test.go
+#11 0.608 reports_hygiene.go
+#11 0.608 reports_hygiene_test.go
+#11 0.608 scan.go
+#11 0.608 schema.go
+#11 0.608 service.go
+#11 0.608 wire_agent.go
+#11 DONE 0.6s
 
 #12 [builder  8/14] RUN PLUGIN_MODULE="$(awk '/^module /{print $2; exit}' src/plugins/Plugins/addon-compute/go.mod | tr -d '\r')"     && HOST_MODULE="$(awk '/^module /{print $2; exit}' src/backend/go.mod | tr -d '\r')"     && echo "rewriting imports ${PLUGIN_MODULE}/backend -> ${HOST_MODULE}/_plugin_build/addon-compute/backend"     && find src/backend/_plugin_build/addon-compute/backend -name '*.go' -print0        | xargs -0 sed -i "s#"${PLUGIN_MODULE}/backend/#"${HOST_MODULE}/_plugin_build/addon-compute/backend/#g"
-#12 0.350 rewriting imports github.com/therealmcsparrow/mcharbor-addons/plugins/addon-compute/backend -> github.com/therealmcsparrow/mcharbor/_plugin_build/addon-compute/backend
-#12 DONE 0.4s
+#12 0.816 rewriting imports github.com/therealmcsparrow/mcharbor-addons/plugins/addon-compute/backend -> github.com/therealmcsparrow/mcharbor/_plugin_build/addon-compute/backend
+#12 DONE 0.9s
 
 #13 [builder  9/14] WORKDIR /build/src/backend
 #13 DONE 0.1s
 
 #14 [builder 10/14] RUN PLUGIN_KEEP_FILE=/build/src/backend/_plugin_build/addon-compute/backend/host_link_keep.go &&     go run ./cmd/extract-core-plugin-symbols ./core/plugin > "$PLUGIN_KEEP_FILE" &&     echo "=== generated $PLUGIN_KEEP_FILE ===" &&     wc -l "$PLUGIN_KEEP_FILE" &&     head -25 "$PLUGIN_KEEP_FILE"
-#14 6.109 === generated /build/src/backend/_plugin_build/addon-compute/backend/host_link_keep.go ===
-#14 6.110 864 /build/src/backend/_plugin_build/addon-compute/backend/host_link_keep.go
-#14 6.112 // Code generated by docker/cmd/extract-core-plugin-symbols. DO NOT EDIT.
-#14 6.112 //
-#14 6.112 // Force-link every exported top-level symbol of every Go subpackage
-#14 6.112 // under github.com/therealmcsparrow/mcharbor/core/plugin/* so each
-#14 6.112 // subpackage's per-package ABI hash in the plugin .so matches the
-#14 6.112 // host binary's. Without this, the plugin linker prunes symbols the
-#14 6.112 // plugin does not directly use from each shared package, producing a
-#14 6.112 // strict-subset view that fails to load with "different version of
-#14 6.112 // package <subpkg>".
-#14 6.112 
-#14 6.112 package main
-#14 6.112 
-#14 6.112 import (
-#14 6.112 	"reflect"
-#14 6.112 	plugin "github.com/therealmcsparrow/mcharbor/core/plugin"
-#14 6.112 	contract "github.com/therealmcsparrow/mcharbor/core/plugin/contract"
-#14 6.112 	host "github.com/therealmcsparrow/mcharbor/core/plugin/host"
-#14 6.112 	services "github.com/therealmcsparrow/mcharbor/core/plugin/services"
-#14 6.112 	abac "github.com/therealmcsparrow/mcharbor/core/plugin/specs/abac"
-#14 6.112 	ai "github.com/therealmcsparrow/mcharbor/core/plugin/specs/ai"
-#14 6.112 	alerting "github.com/therealmcsparrow/mcharbor/core/plugin/specs/alerting"
-#14 6.112 	backup "github.com/therealmcsparrow/mcharbor/core/plugin/specs/backup"
-#14 6.112 	desiredstate "github.com/therealmcsparrow/mcharbor/core/plugin/specs/desiredstate"
-#14 6.112 	identity "github.com/therealmcsparrow/mcharbor/core/plugin/specs/identity"
-#14 6.112 	incident "github.com/therealmcsparrow/mcharbor/core/plugin/specs/incident"
-#14 DONE 6.1s
+#14 5.639 === generated /build/src/backend/_plugin_build/addon-compute/backend/host_link_keep.go ===
+#14 5.641 864 /build/src/backend/_plugin_build/addon-compute/backend/host_link_keep.go
+#14 5.651 // Code generated by docker/cmd/extract-core-plugin-symbols. DO NOT EDIT.
+#14 5.651 //
+#14 5.651 // Force-link every exported top-level symbol of every Go subpackage
+#14 5.651 // under github.com/therealmcsparrow/mcharbor/core/plugin/* so each
+#14 5.651 // subpackage's per-package ABI hash in the plugin .so matches the
+#14 5.651 // host binary's. Without this, the plugin linker prunes symbols the
+#14 5.651 // plugin does not directly use from each shared package, producing a
+#14 5.651 // strict-subset view that fails to load with "different version of
+#14 5.651 // package <subpkg>".
+#14 5.651 
+#14 5.651 package main
+#14 5.651 
+#14 5.651 import (
+#14 5.651 	"reflect"
+#14 5.651 	plugin "github.com/therealmcsparrow/mcharbor/core/plugin"
+#14 5.651 	contract "github.com/therealmcsparrow/mcharbor/core/plugin/contract"
+#14 5.651 	host "github.com/therealmcsparrow/mcharbor/core/plugin/host"
+#14 5.651 	services "github.com/therealmcsparrow/mcharbor/core/plugin/services"
+#14 5.651 	abac "github.com/therealmcsparrow/mcharbor/core/plugin/specs/abac"
+#14 5.651 	ai "github.com/therealmcsparrow/mcharbor/core/plugin/specs/ai"
+#14 5.651 	alerting "github.com/therealmcsparrow/mcharbor/core/plugin/specs/alerting"
+#14 5.651 	backup "github.com/therealmcsparrow/mcharbor/core/plugin/specs/backup"
+#14 5.651 	desiredstate "github.com/therealmcsparrow/mcharbor/core/plugin/specs/desiredstate"
+#14 5.651 	identity "github.com/therealmcsparrow/mcharbor/core/plugin/specs/identity"
+#14 5.651 	incident "github.com/therealmcsparrow/mcharbor/core/plugin/specs/incident"
+#14 DONE 5.7s
 
 #15 [builder 11/14] WORKDIR /build/src/backend
-#15 DONE 0.2s
+#15 DONE 0.3s
 
 #16 [builder 12/14] RUN awk '/^[[:space:]]+[A-Za-z0-9.-]+\.[A-Za-z]+\/[^ ]+ v[0-9]/{print $1}' go.mod         | tr -d '\r' | sort -u > /tmp/host-modules.txt  && PLUGIN_DEPS=$(grep -E '^\s+[A-Za-z0-9.-]+\.[A-Za-z]+/[^ ]+ v[0-9]'         /build/src/plugins/Plugins/addon-compute/go.mod 2>/dev/null |         tr -d '\r' |         awk '{print $1 "@" $2}' |         grep -v 'github.com/therealmcsparrow/mcharbor' || true) &&     if [ -n "$PLUGIN_DEPS" ]; then         for dep in $PLUGIN_DEPS; do             mod="${dep%@*}";             if grep -Fxq "$mod" /tmp/host-modules.txt; then                 echo "keeping host pin for $mod (plugin asked for ${dep#*@})";                 continue;             fi;             go get "$dep" >/tmp/goget.log 2>&1 || { echo "go get $dep failed:"; cat /tmp/goget.log; };         done;     fi
-#16 0.367 keeping host pin for github.com/go-chi/chi/v5 (plugin asked for v5.3.2)
-#16 0.369 keeping host pin for github.com/rs/xid (plugin asked for v1.6.0)
-#16 0.370 keeping host pin for filippo.io/edwards25519 (plugin asked for v1.2.0)
-#16 0.371 keeping host pin for github.com/caarlos0/env/v11 (plugin asked for v11.4.1)
-#16 0.372 keeping host pin for github.com/dustin/go-humanize (plugin asked for v1.0.1)
-#16 0.374 keeping host pin for github.com/go-sql-driver/mysql (plugin asked for v1.10.1)
-#16 0.375 keeping host pin for github.com/golang-sql/civil (plugin asked for v0.0.0-20220223132316-b832511892a9)
-#16 0.377 keeping host pin for github.com/golang-sql/sqlexp (plugin asked for v0.1.0)
-#16 0.378 keeping host pin for github.com/google/uuid (plugin asked for v1.6.0)
-#16 0.379 keeping host pin for github.com/jackc/pgpassfile (plugin asked for v1.0.0)
-#16 0.380 keeping host pin for github.com/jackc/pgservicefile (plugin asked for v0.0.0-20240606120523-5a60cdf6a761)
-#16 0.381 keeping host pin for github.com/jackc/pgx/v5 (plugin asked for v5.11.0)
-#16 0.382 keeping host pin for github.com/jackc/puddle/v2 (plugin asked for v2.2.2)
-#16 0.383 keeping host pin for github.com/mattn/go-isatty (plugin asked for v0.0.24)
-#16 0.385 keeping host pin for github.com/microsoft/go-mssqldb (plugin asked for v1.11.2)
-#16 0.386 keeping host pin for github.com/ncruces/go-strftime (plugin asked for v1.0.0)
-#16 0.387 keeping host pin for github.com/remyoudompheng/bigfft (plugin asked for v0.0.0-20230129092748-24d4a6f8daec)
-#16 0.388 keeping host pin for github.com/shopspring/decimal (plugin asked for v1.4.0)
-#16 0.943 keeping host pin for golang.org/x/crypto (plugin asked for v0.57.0)
-#16 0.944 keeping host pin for golang.org/x/sync (plugin asked for v0.23.0)
-#16 0.946 keeping host pin for golang.org/x/sys (plugin asked for v0.48.0)
-#16 0.947 keeping host pin for golang.org/x/text (plugin asked for v0.42.0)
-#16 0.949 keeping host pin for modernc.org/libc (plugin asked for v1.75.7)
-#16 0.950 keeping host pin for modernc.org/mathutil (plugin asked for v1.7.1)
-#16 0.952 keeping host pin for modernc.org/memory (plugin asked for v1.12.1)
-#16 0.955 keeping host pin for modernc.org/sqlite (plugin asked for v1.58.0)
-#16 DONE 1.0s
+#16 0.819 keeping host pin for github.com/go-chi/chi/v5 (plugin asked for v5.3.2)
+#16 0.820 keeping host pin for github.com/rs/xid (plugin asked for v1.6.0)
+#16 0.821 keeping host pin for filippo.io/edwards25519 (plugin asked for v1.2.0)
+#16 0.824 keeping host pin for github.com/caarlos0/env/v11 (plugin asked for v11.4.1)
+#16 0.825 keeping host pin for github.com/dustin/go-humanize (plugin asked for v1.0.1)
+#16 0.826 keeping host pin for github.com/go-sql-driver/mysql (plugin asked for v1.10.1)
+#16 0.827 keeping host pin for github.com/golang-sql/civil (plugin asked for v0.0.0-20220223132316-b832511892a9)
+#16 0.828 keeping host pin for github.com/golang-sql/sqlexp (plugin asked for v0.1.0)
+#16 0.830 keeping host pin for github.com/google/uuid (plugin asked for v1.6.0)
+#16 0.831 keeping host pin for github.com/jackc/pgpassfile (plugin asked for v1.0.0)
+#16 0.832 keeping host pin for github.com/jackc/pgservicefile (plugin asked for v0.0.0-20240606120523-5a60cdf6a761)
+#16 0.833 keeping host pin for github.com/jackc/pgx/v5 (plugin asked for v5.11.0)
+#16 0.834 keeping host pin for github.com/jackc/puddle/v2 (plugin asked for v2.2.2)
+#16 0.835 keeping host pin for github.com/mattn/go-isatty (plugin asked for v0.0.24)
+#16 0.837 keeping host pin for github.com/microsoft/go-mssqldb (plugin asked for v1.11.2)
+#16 0.850 keeping host pin for github.com/ncruces/go-strftime (plugin asked for v1.0.0)
+#16 0.856 keeping host pin for github.com/remyoudompheng/bigfft (plugin asked for v0.0.0-20230129092748-24d4a6f8daec)
+#16 0.856 keeping host pin for github.com/shopspring/decimal (plugin asked for v1.4.0)
+#16 1.573 keeping host pin for golang.org/x/crypto (plugin asked for v0.57.0)
+#16 1.574 keeping host pin for golang.org/x/sync (plugin asked for v0.23.0)
+#16 1.575 keeping host pin for golang.org/x/sys (plugin asked for v0.48.0)
+#16 1.576 keeping host pin for golang.org/x/text (plugin asked for v0.42.0)
+#16 1.577 keeping host pin for modernc.org/libc (plugin asked for v1.75.7)
+#16 1.578 keeping host pin for modernc.org/mathutil (plugin asked for v1.7.1)
+#16 1.579 keeping host pin for modernc.org/memory (plugin asked for v1.12.1)
+#16 1.581 keeping host pin for modernc.org/sqlite (plugin asked for v1.58.0)
+#16 DONE 1.7s
 
 #17 [builder 13/14] RUN CGO_ENABLED=1 go build -trimpath -buildmode=plugin          -o /tmp/addon-compute.so         ./_plugin_build/addon-compute/backend
-#17 0.373 go: downloading github.com/rs/xid v1.6.0
-#17 0.378 go: downloading github.com/go-chi/chi/v5 v5.3.2
-#17 0.434 go: downloading golang.org/x/crypto v0.57.0
-#17 0.482 go: downloading github.com/go-sql-driver/mysql v1.10.1
-#17 0.488 go: downloading github.com/jackc/pgx/v5 v5.11.0
-#17 0.488 go: downloading github.com/microsoft/go-mssqldb v1.11.2
-#17 0.488 go: downloading modernc.org/sqlite v1.58.0
-#17 0.565 go: downloading github.com/caarlos0/env/v11 v11.4.1
-#17 0.774 go: downloading filippo.io/edwards25519 v1.2.0
-#17 0.954 go: downloading github.com/jackc/puddle/v2 v2.2.2
-#17 0.955 go: downloading github.com/jackc/pgservicefile v0.0.0-20240606120523-5a60cdf6a761
-#17 0.955 go: downloading github.com/jackc/pgpassfile v1.0.0
-#17 0.955 go: downloading golang.org/x/text v0.42.0
-#17 0.963 go: downloading golang.org/x/sys v0.48.0
-#17 0.976 go: downloading golang.org/x/sync v0.23.0
-#17 1.030 go: downloading github.com/shopspring/decimal v1.4.0
-#17 1.030 go: downloading github.com/golang-sql/civil v0.0.0-20220223132316-b832511892a9
-#17 1.030 go: downloading github.com/golang-sql/sqlexp v0.1.0
-#17 1.030 go: downloading github.com/google/uuid v1.6.0
-#17 4.723 go: downloading modernc.org/libc v1.75.7
-#17 10.72 go: downloading modernc.org/mathutil v1.7.1
-#17 10.72 go: downloading github.com/dustin/go-humanize v1.0.1
-#17 10.72 go: downloading modernc.org/memory v1.12.1
-#17 10.80 go: downloading github.com/remyoudompheng/bigfft v0.0.0-20230129092748-24d4a6f8daec
-#17 DONE 70.6s
+#17 0.530 go: downloading github.com/rs/xid v1.6.0
+#17 0.531 go: downloading github.com/go-chi/chi/v5 v5.3.2
+#17 0.560 go: downloading golang.org/x/crypto v0.57.0
+#17 0.580 go: downloading github.com/caarlos0/env/v11 v11.4.1
+#17 0.599 go: downloading github.com/microsoft/go-mssqldb v1.11.2
+#17 0.599 go: downloading github.com/jackc/pgx/v5 v5.11.0
+#17 0.599 go: downloading github.com/go-sql-driver/mysql v1.10.1
+#17 0.599 go: downloading modernc.org/sqlite v1.58.0
+#17 0.758 go: downloading filippo.io/edwards25519 v1.2.0
+#17 0.939 go: downloading github.com/jackc/puddle/v2 v2.2.2
+#17 0.940 go: downloading github.com/jackc/pgservicefile v0.0.0-20240606120523-5a60cdf6a761
+#17 0.941 go: downloading github.com/jackc/pgpassfile v1.0.0
+#17 0.945 go: downloading golang.org/x/text v0.42.0
+#17 0.968 go: downloading golang.org/x/sync v0.23.0
+#17 0.976 go: downloading github.com/golang-sql/sqlexp v0.1.0
+#17 0.976 go: downloading github.com/google/uuid v1.6.0
+#17 0.976 go: downloading github.com/shopspring/decimal v1.4.0
+#17 0.976 go: downloading github.com/golang-sql/civil v0.0.0-20220223132316-b832511892a9
+#17 1.067 go: downloading golang.org/x/sys v0.48.0
+#17 3.808 go: downloading modernc.org/libc v1.75.7
+#17 6.734 go: downloading github.com/dustin/go-humanize v1.0.1
+#17 6.734 go: downloading modernc.org/memory v1.12.1
+#17 6.734 go: downloading modernc.org/mathutil v1.7.1
+#17 6.763 go: downloading github.com/remyoudompheng/bigfft v0.0.0-20230129092748-24d4a6f8daec
+#17 DONE 38.9s
 
-#18 [builder 14/14] RUN RESOLVED_PLUGIN_VERSION="2026.10.01"     && if [ -z "${RESOLVED_PLUGIN_VERSION}" ]; then          RESOLVED_PLUGIN_VERSION=$(awk '/^version:[[:space:]]*/{print $2; exit}' "/build/src/plugins/Plugins/addon-compute/plugin.yaml" | tr -d '"\r');        fi     && test -n "${RESOLVED_PLUGIN_VERSION}"     && mkdir -p /tmp/payload/backend     && cp /build/src/plugins/Plugins/addon-compute/plugin.yaml /tmp/payload/     && if [ -n "202610211556" ]; then          sed -i '/^build:/d' /tmp/payload/plugin.yaml &&          { [ -z "$(tail -c1 /tmp/payload/plugin.yaml)" ] || echo >> /tmp/payload/plugin.yaml; } &&          echo "build:    "202610211556"" >> /tmp/payload/plugin.yaml;        fi     && if [ -d /build/src/plugins/Plugins/addon-compute/i18n ]; then          cp -R /build/src/plugins/Plugins/addon-compute/i18n /tmp/payload/;        fi     && if [ -f /build/src/plugins/Plugins/addon-compute/frontend/addon-compute.umd.cjs ]; then          mkdir -p /tmp/payload/frontend &&            cp /build/src/plugins/Plugins/addon-compute/frontend/addon-compute.umd.cjs /tmp/payload/frontend/;        else          echo "warning: frontend/addon-compute.umd.cjs missing — ConfigForm/SetupGuide will render blank" >&2;        fi     && if [ -d /build/src/plugins/Plugins/addon-compute/icons ]; then          mkdir -p /tmp/payload/icons &&            cp -R /build/src/plugins/Plugins/addon-compute/icons/. /tmp/payload/icons/;        fi     && if [ -d /build/src/plugins/Plugins/addon-compute/migrations ]; then          cp -R /build/src/plugins/Plugins/addon-compute/migrations /tmp/payload/;        fi     && if [ -f /build/src/plugins/Plugins/addon-compute/THIRD_PARTY_NOTICES.md ]; then          cp /build/src/plugins/Plugins/addon-compute/THIRD_PARTY_NOTICES.md /tmp/payload/;        fi     && cp /tmp/addon-compute.so /tmp/payload/backend/addon-compute.so     && mkdir -p /tmp/packaged     && tar -C /tmp/payload -czf /tmp/packaged/addon-compute-${RESOLVED_PLUGIN_VERSION}.tar.gz .     && ls -la /tmp/packaged/
-#18 2.846 total 17320
-#18 2.846 drwxr-xr-x 2 root root     4096 Oct 21 15:58 .
-#18 2.846 drwxrwxrwt 1 root root     4096 Oct 21 15:58 ..
-#18 2.846 -rw-r--r-- 1 root root 17725955 Oct 21 15:58 addon-compute-2026.10.01.tar.gz
-#18 DONE 2.9s
+#18 [builder 14/14] RUN RESOLVED_PLUGIN_VERSION="2026.10.01"     && if [ -z "${RESOLVED_PLUGIN_VERSION}" ]; then          RESOLVED_PLUGIN_VERSION=$(awk '/^version:[[:space:]]*/{print $2; exit}' "/build/src/plugins/Plugins/addon-compute/plugin.yaml" | tr -d '"\r');        fi     && test -n "${RESOLVED_PLUGIN_VERSION}"     && mkdir -p /tmp/payload/backend     && cp /build/src/plugins/Plugins/addon-compute/plugin.yaml /tmp/payload/     && if [ -n "202611060439" ]; then          sed -i '/^build:/d' /tmp/payload/plugin.yaml &&          { [ -z "$(tail -c1 /tmp/payload/plugin.yaml)" ] || echo >> /tmp/payload/plugin.yaml; } &&          echo "build:    "202611060439"" >> /tmp/payload/plugin.yaml;        fi     && if [ -d /build/src/plugins/Plugins/addon-compute/i18n ]; then          cp -R /build/src/plugins/Plugins/addon-compute/i18n /tmp/payload/;        fi     && if [ -f /build/src/plugins/Plugins/addon-compute/frontend/addon-compute.umd.cjs ]; then          mkdir -p /tmp/payload/frontend &&            cp /build/src/plugins/Plugins/addon-compute/frontend/addon-compute.umd.cjs /tmp/payload/frontend/;        else          echo "warning: frontend/addon-compute.umd.cjs missing — ConfigForm/SetupGuide will render blank" >&2;        fi     && if [ -d /build/src/plugins/Plugins/addon-compute/icons ]; then          mkdir -p /tmp/payload/icons &&            cp -R /build/src/plugins/Plugins/addon-compute/icons/. /tmp/payload/icons/;        fi     && if [ -d /build/src/plugins/Plugins/addon-compute/migrations ]; then          cp -R /build/src/plugins/Plugins/addon-compute/migrations /tmp/payload/;        fi     && if [ -f /build/src/plugins/Plugins/addon-compute/THIRD_PARTY_NOTICES.md ]; then          cp /build/src/plugins/Plugins/addon-compute/THIRD_PARTY_NOTICES.md /tmp/payload/;        fi     && cp /tmp/addon-compute.so /tmp/payload/backend/addon-compute.so     && mkdir -p /tmp/packaged     && tar -C /tmp/payload -czf /tmp/packaged/addon-compute-${RESOLVED_PLUGIN_VERSION}.tar.gz .     && ls -la /tmp/packaged/
+#18 1.972 total 17320
+#18 1.972 drwxr-xr-x 2 root root     4096 Nov  6 04:40 .
+#18 1.972 drwxrwxrwt 1 root root     4096 Nov  6 04:40 ..
+#18 1.972 -rw-r--r-- 1 root root 17725571 Nov  6 04:40 addon-compute-2026.10.01.tar.gz
+#18 DONE 2.1s
 
 #19 [plugin-packager 1/1] COPY --from=builder /tmp/packaged/ /packaged/
 #19 DONE 0.1s
 
 #20 exporting to client tarball
-#20 sending tarball
-#20 sending tarball 0.2s done
-#20 DONE 0.2s
+#20 sending tarball 0.1s done
+#20 DONE 0.1s
 
-View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/vy9vco2rjjrhv4oc3umdghffx
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/9z8r3yyr29g2rrn2wuju52opz
 >>> extracting packaged/addon-compute-2026.10.01.tar.gz
 >>> signing addon-compute-2026.10.01.tar.gz with plugin-signing.key and verifying against plugin-signing.pub
 pluginsigner: verified 1 signature(s) against Z:/projects/web/management/McHarbor/signing/plugin-signing.pub
@@ -250,7 +247,7 @@ pluginsigner: signed 1 tarballs, recorded 0 catalog signatures
 >>> wrote /z/projects/web/management/McHarbor/mnt/plugin-catalog/files/addon-compute-2026.10.01.tar.gz.sig
 >>> wrote /z/projects/web/management/McHarbor/mnt/plugin-catalog/icons/addon-compute/ (2 icon(s))
 
-    download_url: https://www.mcharbor.eu/catalog/plugins/files/addon-compute-2026.10.01.tar.gz
+    download_url: https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/addon-compute-2026.10.01.tar.gz
 
     Copy the contents of /z/projects/web/management/McHarbor/mnt/plugin-catalog
     over the catalog root, then restart the container so the
