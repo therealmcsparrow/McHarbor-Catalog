@@ -12,7 +12,7 @@
       "version": "2026.10.01",
       "build": "202611060443",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/comm-smtp-2026.10.01.tar.gz",
-      "built_for": "2026.11.01",
+      "min_mcharbor": "2026.11.01",
       "signature": "h1KSdLZzSzo9mRBZ1ncRc7swB2T0XU0Vx8sMMNLo5f5gN7tMzkU6ZHjEbWzVI1EL9BwMyP5GXQ7Usxk0yeFvBQ=="
     }
   ]

@@ -12,7 +12,7 @@
       "version": "2026.10.01",
       "build": "202611060439",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/addon-kvm-2026.10.01.tar.gz",
-      "built_for": "2026.11.01",
+      "min_mcharbor": "2026.11.01",
       "signature": "DrbJdI/vsI/SA21CojyypIUQoLdL/+B7GwrpMyGw4rZ35jxJxYdOkYLBcFSaD/xJWCGdWzmfJqtjvO1Ce5wLCA=="
     }
   ]

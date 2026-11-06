@@ -12,7 +12,7 @@
       "version": "2026.10.01",
       "build": "202611060446",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/storage-onedrive-personal-2026.10.01.tar.gz",
-      "built_for": "2026.11.01",
+      "min_mcharbor": "2026.11.01",
       "signature": "StSINli34Dox/sA0daaOzTaeqLTrt4lNvixlbgBVWM0a754ewGUPCUcKcLlDNU/E8yorJ7Oboz4Kr2SGwB5pAA=="
     }
   ]

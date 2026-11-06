@@ -12,7 +12,7 @@
       "version": "2026.10.01",
       "build": "202611061416",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/ai-provider-anthropic-2026.10.01.tar.gz",
-      "built_for": "2026.11.01",
+      "min_mcharbor": "2026.11.01",
       "signature": "W3zkLWFNHp7MnnDAHgK5VphmeLUMgcW/Zdd4CtSqFecXneHoB2CIDcUXlGZAC1ropRHOFufSgk8FLzKtj3q6DA=="
     }
   ]

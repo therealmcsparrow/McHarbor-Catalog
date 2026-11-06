@@ -12,7 +12,7 @@
       "version": "2026.10.01",
       "build": "202611061418",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/ai-provider-perplexity-2026.10.01.tar.gz",
-      "built_for": "2026.11.01",
+      "min_mcharbor": "2026.11.01",
       "signature": "3RLkdhcFj1rs6kSVNyyXZ271U5shUSkv7QZFoXjjZf+PG6FDLgaK4ky8fOHX7GaCzN/b1Rs0F8MFcouTC71zCg=="
     }
   ]

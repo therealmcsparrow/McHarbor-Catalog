@@ -12,7 +12,7 @@
       "version": "2026.10.01",
       "build": "202611060442",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/comm-discord-2026.10.01.tar.gz",
-      "built_for": "2026.11.01",
+      "min_mcharbor": "2026.11.01",
       "signature": "AOXsJxb74crIZVTYVZ3U25xtuquopofi0qkh2UcHjStIMG8YYpzqmGwOFItOvB9EPS6BDTpLDvM38C/4JBgjDg=="
     }
   ]

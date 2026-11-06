@@ -12,7 +12,7 @@
       "version": "2026.10.01",
       "build": "202611060444",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/comm-request-tracker-2026.10.01.tar.gz",
-      "built_for": "2026.11.01",
+      "min_mcharbor": "2026.11.01",
       "signature": "kGCDIUyx0C+U7Qta2TzcMdZDqKSEdpcSVHsaKVyQh0O0sC99ZfWyVFGKV9qd0T8AX8EEAs7tZmLoOZFYq0wEBA=="
     }
   ]

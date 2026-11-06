@@ -12,7 +12,7 @@
       "version": "2026.10.01",
       "build": "202611061416",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/ai-provider-groq-2026.10.01.tar.gz",
-      "built_for": "2026.11.01",
+      "min_mcharbor": "2026.11.01",
       "signature": "kcD/vykYC0bb+XDSv6KCDbBI980U//3HTKPBdrA7A8/+zNqe8LaPA0yD7yYxr8641VDdMv7ylZ7/QcHmw5hfDQ=="
     }
   ]

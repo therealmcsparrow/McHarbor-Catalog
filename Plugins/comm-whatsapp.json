@@ -12,7 +12,7 @@
       "version": "2026.10.01",
       "build": "202611060443",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/comm-whatsapp-2026.10.01.tar.gz",
-      "built_for": "2026.11.01",
+      "min_mcharbor": "2026.11.01",
       "signature": "+CMez4bsIrbEG+mLw9mYgJRE+KHwFu8yyxD80FkuEC6hsNsylAKfDk/2TA0RtPntu+hIBGOB4DQGvtsudEwWDQ=="
     }
   ]

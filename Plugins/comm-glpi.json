@@ -12,7 +12,7 @@
       "version": "2026.10.01",
       "build": "202611060443",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/comm-glpi-2026.10.01.tar.gz",
-      "built_for": "2026.11.01",
+      "min_mcharbor": "2026.11.01",
       "signature": "NBUvPwZzUQ7/2cxbbdPf1rFFLa4nc7h5lL1awWBLMR+a5E3rnGVLbevuVJ0/4HkvFqebLMzDTDnHmgv1qUkIDg=="
     }
   ]
