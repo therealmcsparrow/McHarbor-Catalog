@@ -10,10 +10,10 @@
   "versions": [
     {
       "version": "2026.10.01",
-      "build": "202611060441",
+      "build": "202611061416",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/ai-provider-groq-2026.10.01.tar.gz",
       "built_for": "2026.11.01",
-      "signature": "cS3RoJDeAtxC7blEaB2wIckAtF0Zt5iQB9fVKWgxkTTBmZ6Fn5/cNU32iGKTx17gTnjFz1/ZvOoz3C5S5mtBBw=="
+      "signature": "kcD/vykYC0bb+XDSv6KCDbBI980U//3HTKPBdrA7A8/+zNqe8LaPA0yD7yYxr8641VDdMv7ylZ7/QcHmw5hfDQ=="
     }
   ]
 }

@@ -10,10 +10,10 @@
   "versions": [
     {
       "version": "2026.10.01",
-      "build": "202611060442",
+      "build": "202611061418",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/ai-provider-xai-2026.10.01.tar.gz",
       "built_for": "2026.11.01",
-      "signature": "k7l8/6hlOcMD8xbNGScTspiVV0Crvv7C01U9KVIAGMjGKd21Mz531h6EHJg9jHibZPro+aUgt0A4FoV69oRICA=="
+      "signature": "bSHPi9rTKy7uQmswGbfpPDmf/rw14GGVapv79i0eD28GIf86lQdBJwN8raHv69v8wMYYxD0loglQf4KQKA2nAg=="
     }
   ]
 }

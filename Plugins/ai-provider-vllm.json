@@ -10,10 +10,10 @@
   "versions": [
     {
       "version": "2026.10.01",
-      "build": "202611060442",
+      "build": "202611061418",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/ai-provider-vllm-2026.10.01.tar.gz",
       "built_for": "2026.11.01",
-      "signature": "gf70D95eGV6FV9qZ+NE8nj4MiWYDkqPRLtzSsVtxO7UEgqnJqKyhOk6fJksAiLCC/Uy0qGQb0Zxo+Bm/S2GKAQ=="
+      "signature": "1iLo6/AtA1aI2oBJQ/SoYj+C0MuLoTH3TS/ZOstjle/SGgzBu3Zt+BiU9SP1J6IkBwbUavry+Tap5pLGvEXTAA=="
     }
   ]
 }

@@ -131,11 +131,11 @@
     "versions": [
       {
         "version": "2026.10.01",
-        "build": "202611060440",
+        "build": "202611061416",
         "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/ai-provider-anthropic-2026.10.01.tar.gz",
         "built_for": "2026.11.01",
-        "signature": "DbDu4RXtf5ye+NtIE6TmgZfVDHi+xqqFqAiy15xHqfAYIG0d0Z9mtah41tG9JrgZ2qHiu0F4QjNSQEBdVwuzAw==",
-        "checksum": "808510d76ca9ccc11f7f56e0117129ebee6824996a6baa76b02716393e720850"
+        "signature": "W3zkLWFNHp7MnnDAHgK5VphmeLUMgcW/Zdd4CtSqFecXneHoB2CIDcUXlGZAC1ropRHOFufSgk8FLzKtj3q6DA==",
+        "checksum": "5db3a56b495c9158242b283fd114d6d9867eaebcc2cd7168d81b909eedf0744f"
       }
     ]
   },
@@ -151,11 +151,11 @@
     "versions": [
       {
         "version": "2026.10.01",
-        "build": "202611060440",
+        "build": "202611061416",
         "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/ai-provider-cohere-2026.10.01.tar.gz",
         "built_for": "2026.11.01",
-        "signature": "uBied3eYUeOrpMWW2dU7CgcdR0M36h1fbmIOjLpLlbx/VbpYA8+qAVQvhrskQIDwbfO1bujn6PQG5ZNUz2VnDg==",
-        "checksum": "1b7c8b07fc6a56959389542ba16d25238fad74d080be769b97a0c0b511350078"
+        "signature": "9pxMcFOSS//xbS1de+lxxzg7950RmdNg0EYYKhkCsUUW2xRBTNamfJzi3NH/hqY3mzV8hTBYKqkQjiK0gCbABA==",
+        "checksum": "1f57c0a3ead9524165cce7c710383310712e28e8ba8b94a2824d443f736ef548"
       }
     ]
   },
@@ -171,11 +171,11 @@
     "versions": [
       {
         "version": "2026.10.01",
-        "build": "202611060440",
+        "build": "202611061416",
         "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/ai-provider-deepseek-2026.10.01.tar.gz",
         "built_for": "2026.11.01",
-        "signature": "CiJx7CGU/yWl5gXe8i2q+7aSjkWTCgtq7y1ujU/QmdYiIigCDt9eSu8Ls9gVGs9triJesAhLNQ6W3sQHsmqOAw==",
-        "checksum": "49f49797a6bd2e6ca99ed6bd032514c655fcefd1d507e9a962f3d8a620e76919"
+        "signature": "9ihiGMC7gBPLGC2+ffMdmPr6RVMIqevWQCLsIfPnhQ6P7elDA6mV9/1GmXmkbXskL0T6ckyEb+CMiHX3L5rcBA==",
+        "checksum": "6b89146525052f7ed7ede593ed95c956bed350263850e1d5d388877a89e9c311"
       }
     ]
   },
@@ -191,11 +191,11 @@
     "versions": [
       {
         "version": "2026.10.01",
-        "build": "202611060440",
+        "build": "202611061416",
         "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/ai-provider-fireworks-2026.10.01.tar.gz",
         "built_for": "2026.11.01",
-        "signature": "S4yCjqrGyqLpBegRogDiTRBEB8J9ZK29gom1+mjoIlmQhKwmYaEFzmOzO11896pIQ/4lRlkAKWHddG//wRVNAA==",
-        "checksum": "09201c9f116fd3c853c167a2a64b6e23e68d042fb28194916c9a98b22f834193"
+        "signature": "8Fw+x+5QTa75oYe8n48PwirrAX7kkE+g80SkKhfuacFbPMFI4oMnToDPKTnXMQzCAOuAVLrjnzLq8LC/fVnLCA==",
+        "checksum": "416c1bda9e486214efad1ad5d91d8fe1154eeeb48e2a4fb241ad0e5430946c35"
       }
     ]
   },
@@ -231,11 +231,11 @@
     "versions": [
       {
         "version": "2026.10.01",
-        "build": "202611060441",
+        "build": "202611061416",
         "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/ai-provider-groq-2026.10.01.tar.gz",
         "built_for": "2026.11.01",
-        "signature": "cS3RoJDeAtxC7blEaB2wIckAtF0Zt5iQB9fVKWgxkTTBmZ6Fn5/cNU32iGKTx17gTnjFz1/ZvOoz3C5S5mtBBw==",
-        "checksum": "23a38001ad89d996aaf91e3eac2b1e3942216b2380cca86cb7aa1fa2b6df3a18"
+        "signature": "kcD/vykYC0bb+XDSv6KCDbBI980U//3HTKPBdrA7A8/+zNqe8LaPA0yD7yYxr8641VDdMv7ylZ7/QcHmw5hfDQ==",
+        "checksum": "6d016aecab92fc4f03aec465fa182a4ad9c25c25e63b2d7867645227dd01bf8b"
       }
     ]
   },
@@ -251,11 +251,11 @@
     "versions": [
       {
         "version": "2026.10.01",
-        "build": "202611060441",
+        "build": "202611061416",
         "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/ai-provider-llamacpp-2026.10.01.tar.gz",
         "built_for": "2026.11.01",
-        "signature": "w92JmRyQWDKEhnRWJgse0TyepiFyK4zFTQwDzLsDRAI2BOUfEnFGWjSdU/a1c3FX7hQA7RP0h+Xc9xwH2u/eBw==",
-        "checksum": "7216f63096361733239564486722b3b09c6a31eee79a80cc9fa8efb97aca7278"
+        "signature": "D0IgGqJDD8SGmvLAZeu7sAW6PnO1h5ffM+vFUPbYeGj/tpFBCx4rl1vZRYTDyHMl9wKvht4OWGE9owsC3b0DBA==",
+        "checksum": "0e913c95cabf24838412fe89b89829d34002c71c15ea7182b4369cd78a848d91"
       }
     ]
   },
@@ -271,11 +271,11 @@
     "versions": [
       {
         "version": "2026.10.01",
-        "build": "202611060441",
+        "build": "202611061417",
         "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/ai-provider-lmstudio-2026.10.01.tar.gz",
         "built_for": "2026.11.01",
-        "signature": "eixtW+2kJGVgJr4fXXXlezNDTJgtYYJOPU5b5m21D4AWWjZBV3q45Fz1E4JMs7/2NRkotP+BH3bjIwYe+bhhCw==",
-        "checksum": "b11e6fc086ba21c82a9d1d586bf5dea538aa47846dd6a3bdee66c99021ff05f2"
+        "signature": "dxV4aCEh6olEQ0z/QArjprgdumNozyBzVnm7auQrtmToRSJd7HSk9DhJ/MrovTuVpqW0UNcXiFoo1VMeW1aqDg==",
+        "checksum": "5935fe27d353d5827f9475fc6e0fc40a0f8c3a481a8c0e3e49e5662da9df037f"
       }
     ]
   },
@@ -291,11 +291,11 @@
     "versions": [
       {
         "version": "2026.10.01",
-        "build": "202611060441",
+        "build": "202611061417",
         "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/ai-provider-localai-2026.10.01.tar.gz",
         "built_for": "2026.11.01",
-        "signature": "gIVCYVtW0Tc9uolGE4EFIfqUcMyftDeVWbvnXKH8v+qv06VzqfMYj7l3KeuuKlywdti8Pxhe8bG4EaUikWKCCQ==",
-        "checksum": "1c520e71231f757018b1eb920e50602b61a8bda4edec7ba8a96aa9793742e972"
+        "signature": "pNX0bx1yhQ9Z0Eay+LzY/f2X0XSF0zG4uANUwvh0mYZHEiKhkdxW7d3eHNb9ewFrgxif9XpjeD72qxpzejMvAw==",
+        "checksum": "e71a96b50d61f0232272eedceb45b6883a468b150128ead08c936435ebddf055"
       }
     ]
   },
@@ -311,11 +311,11 @@
     "versions": [
       {
         "version": "2026.10.01",
-        "build": "202611060441",
+        "build": "202611061417",
         "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/ai-provider-minimax-2026.10.01.tar.gz",
         "built_for": "2026.11.01",
-        "signature": "nmDxVmlJB61dZ6HEyThSp+E8IAk5WubEjS9171MwuUh6nWMqFyyuBL1o4a01P+TySxcGpCelzoshI87rlw2/CA==",
-        "checksum": "9bc9948cf4d6b8ef676cbeb253bc732d205b574afa3f0ba783acb995c372f4df"
+        "signature": "JG21rvC32U585dk2EYDNt15Fgo7TWJxF99S01QGtKdKflzVcFjoxS1x3UQ9LiqB7Ejr1HOzPlmEM7C6MmCSdDA==",
+        "checksum": "e351722c630c0183a6ce297805c640b97f8dfb1d61751ee21b3d204192de1960"
       }
     ]
   },
@@ -331,11 +331,11 @@
     "versions": [
       {
         "version": "2026.10.01",
-        "build": "202611060441",
+        "build": "202611061417",
         "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/ai-provider-mistral-2026.10.01.tar.gz",
         "built_for": "2026.11.01",
-        "signature": "G7yxKvNrF9V3dXC0C5BiLulivnLx7xkG+NMUqWIl2sWElYOTgpUVzzvkqbCeMnH3VmgZDb0u88T4zQnjSDUnAA==",
-        "checksum": "ad50cdd27f62caf11203ef3fc4b0340076f02cf403ef8fc07fb165d45cc8e944"
+        "signature": "5BugW7IxWoXG71q6gjW4ZYYbjLDPp8gLr8Z7UDq3GpnYMO98AeCIH/2/TFciyvz3muhNW2pVbiZiCWOpNBWfCg==",
+        "checksum": "2f8b93977765f3cfede08f6f28bb7f031e1e6de0a1f4a742e03a6b94bb36aa1e"
       }
     ]
   },
@@ -351,11 +351,11 @@
     "versions": [
       {
         "version": "2026.10.01",
-        "build": "202611060441",
+        "build": "202611061417",
         "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/ai-provider-ollama-2026.10.01.tar.gz",
         "built_for": "2026.11.01",
-        "signature": "Ff4xS74QPTr+C+tlfWgfaZW4aFPOUxOEFFgNy94p7EiVgeO1LwYK7RsPh1NhYvUgoiKYUKVkf7FRrojCpmWoBg==",
-        "checksum": "0b5ff09471ed7fc8b7d27f1848bb4e3f14eeeda6d410c2bbdb23ccaa62c87d52"
+        "signature": "IqJbWRbwsVH++6T/h5UDHleZeg0BXMIB4KxORitBnDlFQLT17wiz/qxYm38MRikLTKNnjduaEQ8AEppL8mHeBQ==",
+        "checksum": "9b1fd5ade41432ff0d2bb5a3dcb6bcec20f5c378832431d457df20f19f36004d"
       }
     ]
   },
@@ -371,11 +371,11 @@
     "versions": [
       {
         "version": "2026.10.01",
-        "build": "202611060441",
+        "build": "202611061417",
         "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/ai-provider-openai-2026.10.01.tar.gz",
         "built_for": "2026.11.01",
-        "signature": "l3laclqm3zKgfKSF58MkgJNQdvvq4XAtzyYrQYKfLX8U+tnWWsXZkr51yyeV2Urlvaut1dtzx8wjqqU/0uZWDg==",
-        "checksum": "eecc2671e33eec4214e78acd387c28a03d2485cf12bf814d9149f3ee9fce65b2"
+        "signature": "o2EOOqsEJ6rRx/gnFYW1TjBwALarIWvnDAH38F0Fxbrypix5IeI9lj+yzz57mPoICzhAxy7fuFn57lH9F3k2CQ==",
+        "checksum": "1d1c8f67940994126855b52c6439842591eee8cfa3686556a64c6d595ee5279a"
       }
     ]
   },
@@ -391,11 +391,11 @@
     "versions": [
       {
         "version": "2026.10.01",
-        "build": "202611060441",
+        "build": "202611061418",
         "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/ai-provider-openrouter-2026.10.01.tar.gz",
         "built_for": "2026.11.01",
-        "signature": "1ucf85bbpwDY9n3veiDfsiJ9XwiAtRjpzJZVLS1MEhkSVrebmd0lEjgdZR3UYB3PVKr8kYI8T0GdQZeGgQluAg==",
-        "checksum": "1188b71075b5ee57660ddb31e942e83fa3bf5000bc0ac7f9ac7f0796d4175020"
+        "signature": "FQ0wLcQ9g6l0FxLoN9GrTHYDIsazjWd4b2SmT4r5svQzQV5lghVC22zl7TeqEz/bu0djV2vWQSStWMTcJKftCA==",
+        "checksum": "b388800986d0d1dc060f79107ea9ccb89dcf58713787bf2dba553fedaed74deb"
       }
     ]
   },
@@ -411,11 +411,11 @@
     "versions": [
       {
         "version": "2026.10.01",
-        "build": "202611060442",
+        "build": "202611061418",
         "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/ai-provider-perplexity-2026.10.01.tar.gz",
         "built_for": "2026.11.01",
-        "signature": "yu/lM17jWmv0B9Z8HqEDp7bBXVoyoH5N22Jv9UwcZU+3SnFbbVm+QoCurGiwXVGBGPoHeG0vEmr7bI1JOzy5BQ==",
-        "checksum": "57582995ca3e8341316ceb24f26ab496a35a0f1093c4d906301c367efadf1e89"
+        "signature": "3RLkdhcFj1rs6kSVNyyXZ271U5shUSkv7QZFoXjjZf+PG6FDLgaK4ky8fOHX7GaCzN/b1Rs0F8MFcouTC71zCg==",
+        "checksum": "1285e846384ad215064940f146bfc3dada8b902130fe809504155bea9791158d"
       }
     ]
   },
@@ -431,11 +431,11 @@
     "versions": [
       {
         "version": "2026.10.01",
-        "build": "202611060442",
+        "build": "202611061418",
         "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/ai-provider-together-2026.10.01.tar.gz",
         "built_for": "2026.11.01",
-        "signature": "SMOU6N2pTwycalzw7C1S1fI5HGHE41Kr5DQXhOTbT3DMdliPXCTxTL0EAYee0wXHiXWBdzl7Pd7cNYBlwxKhCg==",
-        "checksum": "2901587468f7cad9904853481e3e7a6535da27257a7bdc1f14967107d59e7ec2"
+        "signature": "hzYXIS0b+hZH/DH4gxV8/rLWlOGu8I8p/4fCcOYaXrZ/8doEMXVt01mJ9v69W0Ua5EaFvG3EqJ1Dw2RqQpyOCQ==",
+        "checksum": "a55e8decd870543c1f6d792977f67c3ef3a513898c75aec69b861f709c970a26"
       }
     ]
   },
@@ -451,11 +451,11 @@
     "versions": [
       {
         "version": "2026.10.01",
-        "build": "202611060442",
+        "build": "202611061418",
         "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/ai-provider-vllm-2026.10.01.tar.gz",
         "built_for": "2026.11.01",
-        "signature": "gf70D95eGV6FV9qZ+NE8nj4MiWYDkqPRLtzSsVtxO7UEgqnJqKyhOk6fJksAiLCC/Uy0qGQb0Zxo+Bm/S2GKAQ==",
-        "checksum": "8e2cdfbc2d62b1416afa4113f552805f14d44a4f053eb660bf03c19e3927127a"
+        "signature": "1iLo6/AtA1aI2oBJQ/SoYj+C0MuLoTH3TS/ZOstjle/SGgzBu3Zt+BiU9SP1J6IkBwbUavry+Tap5pLGvEXTAA==",
+        "checksum": "312d51ba35a73d1b3759d8dae2e474d5f9c286ff32d9bda09a9b5f9c345cf82a"
       }
     ]
   },
@@ -471,11 +471,11 @@
     "versions": [
       {
         "version": "2026.10.01",
-        "build": "202611060442",
+        "build": "202611061418",
         "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/ai-provider-xai-2026.10.01.tar.gz",
         "built_for": "2026.11.01",
-        "signature": "k7l8/6hlOcMD8xbNGScTspiVV0Crvv7C01U9KVIAGMjGKd21Mz531h6EHJg9jHibZPro+aUgt0A4FoV69oRICA==",
-        "checksum": "9f0f53b65224ac22d6adcb07f5928bde8f15cdd2efc07e505c947cc64c252e2d"
+        "signature": "bSHPi9rTKy7uQmswGbfpPDmf/rw14GGVapv79i0eD28GIf86lQdBJwN8raHv69v8wMYYxD0loglQf4KQKA2nAg==",
+        "checksum": "07e91dd78087869961287d2cf8ad6a611cab80d4897d917f59acb4b31415acc1"
       }
     ]
   },
