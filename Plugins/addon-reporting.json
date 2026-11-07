@@ -10,10 +10,10 @@
   "versions": [
     {
       "version": "2026.10.01",
-      "build": "202611060439",
+      "build": "202611071411",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/addon-reporting-2026.10.01.tar.gz",
       "min_mcharbor": "2026.11.01",
-      "signature": "OPY6POzz6nG/9EPZXCE9ylsce5c60AouMi/Ta6a2/EZN+h1QHMv5mrkvwLPr9LtEmpKz2ZyhPlDYli2Um13HDg=="
+      "signature": "OGVSbg5/TiA3bXrBuGoTCv5GmdIl0U73KKBb0jDcyjUjxT8WcnWpi6Ym0vKnO97Kof2abKYKU2vnBJS4KZO0Cg=="
     }
   ]
 }

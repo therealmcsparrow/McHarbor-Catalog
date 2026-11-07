@@ -10,10 +10,10 @@
   "versions": [
     {
       "version": "2026.10.01",
-      "build": "202611060445",
+      "build": "202611071407",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/storage-nextcloud-2026.10.01.tar.gz",
       "min_mcharbor": "2026.11.01",
-      "signature": "1L7T4j5Bz67jvqHr3gMLIHBpjds0xLxjX2oOCmx82jMUXcivHO83mY5XIyqWePMIHbBhO9L5ugzhO211KRlDAw=="
+      "signature": "GHgoa02P9H4XGOuZa79PRKnb8g7FPu6yzXJvjDVWzgsby/fmCC6u3Be0BPwXYVJrqBLN98kK+FD6GQGs6zskDg=="
     }
   ]
 }

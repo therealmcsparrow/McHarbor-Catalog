@@ -10,10 +10,10 @@
   "versions": [
     {
       "version": "2026.10.01",
-      "build": "202611060444",
+      "build": "202611071405",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/identity-saml-2026.10.01.tar.gz",
       "min_mcharbor": "2026.11.01",
-      "signature": "2YkxqbdbQv0w7I2IxwI4OD2YOoyEsqatembJITnUmUc4As6i5QD2CNTf+CpQYkKBCLKZBpr2LOqicU0hwKyqCQ=="
+      "signature": "i7UqaNN9mANuOLq0XbAukb1qgi7dcZV0bI2Rm3zdIuTWPisS34Fxa49SZNjLXOHfwME7wNqqn+ZLS+Uyhy7CDg=="
     }
   ]
 }

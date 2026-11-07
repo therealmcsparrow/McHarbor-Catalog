@@ -10,10 +10,10 @@
   "versions": [
     {
       "version": "2026.10.01",
-      "build": "202611060443",
+      "build": "202611071403",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/comm-telegram-2026.10.01.tar.gz",
       "min_mcharbor": "2026.11.01",
-      "signature": "JkH1lOCFX1/o9XOCHwqtcQm7Ju+rwzF8NbOZex/Cj972vX5zWILgEL9PA/xUXjY+9mvzr7/FApxQ2cmDdd2oDQ=="
+      "signature": "yKlD+nf5MTxQcCNfvLKB6tert6+7hnoZ5RZl/A1ukkLbsebx4pzr4UB2IZmvR5NbJ5bzXDLZJtOlz369KQYhCA=="
     }
   ]
 }

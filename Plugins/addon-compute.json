@@ -10,10 +10,10 @@
   "versions": [
     {
       "version": "2026.10.01",
-      "build": "202611060439",
+      "build": "202611071409",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/addon-compute-2026.10.01.tar.gz",
       "min_mcharbor": "2026.11.01",
-      "signature": "F4UJ5a/RVmPnKrnuC4oN7KTAKRDy0CUsobDxKETD1ShWECq6oEeWg1vP1ziOhm6vOG5h53AwsLDDa+GYbLB4Dw=="
+      "signature": "+IQYxbyd1ITu4PnyTfbUptMMboplqZEZmHwPjVBpNp6S3CqOHKghA/ANgY4FDbuDvBB9dcMFPkSl7aJB4o17Ag=="
     }
   ]
 }

@@ -10,10 +10,10 @@
   "versions": [
     {
       "version": "2026.10.01",
-      "build": "202611060445",
+      "build": "202611071406",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/scanner-trivy-2026.10.01.tar.gz",
       "min_mcharbor": "2026.11.01",
-      "signature": "+55V0G7Sbwbnb3HltOZUnVhCUClv3A9lEPdHM7zo4MYWGRKZfb7jNBYzrgkYic+NG/RmV+40r+h0hesJ90Z5Dg=="
+      "signature": "woJdStVo2f23rV11SzQucAcy9KyBDIRrRdsvSZHdyBMLMuHk9BCo0CAN6hDfGRZ1mVXUyeQFhqZZzqEfW5TWDA=="
     }
   ]
 }

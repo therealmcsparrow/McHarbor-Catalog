@@ -10,10 +10,10 @@
   "versions": [
     {
       "version": "2026.10.01",
-      "build": "202611060445",
+      "build": "202611071406",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/snapshot-truenas-2026.10.01.tar.gz",
       "min_mcharbor": "2026.11.01",
-      "signature": "K1nVO3g0HeT6Y9hcVu+6HJjLtWaJVQnOhAuF0zlSsFM+Ff1nrOeH31Q5bl7fQdL80Z9K4vEKXN24FG84aAZlAQ=="
+      "signature": "vIL3JUGaGS4K1QrcwFI8c8HqSIiou/Yihko33srW1MxV9TKL7F8fSWJGvg5oEN09L1UHu0/JX9U3GB2nY2SPCg=="
     }
   ]
 }

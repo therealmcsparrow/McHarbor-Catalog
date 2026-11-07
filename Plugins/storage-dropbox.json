@@ -10,10 +10,10 @@
   "versions": [
     {
       "version": "2026.10.01",
-      "build": "202611060445",
+      "build": "202611071406",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/storage-dropbox-2026.10.01.tar.gz",
       "min_mcharbor": "2026.11.01",
-      "signature": "7sobDZSAqotZm7IHs2fD6OECMBSOVNC8LtANWbwt5wY9HDO4rEXOn3YKJ9bnR+QqyUenXcP77L30MzUDgfixAQ=="
+      "signature": "3OL8gnZu+AoqFRtBfGByGxb8JIhZ4l+gRZZoBhGH4b/jguAOrrNNnMPTV75N7d1bkp8M+ZWEOcEmpPodBT19Aw=="
     }
   ]
 }

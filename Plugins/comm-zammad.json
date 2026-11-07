@@ -10,10 +10,10 @@
   "versions": [
     {
       "version": "2026.10.01",
-      "build": "202611060444",
+      "build": "202611071405",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/comm-zammad-2026.10.01.tar.gz",
       "min_mcharbor": "2026.11.01",
-      "signature": "KiWQ3ZjT2tW9E/uUjOFT+Qt9F203L/kOmOQiSPEcuyKt9b1ryUu3qwWs3kyMRQSNorWYWaqp4hrUmbrH3C4LAg=="
+      "signature": "FXRMwY7+IOLz3Dbcb5xLzkDz0/XNKMip3EFyWRdTmTpzxeR3Js7We05fezzonGVSdOTOiT+krs4cqR/Ku0NIAQ=="
     }
   ]
 }

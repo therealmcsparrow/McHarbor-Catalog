@@ -10,10 +10,10 @@
   "versions": [
     {
       "version": "2026.10.01",
-      "build": "202611061418",
+      "build": "202611071402",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/ai-provider-together-2026.10.01.tar.gz",
       "min_mcharbor": "2026.11.01",
-      "signature": "hzYXIS0b+hZH/DH4gxV8/rLWlOGu8I8p/4fCcOYaXrZ/8doEMXVt01mJ9v69W0Ua5EaFvG3EqJ1Dw2RqQpyOCQ=="
+      "signature": "IIFhhoYwPn9NnTnV2TUDrKA++xIrnchXq7/jeDzmBHidOI+kXRlADn3+Bl97cql6zOfniTVfZXn6bBiH71dqAg=="
     }
   ]
 }

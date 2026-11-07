@@ -10,10 +10,10 @@
   "versions": [
     {
       "version": "2026.10.01",
-      "build": "202611060442",
+      "build": "202611071402",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/comm-discord-2026.10.01.tar.gz",
       "min_mcharbor": "2026.11.01",
-      "signature": "AOXsJxb74crIZVTYVZ3U25xtuquopofi0qkh2UcHjStIMG8YYpzqmGwOFItOvB9EPS6BDTpLDvM38C/4JBgjDg=="
+      "signature": "DQbEZrzLito2fOVqWAJx5nRxocOQjpyKvEVazZScL+co8pdqESq1uzqibF7vdlkyqhwdpslEuIi9c+lLuUPcBA=="
     }
   ]
 }

@@ -10,10 +10,10 @@
   "versions": [
     {
       "version": "2026.10.01",
-      "build": "202611061416",
+      "build": "202611071400",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/ai-provider-fireworks-2026.10.01.tar.gz",
       "min_mcharbor": "2026.11.01",
-      "signature": "8Fw+x+5QTa75oYe8n48PwirrAX7kkE+g80SkKhfuacFbPMFI4oMnToDPKTnXMQzCAOuAVLrjnzLq8LC/fVnLCA=="
+      "signature": "mPjL5n6QDpYRHU7wWfqpGd+1C9yBW7eYK3vOgwVRiemoaVnyVAQObAYdJyvgkqFrWr/KGJ5SAzQekAiYYAVyDA=="
     }
   ]
 }

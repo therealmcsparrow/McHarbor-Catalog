@@ -10,10 +10,10 @@
   "versions": [
     {
       "version": "2026.10.01",
-      "build": "202611060445",
+      "build": "202611071406",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/storage-box-2026.10.01.tar.gz",
       "min_mcharbor": "2026.11.01",
-      "signature": "lyKmDD9Zs+/UTehNgb5PO221H7CEB0PMf92I/T51TbdOdU5WkX28T2UzGDTSpT3zOdPGg7P0xtn2nk72o7rzCA=="
+      "signature": "k9Fjsta0qt4pVUQEaEQ8HnSc8mE4UjZ7zWuFgICIgsR4FV6TQk3m0uprCTTix1zMRsxeJUDcbHNFEl6Ff3SqAA=="
     }
   ]
 }

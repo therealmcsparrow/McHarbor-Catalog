@@ -10,10 +10,10 @@
   "versions": [
     {
       "version": "2026.10.01",
-      "build": "202611060444",
+      "build": "202611071405",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/identity-entra-id-2026.10.01.tar.gz",
       "min_mcharbor": "2026.11.01",
-      "signature": "KpEEvdS4EnGIruLFyE60h2Dt/5WQqmTrH8cfslj0hCQqXteVwMGw/y7nT1dajIZ9jHxsipViRfWNOc1bbbkuDA=="
+      "signature": "I1wpv+0ua0U35oA6FXmEUfVwPazLobU8gea7OjAwfcFyC3BeQvP8U0noAhFr8kq1J8rL+L/PFi+cTKVV0BtXAA=="
     }
   ]
 }

@@ -10,10 +10,10 @@
   "versions": [
     {
       "version": "2026.10.01",
-      "build": "202611060445",
+      "build": "202611071406",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/snapshot-synology-2026.10.01.tar.gz",
       "min_mcharbor": "2026.11.01",
-      "signature": "7nWffGXSFEGyVrJzIVd4pSTBPFNnwD74QsYbTqBooMr2BBBKKvDOPJIt7McL5rk+PfwBnrXiBOJNdAr2Cy6zCg=="
+      "signature": "3t1EVGOz4CGOzyj+ZK5qJpNmR/3n6scE1hdAmNAB40/jy9RNdiwjuB0Sm9sTaiXs6zirksNtHSrDTEeDQ4DxAA=="
     }
   ]
 }

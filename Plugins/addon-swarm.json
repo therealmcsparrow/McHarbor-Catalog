@@ -10,10 +10,10 @@
   "versions": [
     {
       "version": "2026.10.01",
-      "build": "202611060439",
+      "build": "202611071411",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/addon-swarm-2026.10.01.tar.gz",
       "min_mcharbor": "2026.11.01",
-      "signature": "N1QI6P/d/72dW36+HJUUbyaq2xnvKndobt+MdTqOaocmh83f9V17KpLleQDXBOXPspVDUSkDgBWjJkbGazaECQ=="
+      "signature": "DrKEIY+4WAYfENoOesvzkcXd4WUj8nZs7Dn+FUoot9PTgX7AnEH0Ggy3wBhqGqjD7x2vW6mGl6tFTkak5Ri3CA=="
     }
   ]
 }

@@ -10,10 +10,10 @@
   "versions": [
     {
       "version": "2026.10.01",
-      "build": "202611060444",
+      "build": "202611071405",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/identity-ldap-2026.10.01.tar.gz",
       "min_mcharbor": "2026.11.01",
-      "signature": "zlRcRzWLsaSgT3Mz8O8OlEO5DRmUaaaN+1jWSOPye0h95TW0g6aaAP+tJGOeG1wUms/7Xf6SuOzeLIumaqzyBg=="
+      "signature": "tk63k1OGdUgH2DezH9I9UD9eCT4nUBjuug+EUe4uZ9m4lvD4ez3EQmEmgLl4UjaO+04w6PcBRNQMa/brh3zPDg=="
     }
   ]
 }
