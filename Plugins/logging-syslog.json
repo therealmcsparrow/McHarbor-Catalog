@@ -10,10 +10,10 @@
   "versions": [
     {
       "version": "2026.10.01",
-      "build": "202611071406",
+      "build": "202611090223",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/logging-syslog-2026.10.01.tar.gz",
-      "min_mcharbor": "2026.11.01",
-      "signature": "IMoX7Mtc0bARt8aCi7sjya/Uws0igbTLdY0VTq62rYxy7RUsbLgAoCEFzoBHuDWrhdgxUMmn8z2b7x+5VksBAw=="
+      "min_mcharbor": "2026.11.03",
+      "signature": "slsPnzLrSDjMaDlH5SSG7QOB11nIfh9AVSjWaSQHy4Ak4u88La8q0Temp7u/yLCxfxXJv5fqyUNy8tgz14eRAg=="
     }
   ]
 }

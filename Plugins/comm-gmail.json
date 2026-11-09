@@ -10,10 +10,10 @@
   "versions": [
     {
       "version": "2026.10.01",
-      "build": "202611071402",
+      "build": "202611090220",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/comm-gmail-2026.10.01.tar.gz",
-      "min_mcharbor": "2026.11.01",
-      "signature": "ItZe8w9GItpNZEDZ8PFI7lg2a4xVPjYv0coKa9MdJ6HTSJAy4TKcWDScKSvMZYZePeWzWYwakCiJFzZNTiTgAg=="
+      "min_mcharbor": "2026.11.03",
+      "signature": "BA21hqNXPfe3+UyTFV/6Cm3q7i2balzV+sYI5/aQfZIGM7RA8bT6stSSA3LqUEAj65KtNA8OpYb5Q2WMtXfWCA=="
     }
   ]
 }

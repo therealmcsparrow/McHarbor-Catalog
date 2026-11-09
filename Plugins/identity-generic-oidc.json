@@ -10,10 +10,10 @@
   "versions": [
     {
       "version": "2026.10.01",
-      "build": "202611071405",
+      "build": "202611090223",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/identity-generic-oidc-2026.10.01.tar.gz",
-      "min_mcharbor": "2026.11.01",
-      "signature": "wuCYKKAlzQSg329SzsAfQpSSlLJbTVrXQipZ6AQ3gz1mBXuPmvjROZ8OBVqSoUUlKaWbvilmaKQGqJJq946vBQ=="
+      "min_mcharbor": "2026.11.03",
+      "signature": "PuL9uv9Wucu3Bq9r7mtBRlnSp9zB601GrBNnTyciHzP5II5xb2iJrf64mcB3Tfnaj+OV0xHhXHt/bQwz9+tKBg=="
     }
   ]
 }

@@ -10,10 +10,10 @@
   "versions": [
     {
       "version": "2026.10.01",
-      "build": "202611071401",
+      "build": "202611090218",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/ai-provider-llamacpp-2026.10.01.tar.gz",
-      "min_mcharbor": "2026.11.01",
-      "signature": "XSYZJFHck7Jyx/tbf3jNUr6gNdIaXlNWrpdPP3vbiI2POj8LewwdTcr+e2ZEn8QR1QpbZU34kqp6V9wHLFlNCA=="
+      "min_mcharbor": "2026.11.03",
+      "signature": "SKSO6YPmmkpKDoOGXJeHHhBJ8fTU7CMLpi29HbtK6w1FMDfdu48lB57Wu5Cr2y0O03uAWlzFNoy9701pi3Z0CA=="
     }
   ]
 }

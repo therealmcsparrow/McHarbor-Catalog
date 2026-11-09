@@ -10,10 +10,10 @@
   "versions": [
     {
       "version": "2026.10.01",
-      "build": "202611071402",
+      "build": "202611090220",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/comm-exchange-2026.10.01.tar.gz",
-      "min_mcharbor": "2026.11.01",
-      "signature": "nA6q2owG+obrgJbMsIpIWvm7ZN7gc4XTFaVc+34x0mpqHUkwlBMhT15EyYQdoIEJFkRQTBxldR3hadcw0gmqDQ=="
+      "min_mcharbor": "2026.11.03",
+      "signature": "4CVb2FqkRmG5HUbuRhiS0Kw/qXc6rWGba1RumncJ1U9PY750hMy5JTQT7GIq7ZCzB3pHpmlKfRHZeieCGYt2Dw=="
     }
   ]
 }

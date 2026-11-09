@@ -10,10 +10,10 @@
   "versions": [
     {
       "version": "2026.10.01",
-      "build": "202611071407",
+      "build": "202611090225",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/storage-onedrive-business-2026.10.01.tar.gz",
-      "min_mcharbor": "2026.11.01",
-      "signature": "V6KcYxqwfv6JpDAipnMD/NNQSkl9nF9B4z+fqjBpoyUdpnU6kkasNv1cAwrbGZbA1CGNhSwprx56eqTw3fwEBg=="
+      "min_mcharbor": "2026.11.03",
+      "signature": "GAnyFqePEmWpEw7uQCD5+v1PFlOwOXbSAEVuWHJLb3xW77cS5ayltbHjm0vx09zGYQC+9Uf90SLYhxISMG/BAw=="
     }
   ]
 }

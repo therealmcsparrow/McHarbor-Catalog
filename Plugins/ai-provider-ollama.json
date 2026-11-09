@@ -10,10 +10,10 @@
   "versions": [
     {
       "version": "2026.10.01",
-      "build": "202611071401",
+      "build": "202611090218",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/ai-provider-ollama-2026.10.01.tar.gz",
-      "min_mcharbor": "2026.11.01",
-      "signature": "GthYdfheHvUp+Gyz4LLmkknMP1qn8EyO6j83kSD8MJnrbDTEEK4SkNrS4GpAauYLzG8TCq3AU+wCSH+L8HY+AQ=="
+      "min_mcharbor": "2026.11.03",
+      "signature": "GdxxPltvCEA3r8UvbJjTVRs94Y27iKhvVDL/X1acAebh7sIcSfqZsXqiZdQIhNzVdeIP/EDt+BoXDMHLK2pVBw=="
     }
   ]
 }

@@ -10,10 +10,10 @@
   "versions": [
     {
       "version": "2026.10.01",
-      "build": "202611071401",
+      "build": "202611090218",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/ai-provider-mistral-2026.10.01.tar.gz",
-      "min_mcharbor": "2026.11.01",
-      "signature": "RdH1WPQ7sbdrNprHq6fVThURjQvEpgo5MkjWT6OhpaMzi/b3Q5BSPKV54DqeVQnprcjm9Mi3rK+/NpqQZ7jBBw=="
+      "min_mcharbor": "2026.11.03",
+      "signature": "JrtW0fA/OIaDdTqzMKW+QEoJE9WIFzn3lcBOdnLyFiERvLP9T/mOHyxa6gcUeodTPYgenyslgyRDDM5Pktq3Cg=="
     }
   ]
 }

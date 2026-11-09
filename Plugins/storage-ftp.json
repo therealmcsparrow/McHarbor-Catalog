@@ -10,10 +10,10 @@
   "versions": [
     {
       "version": "2026.10.01",
-      "build": "202611071407",
+      "build": "202611090225",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/storage-ftp-2026.10.01.tar.gz",
-      "min_mcharbor": "2026.11.01",
-      "signature": "X6zNi5qrx2g3BM5v5RzSDO50GN10nIh4MNfs2UWvWkkDPGwiAUZ20Laj4OtUCiJ417VHUIuUNWWBLeCyJVAgBg=="
+      "min_mcharbor": "2026.11.03",
+      "signature": "eHdCMjffX7QiCeXWnTPsh7NxWwTyHifLAg1MCdWm+9gHBt67HnuZMwmTDJktcxrbuW9BRqTO6ICRDaQdcaHHAw=="
     }
   ]
 }

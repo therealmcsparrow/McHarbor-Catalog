@@ -10,10 +10,10 @@
   "versions": [
     {
       "version": "2026.10.01",
-      "build": "202611071407",
+      "build": "202611090225",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/storage-nfs-2026.10.01.tar.gz",
-      "min_mcharbor": "2026.11.01",
-      "signature": "RzjPbmHfbt3q2VaVJuKmh5mVjQxu5o8keBYyxHmQCqHwN0LYB/uH1VFfS5EM1olY8q8mh5ZQVXDiNC+JOzkICw=="
+      "min_mcharbor": "2026.11.03",
+      "signature": "+GVRFNYgagq41qNZPfZtOEy3OS6Sh8exM04xTYb/mUO4w6VYTNjOodecc9ge6Xcvw7/X5LEUUJ637+GWehESCg=="
     }
   ]
 }

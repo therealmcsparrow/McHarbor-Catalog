@@ -10,10 +10,10 @@
   "versions": [
     {
       "version": "2026.10.01",
-      "build": "202611071403",
+      "build": "202611090221",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/comm-teams-2026.10.01.tar.gz",
-      "min_mcharbor": "2026.11.01",
-      "signature": "LS9atQM2py7WImj4pNz2033wVtKvRYKiRQapC29dGWaVs49menOgTQWYD9wfBiZ0whILZGQJ618kDUxkv5kCDA=="
+      "min_mcharbor": "2026.11.03",
+      "signature": "7ZlJRd32h3prxysmZLCLxpRt49r8bWHqe/1lweSdR2oRtEmXEYHTnFuzxdgZolMDA/a9f+wwPAO277wa/N3/Dw=="
     }
   ]
 }

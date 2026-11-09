@@ -10,10 +10,10 @@
   "versions": [
     {
       "version": "2026.10.01",
-      "build": "202611071403",
+      "build": "202611090221",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/comm-smtp-2026.10.01.tar.gz",
-      "min_mcharbor": "2026.11.01",
-      "signature": "R9oF5Pzc1PTC24uWoshiWJ2fktmM4MKDarwMn2cAjqwG+1qG0bnyzhMAnl44tEFwR+aai6KplQK6X0zzDshZDg=="
+      "min_mcharbor": "2026.11.03",
+      "signature": "peUN1XulDuaAGLm1lY1EvyF2l0+Hp3RstZSfeZodyBAWbsQFQr00FKAVTr1d5V8Xc1q+/pf70ZidWRolkiATBg=="
     }
   ]
 }

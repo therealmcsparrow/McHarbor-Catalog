@@ -10,10 +10,10 @@
   "versions": [
     {
       "version": "2026.10.01",
-      "build": "202611071404",
+      "build": "202611090222",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/comm-glpi-2026.10.01.tar.gz",
-      "min_mcharbor": "2026.11.01",
-      "signature": "xPZ89eueJ2Z6fHWwFMfvnGRR0Ck5/sR7igt/G7JrfZt/n+7OaaiCzP7pP9i2dk3U3RS5JkVs5SdENFnnuOWnCg=="
+      "min_mcharbor": "2026.11.03",
+      "signature": "RuPKHh5fPXYTHV5s2DUzy4B7ccDHsxWTUAPtOi7nooZ9cWZD9Z2V71Rs5AFrgb81pYuMcGiSZqG6l2mdRzcJCw=="
     }
   ]
 }

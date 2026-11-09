@@ -10,10 +10,10 @@
   "versions": [
     {
       "version": "2026.10.01",
-      "build": "202611071408",
+      "build": "202611090226",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/storage-sftp-2026.10.01.tar.gz",
-      "min_mcharbor": "2026.11.01",
-      "signature": "xqef+EbW9BCFzimnTtGCHIIC+y6yY9+wBOOf0kHFux4+EJxSE4qco58YdEFHVTe/MfYXoPJloGbQCjPcySJvCw=="
+      "min_mcharbor": "2026.11.03",
+      "signature": "RtBBE041hRgWEx4/JnZZUd9Vbv+/ekSnODLhD+6icQryxKwaOM2nxmJuryiJgo7mQ7p5KaCT7zoNy7/kGJ3hDA=="
     }
   ]
 }

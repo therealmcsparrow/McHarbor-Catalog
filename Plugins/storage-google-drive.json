@@ -10,10 +10,10 @@
   "versions": [
     {
       "version": "2026.10.01",
-      "build": "202611071407",
+      "build": "202611090225",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/storage-google-drive-2026.10.01.tar.gz",
-      "min_mcharbor": "2026.11.01",
-      "signature": "D2qZbXeMkmB9GDsz8u+JWVAm8RcknT3u4tq1J+LNKeQkh7D019En5VGXE6zatb7+dc9njOgY3ku3uaM8mhF/AA=="
+      "min_mcharbor": "2026.11.03",
+      "signature": "G9JkoENPC6ZjajSMzW0AO/L1QTKhy/IUlNskxse7j1lrm61a+g6tazkh6ORu46nQSTBCSwvYR5rK/M5GtaBEDA=="
     }
   ]
 }

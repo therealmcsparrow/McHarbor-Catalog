@@ -10,10 +10,10 @@
   "versions": [
     {
       "version": "2026.10.01",
-      "build": "202611071408",
+      "build": "202611090226",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/storage-opencloud-2026.10.01.tar.gz",
-      "min_mcharbor": "2026.11.01",
-      "signature": "HahFcZRf5fy61PyKuxb36YSX69/vX6IufOl3hTRYutohmnkMugQaEkJFPN/a6XmxpHIK7nU4lNOfilC0PKuyAg=="
+      "min_mcharbor": "2026.11.03",
+      "signature": "dQfLzHsyqUs04XTVSa1ragZKn83Ww0W5ymwkuYqdQ2OAk8ORQooAm4Qy3p3949PJB2eWWaiYf1dTQHrto837Bg=="
     }
   ]
 }

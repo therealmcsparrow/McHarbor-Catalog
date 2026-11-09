@@ -10,10 +10,10 @@
   "versions": [
     {
       "version": "2026.10.01",
-      "build": "202611071406",
+      "build": "202611090224",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/scanner-grype-2026.10.01.tar.gz",
-      "min_mcharbor": "2026.11.01",
-      "signature": "YT+E96Bl/vJGJUmM1Qbb3iaZFGZ9y+7yQuCzov7Zi2A22jNU+tDHKmt4+vXQElIXGZb9CNkrA+w2eH5oq5uOAw=="
+      "min_mcharbor": "2026.11.03",
+      "signature": "6MF0G7EnKWtxUmtdMtTM8ACoi47OEyyTCAzVyG9iyUXR9u8PPvPK7FkCJfwRGXnfNgrUieq2H7F7mgU7pqx8AQ=="
     }
   ]
 }

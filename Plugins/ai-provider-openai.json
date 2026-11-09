@@ -10,10 +10,10 @@
   "versions": [
     {
       "version": "2026.10.01",
-      "build": "202611071401",
+      "build": "202611090219",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/ai-provider-openai-2026.10.01.tar.gz",
-      "min_mcharbor": "2026.11.01",
-      "signature": "XK8bn/Y6cLTHjsEVHlPlqSMHdtExnCCnMwW8XfNqLBq874OAFaVLIWtqqXf6f9D88fsUkOhN5gySqsl+r8D2Dw=="
+      "min_mcharbor": "2026.11.03",
+      "signature": "G3K05NGQh8YdjKzzijfkvL0ALvaa7uTL6bV/IvdukHEHtZpCbUDPxv9Uc60HgUALrvnDPSy2rPxrGy2f/1EKBA=="
     }
   ]
 }

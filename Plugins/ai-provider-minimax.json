@@ -10,10 +10,10 @@
   "versions": [
     {
       "version": "2026.10.01",
-      "build": "202611071401",
+      "build": "202611090218",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/ai-provider-minimax-2026.10.01.tar.gz",
-      "min_mcharbor": "2026.11.01",
-      "signature": "m1sfJpD27XV2zZ6cojdSJWAVaATGTWNl8iTs7QnRlXKEroU/hfJI8lWjQ3xh5+2b8pTL0YsuRjHM0UhYvFaaBw=="
+      "min_mcharbor": "2026.11.03",
+      "signature": "XLoeUGc/hFC1CIJLVoHa5NEszTeL8hGgwCuy3+VBXXLFIrDH1GqQNrEG3dOkmlO20cClSpcLG1rLad3RXrwOAg=="
     }
   ]
 }

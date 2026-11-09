@@ -10,10 +10,10 @@
   "versions": [
     {
       "version": "2026.10.01",
-      "build": "202611071404",
+      "build": "202611090222",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/comm-otrs-2026.10.01.tar.gz",
-      "min_mcharbor": "2026.11.01",
-      "signature": "eYP8+QAAqZLFzbMbSA+/h7DipFe64MRwrBA18PNJRb3oKUMyiAI6w49HsuDDk86QlbZTp7gIFHc49LACHWhRCg=="
+      "min_mcharbor": "2026.11.03",
+      "signature": "9llnLAfEnk2JmZIKZ5mSr1URwk04HQtnNgEl8gK8K+1TOmRSYyyJvgYBFUh9yqG0ljWBMbmod6lbqwBvI3JoBA=="
     }
   ]
 }

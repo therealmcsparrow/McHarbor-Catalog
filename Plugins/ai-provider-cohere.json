@@ -10,10 +10,10 @@
   "versions": [
     {
       "version": "2026.10.01",
-      "build": "202611071400",
+      "build": "202611090217",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/ai-provider-cohere-2026.10.01.tar.gz",
-      "min_mcharbor": "2026.11.01",
-      "signature": "iLU4F7+n1XfWWH0BuYT7ZSJLtA/z9hk6lneOGqiBATIZMKDgyoOCAj78zMd/SayX+ULCuBaT2fItZ04QI5EUBQ=="
+      "min_mcharbor": "2026.11.03",
+      "signature": "q2PN5JLukYrFrOBZMUpEJmBCCBCvWXdJiVTEC3eC8c600fd70gxRr8HfWtq27RQuGXlmxT8ntW069uCb6UmFBw=="
     }
   ]
 }
