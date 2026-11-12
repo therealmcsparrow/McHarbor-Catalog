@@ -10,10 +10,10 @@
   "versions": [
     {
       "version": "2026.10.01",
-      "build": "202611090227",
+      "build": "202611120104",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/storage-truenas-2026.10.01.tar.gz",
       "min_mcharbor": "2026.11.03",
-      "signature": "1YqtxsSt8ARYRoI/7NjDHcoFAmdKkewZ5YT9SZREWbF6xHYwLftUy/QCYIOucVkDM4tuC35xApqsS+5BVllWDA=="
+      "signature": "d43S3qm2ltpSu7J9LZljaJDrDib/rwu0Vjxc2gH0Mhw/PixeqqavNL25wrJ1xljgQ5F01CF5/ToLI4y8Jj9uBA=="
     }
   ]
 }

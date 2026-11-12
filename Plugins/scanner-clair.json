@@ -10,10 +10,10 @@
   "versions": [
     {
       "version": "2026.10.01",
-      "build": "202611090224",
+      "build": "202611120056",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/scanner-clair-2026.10.01.tar.gz",
       "min_mcharbor": "2026.11.03",
-      "signature": "qKVwLQCs2O3yNdZaU/LqVhG1hoEzcdb7CGw2bjzOS4mrXVvH1eLYmMiZgl9tpOrfBxhyN2/Oc+RtPjrNmse9AA=="
+      "signature": "XNzX9/2dZ4RaVk08mGikDEKUzdUOVgVfSlNvW1tlLxczX8cTE0KAbpuNRsVIeLer18bywNbDCNW0gxNwytGMCg=="
     }
   ]
 }

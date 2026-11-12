@@ -10,10 +10,10 @@
   "versions": [
     {
       "version": "2026.10.01",
-      "build": "202611090220",
+      "build": "202611120046",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/comm-ntfy-2026.10.01.tar.gz",
       "min_mcharbor": "2026.11.03",
-      "signature": "aPqXqmMu3+MH24LbaZUYeilUU6i7s056UCMKT+lmhYW3iDx64C/HzmGkBs02rHcsbzGeCABTXjTHVneaGk3vCQ=="
+      "signature": "sndadHVhQ7Z/skFs6+AeE1/Xu40WwKh/D8p6dRr8IZ8AcEuAihop/0o0tfqgtPDey0RF/C/a0jzqg5bdo6S2BA=="
     }
   ]
 }

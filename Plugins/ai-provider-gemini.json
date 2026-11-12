@@ -10,10 +10,10 @@
   "versions": [
     {
       "version": "2026.10.01",
-      "build": "202611090217",
+      "build": "202611120039",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/ai-provider-gemini-2026.10.01.tar.gz",
       "min_mcharbor": "2026.11.03",
-      "signature": "thon1pujK3I2oZ0UiKkuNlwKXccOEqb8D9QvHklLp2EwrxaLnKT+ARfrCx1yZbfEuOtIa6DtBP0bxe1T0aEqAQ=="
+      "signature": "z1jwm+rp4UBCG/eQQswI1+eXtsDOoMtiM/chZ606BGTBUUG0AIWDck7eN9XfEv+BfkCEyORUPVqxo4OGlLJjAg=="
     }
   ]
 }

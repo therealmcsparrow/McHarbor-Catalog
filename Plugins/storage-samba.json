@@ -10,10 +10,10 @@
   "versions": [
     {
       "version": "2026.10.01",
-      "build": "202611090226",
+      "build": "202611120103",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/storage-samba-2026.10.01.tar.gz",
       "min_mcharbor": "2026.11.03",
-      "signature": "wXomKpuf1so8uzEqcoTT6KPRemgF5WPJhfrGNI+r1qN/GQroSFeFNv1tBmyLOtRIUpxa6k9CfdahQ9DGtuPuAA=="
+      "signature": "h7jf741sQ1Qh/9AKiZCxVkMavhDdN1WeTaexYppxsFxm0MVTaGQ6X1dCPWUw5SGHG5LP/bOcQwui/1FXEDWwDQ=="
     }
   ]
 }

@@ -10,10 +10,10 @@
   "versions": [
     {
       "version": "2026.10.01",
-      "build": "202611090218",
+      "build": "202611120041",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/ai-provider-localai-2026.10.01.tar.gz",
       "min_mcharbor": "2026.11.03",
-      "signature": "O6pQ3S8Iz7Mc9rZCWO4Ic5hrNd46eDjufKoPGGdwYfCL6c2xBNhBnfJWUF9l4yryEEPNRJxKkAe+y7ygq75aCQ=="
+      "signature": "aNGRhgBFZtqosxem8vYedUswzuR3r9qGNE9tTYhnPIvtSMH/6oB5HgHqc2fTUJO+dcyeTK2K033vI3pI+m93Cw=="
     }
   ]
 }

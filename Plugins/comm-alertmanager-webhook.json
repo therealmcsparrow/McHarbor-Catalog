@@ -10,10 +10,10 @@
   "versions": [
     {
       "version": "2026.10.01",
-      "build": "202611090221",
+      "build": "202611120049",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/comm-alertmanager-webhook-2026.10.01.tar.gz",
       "min_mcharbor": "2026.11.03",
-      "signature": "Y/m6otUwTAwmTiE6Bkl6BdbZ83Z0h4l5iVvf9ij71qmx+4aB1rHVdPHK25Ikepv3A/t7CxeBobUGj82+d37TDw=="
+      "signature": "9ALrawoXVUuymsmaWBAbDLm1rRtOJAG2bYJYEqVZZNGVonQM3onOQ8Z99rstu+vVkfgpdY3mu0rhxtq4WMDqDg=="
     }
   ]
 }

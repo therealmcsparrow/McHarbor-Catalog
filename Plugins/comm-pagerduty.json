@@ -10,10 +10,10 @@
   "versions": [
     {
       "version": "2026.10.01",
-      "build": "202611090222",
+      "build": "202611120051",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/comm-pagerduty-2026.10.01.tar.gz",
       "min_mcharbor": "2026.11.03",
-      "signature": "yt5Jn0KAuV+KGzwOCLOIspIJqC34l2stQlS1m9ffbwTvzPaeVd0kkDFcquc3VC5+uKJWCtagHsxBWfUnjUbUAQ=="
+      "signature": "LNgfYrpXXncT2Fy+D5PfJDl2jrdbVvZu6+qaaT/EL60mSi8/GsDZ/joJIwm5gdHbD/CjtnuM4zE9TmrkInVLBw=="
     }
   ]
 }

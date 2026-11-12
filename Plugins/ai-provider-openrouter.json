@@ -10,10 +10,10 @@
   "versions": [
     {
       "version": "2026.10.01",
-      "build": "202611090219",
+      "build": "202611120042",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/ai-provider-openrouter-2026.10.01.tar.gz",
       "min_mcharbor": "2026.11.03",
-      "signature": "eGsStn44qPb68vz3qAha7YOlSMzdNtH9uc30MsgKjujKXxoStJXKbIpYTs6V91DkK0oRDjY0Wk98Wtqdw5S4DQ=="
+      "signature": "eOnxhSLIuiSGU99sHpZwONLaEZ/8hrprIJW8ez9vhPPezKU/4KmxknufumEMJjOgiTW3FNajEE7EtnCH+CbDAg=="
     }
   ]
 }

@@ -10,10 +10,10 @@
   "versions": [
     {
       "version": "2026.10.01",
-      "build": "202611090220",
+      "build": "202611120046",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/comm-gotify-2026.10.01.tar.gz",
       "min_mcharbor": "2026.11.03",
-      "signature": "WIYnT+phMhnMf8wvSxtCTs3/p8mIIMkUj/inXrprt+0kP9qskMeL9RShPkKqc471ZBL6r7lKzdd21eDIxpSvDA=="
+      "signature": "ni+S7y0xA+OE/cVK0ciYvY0DekaGJHZjLGBQsj6O5N1dD2blWxbHS2FFdr2qfjVi2euI5vgawpdfrMaR5ewYBA=="
     }
   ]
 }

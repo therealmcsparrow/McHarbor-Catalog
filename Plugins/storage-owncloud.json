@@ -10,10 +10,10 @@
   "versions": [
     {
       "version": "2026.10.01",
-      "build": "202611090226",
+      "build": "202611120102",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/storage-owncloud-2026.10.01.tar.gz",
       "min_mcharbor": "2026.11.03",
-      "signature": "kXGDiU1dFgP/aedEgk/2rInz19fRnqN3RgTIAXrz1RYcX2275jqQ7Dg2+sOSCo0/2DV88EPG79tQd2gISbpgBw=="
+      "signature": "Se/p0MyC+Qc8L6yMmFsomqdx9H+eeCjMFdaboGbfYuGHxxL8NuwEn+5s1B19dn0NP45Dq6oGfyPTgesGLL1MAw=="
     }
   ]
 }

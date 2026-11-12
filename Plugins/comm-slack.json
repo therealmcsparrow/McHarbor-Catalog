@@ -10,10 +10,10 @@
   "versions": [
     {
       "version": "2026.10.01",
-      "build": "202611090221",
+      "build": "202611120047",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/comm-slack-2026.10.01.tar.gz",
       "min_mcharbor": "2026.11.03",
-      "signature": "RxyUef5zGlqX/ZP7vSzFaZ3gYUyxKxYXr1zgGpjbgmumMT6LAcTqNvsOSueWI38m+cOS6ETlgOI90yRp+JAzCQ=="
+      "signature": "jXe6aq+h2aI6zKHrQXYE26Qp3qDH0hXx9dmy2YjImKwvZAs1YQx4WmcogY14ilqUP2fxnZXnpRO3Dy4/9xWlBg=="
     }
   ]
 }

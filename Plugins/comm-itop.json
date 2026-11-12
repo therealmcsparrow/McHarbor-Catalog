@@ -10,10 +10,10 @@
   "versions": [
     {
       "version": "2026.10.01",
-      "build": "202611090222",
+      "build": "202611120050",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/comm-itop-2026.10.01.tar.gz",
       "min_mcharbor": "2026.11.03",
-      "signature": "8AkSPa7lgcd4AqhpXAew7g1a6589yUNQ4MHQMsPeFV45Bdvtn/ogfHdyA50GnneLEv4dSvvqh4lvjrtKqY1vCQ=="
+      "signature": "roLZHyBuqBb2yC1JWN68+JIUvg9AIlqwrTydHfzyqWrpSEa8jtLUaDBHrvV0Q0ojBAQjP86WFHxCdbYm1EbVCA=="
     }
   ]
 }

@@ -10,10 +10,10 @@
   "versions": [
     {
       "version": "2026.10.01",
-      "build": "202611090219",
+      "build": "202611120043",
       "download_url": "https://raw.githubusercontent.com/therealmcsparrow/McHarbor-Catalog/main/Plugins/files/ai-provider-perplexity-2026.10.01.tar.gz",
       "min_mcharbor": "2026.11.03",
-      "signature": "agjN4cguNRpaCwO/1FpsjffAC8yTHCPKyYUVYdugDYMOnDBtzzB0seswl41rW/Z2G0Aku2N2/kz1f31wyhYOBg=="
+      "signature": "n7v2t8V/t+h9iSjyEOVbkF5a4YxtTTROWecuwdBfzXfrLb/5cPWkFd5zxXin/HnOG9tgtgaXlBf++IEkskCKBQ=="
     }
   ]
 }
